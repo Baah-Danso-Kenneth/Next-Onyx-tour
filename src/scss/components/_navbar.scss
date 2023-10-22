@@ -1,0 +1,23 @@
+@import '../mixins/layout/mixin_layout.scss';
+@import '../mixins/layout/flex.scss';
+
+.nav-bar-content{
+  @include max-width;
+  @include flex;
+
+  .nav-bar-content-1{
+    ul{
+          display: flex;
+          >li{
+            color:red;
+            list-style-type: none;
+            white-space: nowrap;
+            margin-left: 0.8rem;
+            text-transform: uppercase;
+            font-family: var(--raleway) !important;
+          }
+    }
+
+
+  }
+}

@@ -1,0 +1,24 @@
+
+.btn{
+ color: var(--theme-color);
+ padding: 10px 25px ;
+ text-decoration: none;
+ background-color: transparent;
+ border: 1px solid var(--theme-color);
+ border-radius: 4px;
+ font-size: var(--tsm);
+ outline:none;
+ &:hover,
+ &:focus{
+   background-color: var(--lightest-navy);
+ }
+  a{
+    text-decoration: none;}
+}
+
+.nav-items-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
