@@ -1,9 +1,10 @@
 import React from 'react'
 import Logo from '../../public/assets/images/crafted-logo.png';
-import Image
+import Image from 'next/image';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {CgClose} from 'react-icons/cg'
 
 
-from 'next/image';
 function Navbar() {
   return (
     <div className="nav-bar-content">
@@ -28,6 +29,10 @@ function Navbar() {
           <li>shop</li>
           <li>about</li>
         </ul>
+      </div>
+
+      <div className="nav-bar-icon-container">
+          <GiHamburgerMenu/>
       </div>
 
     </div>

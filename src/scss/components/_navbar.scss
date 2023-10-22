@@ -4,6 +4,7 @@
 .nav-bar-content{
   @include max-width;
   @include flex;
+  font-weight: 200;
 
   .nav-bar-content-1{
     ul{
@@ -46,6 +47,56 @@
 
   &-3{
      @extend .nav-bar-content-1;
+  }
+
+    .nav-bar-icon-container{
+      display: none;
+    }
+
+  @media screen  and (max-width:1080px) {
+    .nav-bar-content-1{
+       transform: translate(2.5rem);
+    }
+    .nav-bar-content-2{
+      flex-direction: row-reverse;
+      .nav-bar-content-image{
+        transform: translateY(1rem);
+      }
+      >li{
+        white-space: nowrap;
+        transform: translate(3rem,1.8rem);
+        margin-left: 2rem;
+      }
+    }
+
+    &-3{
+     transform: translateX(-3.5rem) !important;
+    }    
+  }
+
+  @media screen and (max-width:768px) {
+
+  .nav-bar-content-1{
+    display: none;
+  }
+  .nav-bar-content-2{
+      transform: translateX(3rem);
+    
+    >li{
+      display: none;
+    }
+  }
+
+  .nav-bar-content-3{
+    display: none;
+  }
+ 
+    .nav-bar-icon-container{
+      display: block;
+      font-size: var(--tlarge2);
+      color: var(--light-slate);
+      transform: translate(-3rem, 0.8rem);
+    }
   }
 
 }
