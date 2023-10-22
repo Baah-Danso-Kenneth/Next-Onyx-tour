@@ -1,0 +1,62 @@
+@import '../mixins/layout/flex.scss';
+@import '../mixins/layout/mixin_layout.scss';
+
+.footer-container{
+    @include max-width;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    .sponsors{
+       @include flex;
+        >img{
+            object-fit: contain;
+        }
+    }
+
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >h3{
+            text-transform: uppercase;
+            font-family: var(--slug_fira);
+        }
+        .footer-link{
+            font-weight: 100;
+            font-style: italic;
+        }
+        >p{
+            margin-top: 0.5rem;
+            font-family: var(--slug_way);
+        }
+    }
+    .footer-comment{
+        >p{
+            width: 80%;
+            font-family: var(--slug_way);
+            text-align: center;
+            transform: translate(7rem);
+        }
+    }
+
+    .footer-tag{
+        >p{
+            text-align: center;
+            font-family: var(--slug_fira);
+            font-weight: 100;
+            font-size: var(--tsm2);
+            word-spacing: 5x;
+            font-style: italic;
+        }
+    }
+
+    @media screen and (max-width:780px) {
+        .footer-comment{
+            >p{
+                width: 120%;
+                transform: translate(-2rem);
+            }
+        }
+    }
+}
