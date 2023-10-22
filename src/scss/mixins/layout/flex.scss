@@ -7,3 +7,7 @@
         flex-flow: row-reverse;
     }
 }
+
+@mixin what-we-do-flex{
+    display:flex;
+}
