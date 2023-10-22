@@ -9,13 +9,13 @@ function Layout({children}:{children: ReactNode}) {
         <Navbar/>
        </div>
 
-       {/* <div className="content">
+        <div className="content">
         {children}
-       </div> */}
+       </div> 
        
-       {/* <div className='footer'>
+       <div className='footer'>
         <Footer/>
-       </div> */}
+       </div> 
     </div>
   )
 }

@@ -1,0 +1,45 @@
+.hero-container{
+    position: relative;
+
+
+ .hero-section-overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+
+ }
+ .hero-image-section{
+    >img{
+        width: 100%;
+        object-fit: cover;
+    }
+ }
+
+ .hero-statement{
+    position: absolute;
+    top: 3rem;
+    left:3rem;
+    >p{
+       font-size: var(--txtHero);
+       font-family: var(--slug_way);
+       text-transform: uppercase;
+       text-align: center;
+       transform: translate(12rem,5rem);
+       color: #fff;
+       font-weight: 500;
+       width: 70%;
+    }
+ }
+
+ @media screen and (max-width:1080px) {
+    .hero-statement{
+        >p{
+            transform: translate(5rem, 5rem);
+            width:75%;
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    
+ }
+}
