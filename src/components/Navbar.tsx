@@ -16,13 +16,13 @@ function Navbar() {
       </div>
       
       <div className="nav-bar-content-2">
-        <div className="navbar-content-image">
-            <Image  src={Logo} alt="company" width={150} height={150}/>
+        <div className="nav-bar-content-image">
+            <Image className='nav-bar-content-img' src={Logo} alt="company" width={200} height={100}/>
         </div>
          <li>2024 + 2025 calender</li>
       </div>
 
-      <div className="nav-baar-content-3">
+      <div className="nav-bar-content-3">
         <ul>
           <li>custom trips</li>
           <li>shop</li>

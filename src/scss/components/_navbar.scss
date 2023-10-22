@@ -9,15 +9,40 @@
     ul{
           display: flex;
           >li{
-            color:red;
+            color:var(--light-slate);
             list-style-type: none;
             white-space: nowrap;
             margin-left: 0.8rem;
+            word-spacing: -5px;
             text-transform: uppercase;
-            font-family: var(--raleway) !important;
+            font-family: var(--slug_fira);
           }
     }
+  }
 
+  .nav-bar-content-2{
+    @include flex;
+    flex-flow: column;
+    align-items: center;
 
+    .nav-bar-content-image{
+      .nav-bar-content-img{
+        transform: translateY(-2rem);
+        
+      }
+   
+    }
+    >li{
+      list-style: none;
+      transform: translateY(-3.3rem);
+      text-transform: uppercase;
+      color: var(--light-slate);
+      margin-left: 1rem;
+      font-family: var(--slug_fira)
+    }
+  }
+
+  &-3{
+     @extend .nav-bar-content-1;
   }
 }
