@@ -6,6 +6,7 @@
   .nav-bar{
     grid-area: 1/1/1/-1;
     background-color: var(--blue-dark);
+    font-family: var(--fire_code);
   }
   .content{
     grid-area: 2/1/2/-1;
@@ -19,19 +20,19 @@
 
  @media screen and (max-width:1020px) {
      .nav-bar {
-         background-color: pink;
+
      }
  }
 
  @media screen and (max-width: 768px){
      .nav-bar {
-         background-color: yellow;
+
      }
  }
 
  @media screen and (max-width:480px) {
      .nav-bar {
-         background-color: lemonchiffon;
+      
      }
  }
 

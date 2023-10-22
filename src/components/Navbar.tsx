@@ -1,9 +1,10 @@
 import React from 'react'
-import Logo from '../../public/assets/images/onyx_logo.png';
-import Image
+import Logo from '../../public/assets/images/crafted-logo.png';
+import Image from 'next/image';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {CgClose} from 'react-icons/cg'
 
 
-from 'next/image';
 function Navbar() {
   return (
     <div className="nav-bar-content">
@@ -16,18 +17,22 @@ function Navbar() {
       </div>
       
       <div className="nav-bar-content-2">
-        <div className="navbar-content-image">
-            <Image  src={Logo} alt="company" width={150} height={150}/>
+        <div className="nav-bar-content-image">
+            <Image className='nav-bar-content-img' src={Logo} alt="company" width={200} height={100}/>
         </div>
          <li>2024 + 2025 calender</li>
       </div>
 
-      <div className="nav-baar-content-3">
+      <div className="nav-bar-content-3">
         <ul>
           <li>custom trips</li>
           <li>shop</li>
           <li>about</li>
         </ul>
+      </div>
+
+      <div className="nav-bar-icon-container">
+          <GiHamburgerMenu/>
       </div>
 
     </div>
