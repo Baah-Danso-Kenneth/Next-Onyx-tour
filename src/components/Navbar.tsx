@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../public/assets/images/onyx_logo.png';
+import Logo from '../../public/assets/images/crafted-logo.png';
 import Image
 
 

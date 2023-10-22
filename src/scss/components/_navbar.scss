@@ -7,6 +7,7 @@
 
   .nav-bar-content-1{
     ul{
+          transform: translateY(1.8rem);
           display: flex;
           >li{
             color:var(--light-slate);
@@ -27,14 +28,15 @@
 
     .nav-bar-content-image{
       .nav-bar-content-img{
-        transform: translateY(-2rem);
+        transform: translateY(-0.8rem);
+        object-fit: contain;
         
       }
    
     }
     >li{
       list-style: none;
-      transform: translateY(-3.3rem);
+      transform: translateY(-1.5rem);
       text-transform: uppercase;
       color: var(--light-slate);
       margin-left: 1rem;
@@ -45,4 +47,5 @@
   &-3{
      @extend .nav-bar-content-1;
   }
+
 }
