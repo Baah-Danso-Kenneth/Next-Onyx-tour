@@ -2,7 +2,8 @@
     height: 130vh;
     background-color: var(--plum-violet);   
     .we-go-element{
-    @include max-width;
+     max-width: 80%;
+     margin: 0 auto ;
 
     .title{
         padding: 2rem;
@@ -24,5 +25,30 @@
        justify-content: center;
        align-items: center;
        gap:1rem;
+    }
+   @media screen and (max-width:1080px){
+    .we-go-container{
+        min-height: 100vh;
+    }
+   }
+    @media screen  and (max-width:780px) {
+        .we-go-container{
+             min-height: 300vh !important;
+             max-width: 100%;
+             margin: 0 auto;
+        }
+
+        .we-go-element{
+            .title{
+                word-wrap: normal;
+                white-space: nowrap;
+            }
+        }
+
+        .where-we-go-flex{
+            display: flex;
+          
+            
+        }
     }
 }

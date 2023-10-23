@@ -1,13 +1,20 @@
 .hero-container{
     position: relative;
 
-
- .hero-section-overlay{
-    z-index: 1;
+    &::after {
+    content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: auto;
 
- }
+    background-color: rgba(0, 0, 0, 0.5); 
+  
+   }
+
+
+
  .hero-image-section{
     >img{
         width: 100%;
