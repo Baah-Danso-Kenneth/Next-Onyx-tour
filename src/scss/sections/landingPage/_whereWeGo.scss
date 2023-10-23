@@ -1,0 +1,28 @@
+.we-go-container{
+    height: 130vh;
+    background-color: var(--plum-violet);   
+    .we-go-element{
+    @include max-width;
+
+    .title{
+        padding: 2rem;
+        text-align: center;
+        font-family: var(--slug_way);
+        font-size: var(--txtHero);
+        color: var(--light-slate);
+
+        h3{    
+        font-weight: 300;
+        text-transform: uppercase;
+        }
+    }
+    }
+
+    .where-we-go-flex{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap:1rem;
+    }
+}
