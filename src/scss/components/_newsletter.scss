@@ -1,0 +1,104 @@
+.news-letter-container{
+    border-top: 1px solid #ccc;
+    @include max-width;
+    min-height: 282.6px;
+
+    .banner-text{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        >h3{
+            margin-top: 2rem;
+            font-family: var(--slug_way);
+            text-transform: uppercase;
+            font-size: var(--tx2large);
+            font-weight: 500;
+            color: var(--light-slate);
+        }
+
+        .small-text{
+            font-family: var(--slug_fira);
+            padding:5px;
+            word-spacing: -3px;
+            font-size: var(--tsm1);
+            color: var(--lightest-slate);
+            transform: translateY(1rem);
+        }
+    }
+
+.small-text-2{
+           font-family: var(--slug_fira);
+            padding:5px;
+            word-spacing: -3px;
+            font-size: var(--tsm1);
+            text-align: center;
+            color: var(--lightest-slate);
+            transform: translateY(3rem)
+}
+
+.flex-input{
+   @include flex;
+   gap:1rem;  
+   margin-top: 2.5rem;
+
+   &-names{
+    display: flex;
+    gap: 1rem;
+
+    >input{
+        padding: 15px 35px 25px;
+    }
+   }
+
+
+   &-email{
+    >input{
+        padding: 15px 35px 25px;
+    }
+
+   }
+
+   &-btn{
+    >button{
+        padding: 15px 35px 25px;
+        text-transform: uppercase;
+        font-family: var(--slug_way);
+        font-weight: 500;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+   }
+}
+
+
+@media screen and (max-width:1080px) {
+
+    &-names{
+        >input{
+            padding: 15px 30px 15px;
+        };
+    }
+
+    &-email{
+        >input{
+            padding: 15px 30px 15px;
+        }
+    }
+
+   .flex-input-btn{  
+    >button{
+        white-space: nowrap;
+        color: var(--blue-dark);
+        padding: 15px 25px 25px;
+    }
+   } 
+
+   .small-text-2{
+    transform: translateY(2rem);
+   }
+}
+
+}
