@@ -33,7 +33,7 @@
     }
     .footer-comment{
         >p{
-            width: 80%;
+            width: 90%;
             font-family: var(--slug_way);
             text-align: center;
             transform: translate(7rem);
@@ -48,6 +48,15 @@
             font-size: var(--tsm2);
             word-spacing: 5x;
             font-style: italic;
+        }
+    }
+
+    @media screen  and (max-width:1080px){
+        .footer-comment{
+            >p{
+                width: 100%;
+                transform: translate(1rem);
+            }
         }
     }
 
