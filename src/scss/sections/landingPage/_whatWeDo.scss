@@ -1,0 +1,64 @@
+@import '../../mixins/layout/mixin_layout.scss';
+
+.what-we-do-container{
+    min-height: 50vh;
+    @include max-width;
+
+
+  .what-we-do-title{
+    transform: translate(10rem, 5rem);
+    >p{
+        text-align: center;
+        font-family: var(--slug_way);
+        font-size: var(--txlarge);
+        text-transform: uppercase;
+        color: var(--light-slate);
+        width: 70%;
+    }
+  }
+
+  .flex-container{
+   display: flex;
+   gap: 2rem;
+   align-items: flex-end;
+   transform: translateY(9rem);
+  }
+
+  .what-we-do-content-1{
+    >h3{
+        font-family: var(--slug_fira);
+        text-transform: uppercase;
+        font-size: var(--txtHero);
+        font-weight: 400;
+        color: var(--light-slate);
+    }
+
+    >p{
+        font-weight: 200;
+        color: var(--lightest-slate);
+        font-family: var(--slug_way);
+    }
+  }
+
+  @media screen and (max-width:1080px) {
+    min-height: 35vh;
+     gap: 1rem;
+     transform: translateX(-7rem);
+     .what-we-do-title{
+        transform: translate(6rem, 5rem);
+        >p{
+            width: 100%;
+        }
+     }
+  }
+
+  @media screen and (max-width:769px){
+     min-height: 55vh;
+     .flex-container{
+        transform: translate(2.8rem, 10rem);
+        flex-flow: column;
+     }
+
+}
+
+}
