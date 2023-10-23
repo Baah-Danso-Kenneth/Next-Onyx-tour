@@ -1,0 +1,17 @@
+.recommend-container{
+    min-height: 10vh;
+    padding: 3rem;
+    background-color: var(--cove-blue);
+      .recommend-elements{
+         max-width: 80%;
+       margin: 0 auto;
+       .recommend-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+       }
+    }
+
+
+}
