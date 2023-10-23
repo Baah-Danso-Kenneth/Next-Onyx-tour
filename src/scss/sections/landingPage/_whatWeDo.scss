@@ -59,6 +59,18 @@
         flex-flow: column;
      }
 
+     .what-we-do-title{
+       display: flex;
+       justify-content: center;
+       > p{
+          transform: translateX(-4rem)
+       };
+     }
+
+     .flex-container{
+      transform:translate(-5rem, 8rem);
+     }
+
 }
 
 }
