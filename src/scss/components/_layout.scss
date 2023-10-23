@@ -2,7 +2,7 @@
    display: grid;
    overflow-x: hidden;
    grid-template-columns: repeat(1fr); 
-   grid-template-rows: auto auto 33.5em;
+   grid-template-rows: auto auto auto 33.5em;
 
   .nav-bar{
     grid-area: 1/1/1/-1;
@@ -14,9 +14,14 @@
 
   }
 
+  .newsletter{
+    grid-area:3/1/3/-1 ;
+    background-color: var(--blue-dark);
+  }
+
   .footer{
     background-color: var(--heliotrope-violet);
-    grid-area: 3/1/3/-1;
+    grid-area: 4/1/4/-1;
   }
 
  @media screen and (max-width:1020px) {

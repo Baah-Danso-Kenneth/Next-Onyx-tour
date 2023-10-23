@@ -52,7 +52,7 @@ html{
     }
 
     &-thumb{
-        background-color: #ccc;
+        background-color: var(--blue-dark);
         border: 3px solid #ccc;
         border-radius: 20px;
     }
