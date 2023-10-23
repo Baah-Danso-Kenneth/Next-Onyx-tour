@@ -101,4 +101,18 @@
    }
 }
 
+@media screen and (max-width:768px){
+    .banner-text{
+       >h3{
+        transform: translate(-1rem);
+        text-align: center;
+        width: 100%;
+       }
+    }
+
+    .flex-input{
+        flex-flow: column;
+    }
+}
+
 }

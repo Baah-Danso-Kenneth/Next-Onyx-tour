@@ -46,7 +46,7 @@
 @media screen and (max-width:768px) {
    .hero-image-section{
       >img{
-         width: 90%;
+         width: 100%;
       }
    }
 
@@ -54,6 +54,7 @@
       >p{
          font-size: var(--tx2large);
          transform: translate(1.5rem, 2rem);
+         text-align: center;
       }
    }
 }
