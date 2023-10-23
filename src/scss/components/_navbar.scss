@@ -95,8 +95,18 @@
       display: block;
       font-size: var(--tlarge2);
       color: var(--light-slate);
-      transform: translate(-3rem, 0.8rem);
+      transform: translate(-15rem, 0.8rem);
     }
+
+
+    .nav-bar-content-content-2{
+
+    }
+
+  }
+
+  @media screen and (max-width:480px){
+    
   }
 
 }
