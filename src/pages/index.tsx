@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Hero from '@/sections/landingpage/Hero'
 import KindWords from '@/sections/landingpage/KindWords'
+import Meetup from '@/sections/landingpage/Meetup'
 import Recommend from '@/sections/landingpage/Recommend'
 import WhatWeDo from '@/sections/landingpage/WhatWeDo'
 import WhereWeGo from '@/sections/landingpage/WhereWeGo'
@@ -13,6 +14,7 @@ function index() {
       <WhatWeDo/>
       <WhereWeGo/>
       <Recommend/>
+      <Meetup/>
       <KindWords/> 
     </Layout>
   )
