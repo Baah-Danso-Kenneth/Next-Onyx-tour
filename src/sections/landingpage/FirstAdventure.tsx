@@ -1,11 +1,15 @@
 import React from 'react'
+import ArtsImage from '../../../public/assets/images/artsszone.png'
+import Image from 'next/image'
 
-function Adveture() {
+
+
+function FirstAdveture() {
   return (
     <div className='funtime-container'>
         <div className="funtime-container-element">
             <div className="img_section">
-
+               <Image src={ArtsImage} alt='art-zone'/>
             </div>
 
             <div className="text-section">
@@ -25,4 +29,4 @@ function Adveture() {
   )
 }
 
-export default Adveture
+export default FirstAdveture
