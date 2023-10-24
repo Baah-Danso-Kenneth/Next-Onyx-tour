@@ -51,7 +51,8 @@
                     outline: none;
                     border-radius: 5px;
                     color: var(--blue-dark);
-                    font-weight: 800;
+                    font-weight: 600;
+                    font-family: var(--slug_way);
                     background-color: var(--heliotrope-violet);
                 }
             }
@@ -66,6 +67,42 @@
                 font-size: 30px;
                 width: 60%;
                 margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        margin-top: -3rem;
+        .image-section{
+            transform: translate(-2.8rem);
+            >img{
+                width: 55%;
+            }
+        }
+
+        .text-section{
+            transform: translateY(-5rem);
+            >h3{
+                font-size:20px;
+                word-spacing: -5px;
+                text-align: center;
+                transform: translate(-12rem);
+            }
+
+            .statement{
+                >p{
+                    font-size: 14px;
+                    width: 50%;
+                    text-align: center;
+                    transform: translate(-2rem);
+                }
+               .button-section{
+                transform: translate(-12rem);
+                >button{
+                    padding: 10px 30px 20px;
+                }
+               }
+
             }
         }
     }

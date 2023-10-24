@@ -13,5 +13,12 @@
        }
     }
 
-
+@media screen and (max-width:480px){
+    .recommend-flex{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-11.5rem);
+    }
+}
 }

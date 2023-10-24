@@ -43,6 +43,18 @@
          align-items: center;
      }
     }
-
+@media screen and (max-width:480px){
+    height: 155rem;
+   .kind-word-container-title{
+    >h3{
+        font-size: 35px;
+        transform: translate(-11rem);
+    }
+   }
+   .flex-card-container{
+    flex-flow: column;
+    transform: translate(-12rem);
+   }
+}
 
 }
