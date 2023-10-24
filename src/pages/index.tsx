@@ -1,4 +1,6 @@
 import Layout from '@/components/Layout'
+import Bookings from '@/sections/landingpage/Bookings'
+import Brand from '@/sections/landingpage/Brand'
 import FirstAdveture from '@/sections/landingpage/FirstAdventure'
 import Hero from '@/sections/landingpage/Hero'
 import KindWords from '@/sections/landingpage/KindWords'
@@ -19,6 +21,8 @@ function index() {
       <Meetup/>
       <FirstAdveture/>
       <SecondAdventure/>
+      <Brand/>
+      <Bookings/>
       <KindWords/> 
     </Layout>
   )

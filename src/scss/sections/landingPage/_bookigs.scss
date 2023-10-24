@@ -1,0 +1,44 @@
+.booking-container{
+    background-color: var(--blue-dark);
+    .booking-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .flex-content{
+            display: flex;
+            transform: translate(0rem, -3rem);
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            .flex-content-1{
+                >img{
+                    width: 20%;
+                    object-fit: contain;
+                }
+                >h3{
+                    font-size: var(--tx2large);
+                    margin-bottom: 0.2rem;
+                    font-family: var(--slug_fira);
+                    color: var(--light-slate);
+                    text-transform: uppercase;
+                    font-weight: 300;
+                }
+                >p{
+                    font-family: var(--slug_way);
+                    color: var(--lightest-slate);
+                    font-weight: 500;
+                }
+            }
+
+            .adjust{
+                h3,p{
+                    transform: translateY(-4rem);
+                }
+            }
+        }
+    }
+}
