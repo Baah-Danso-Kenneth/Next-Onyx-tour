@@ -63,15 +63,22 @@
        display: flex;
        justify-content: center;
        > p{
-          transform: translateX(1.8rem);
+          transform: translateX(1.3rem);
           font-size:30px;
-          width: 90%;
+          width: 800px;
+          color: var(--light-slate);
           text-align: center;
        };
      }
 
      .flex-container{
-      transform:translate(2rem, 9rem);
+      transform:translate(3rem, 9rem);
+
+      .whate-we-do-content-1{
+        >h3{
+          text-align: center;
+        }
+      }
      }
 
 }

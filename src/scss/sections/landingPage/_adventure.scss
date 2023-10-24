@@ -57,6 +57,29 @@
         }
     }
 
+
+       @media screen and (max-width:780px) {
+
+    &-element{
+       .text-section{
+        .title{
+            h3{
+               font-size: 30px;
+            }
+        }
+       } 
+
+       .button-section{
+        >button{
+            padding: 25px 30px 25px;
+            white-space: nowrap;
+            font-size: 15px;
+        }
+       }
+    }
+
+   }
+
 }
 
 
@@ -112,6 +135,29 @@
            font-weight: 800;
            border-radius: 5px;
        }
+   }
+
+
+   @media screen and (max-width:780px) {
+
+    &-element{
+       .text-section{
+        .title{
+            h3{
+               font-size: 30px;
+            }
+        }
+       } 
+
+       .button-section{
+        >button{
+            padding: 25px 30px 25px;
+            white-space: nowrap;
+            font-size: 15px;
+        }
+       }
+    }
+
    }
 }
 
