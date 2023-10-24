@@ -29,7 +29,7 @@ function WhereWeGo() {
 
         <div className="where-we-go-flex">
           {destinationInfo.map(({name, src, itenary, icon},index)=>(
-            <DestinationCard key={index} name={name} src={src} itenary={itenary} icon={icon}/>
+            <DestinationCard key={index} name={name} src={src.src} itenary={itenary} icon={icon}/>
           ))}
         </div>
         </div>
