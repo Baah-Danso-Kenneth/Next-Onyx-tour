@@ -1,0 +1,18 @@
+.brand-container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--plum-violet);
+    .brand-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >img{
+            width: 30%;
+            object-fit: contain;
+        }
+    }
+}

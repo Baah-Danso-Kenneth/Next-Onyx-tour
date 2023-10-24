@@ -1,0 +1,32 @@
+import React from 'react'
+import ArtsImage from '../../../public/assets/images/artsszone.png'
+import Image from 'next/image'
+
+
+
+function FirstAdveture() {
+  return (
+    <div className='funtime-container'>
+        <div className="funtime-container-element">
+            <div className="img_section">
+               <Image src={ArtsImage} alt='art-zone'/>
+            </div>
+
+            <div className="text-section">
+                <div className="title">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente 
+                        hic nemo. Magni nemo quibusdam corporis asperiores dolorem c
+                        upiditate ut.</p>
+                    <div className="button-section">
+                        <button>2024 + 2025 Calender</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+  )
+}
+
+export default FirstAdveture
