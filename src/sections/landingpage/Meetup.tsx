@@ -13,7 +13,7 @@ function Meetup() {
                <div className="text-section">
                      <h3>In the Movement of fun through growth </h3>
                       
-                      <div className="statemet">
+                      <div className="statement">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                              quas quo quae exercitationem corrupti eligendi 
                             voluptatum quidem ex aliquid deserunt quibusdam 
