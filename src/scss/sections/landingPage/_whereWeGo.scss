@@ -51,4 +51,29 @@
             
         }
     }
+
+    @media screen and (max-width:480px) {
+        height: 150rem;
+          .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-12rem);
+            >h3{
+                font-size: 25px;
+                
+            }
+          }
+
+
+
+          .where-we-go-flex{
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            gap:2rem;
+            transform: translate(-12rem);
+          }
+    }
+
 }

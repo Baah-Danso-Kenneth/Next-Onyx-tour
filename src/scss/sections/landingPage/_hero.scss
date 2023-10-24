@@ -65,4 +65,21 @@
       }
    }
 }
+
+@media screen and (max-width:480px) {
+   .hero-image-section{
+      >img{
+         object-fit: cover;
+      }
+   }
+
+   .hero-statement{
+      >p{
+         font-size: 20px;
+         width: 70%;
+         transform: translate(-1.3rem);
+      }
+   }
+}
+
 }

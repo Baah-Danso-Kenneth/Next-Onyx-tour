@@ -41,4 +41,32 @@
             }
         }
     }
+
+    @media screen and (max-width:480px){
+       .booking-elements{
+        .logo{
+            transform: translate(-4rem,-6rem);
+            >img{
+                width: 45%;
+                object-fit: contain}
+        }
+
+        .flex-content{
+            flex-direction:column;
+            .flex-content-1{
+                >img{
+                    width: 10%;
+                }
+
+                >h3{
+                    font-size:20px;
+                    font-weight: 500;
+                }
+                >p{
+                    width: 50%;
+                }
+            }
+        }
+       } 
+    }
 }

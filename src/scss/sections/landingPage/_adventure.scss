@@ -50,12 +50,75 @@
                 outline: none;
                 color:var(--blue-dark);
                 text-transform: uppercase;
+                font-family: var(--slug_way);
                 font-size:15px;
                 font-weight: 800;
                 border-radius: 5px;
             }
         }
     }
+
+
+       @media screen and (max-width:780px) {
+
+    &-element{
+       .text-section{
+        .title{
+            h3{
+               font-size: 30px;
+            }
+        }
+       } 
+
+       .button-section{
+        >button{
+            padding: 25px 30px 25px;
+            white-space: nowrap;
+            font-size: 15px;
+        }
+       }
+    }
+
+   }
+
+      @media screen and (max-width:480px){
+
+   .funtime-container-element{
+    flex-flow: column;
+
+    .img_section{
+        transform: translate(-2rem);
+        >img{
+        width: 50%;
+        object-fit: cover;
+        }
+    }
+    .text-section{
+        transform: translate(-12rem,-4rem);
+        .title{
+            >h3{
+                font-size: 20px;
+            }
+
+            >p{
+                transform: translate(10rem);
+                font-size: 14px;
+                color: var(--light-slate);
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        .button-section{
+            >button{
+                 padding: 10px 30px 20px;
+            }
+        }
+
+    }
+
+   }
+}
 
 }
 
@@ -108,15 +171,74 @@
            outline: none;
            color:var(--blue-dark);
            text-transform: uppercase;
+           font-family: var(--slug_way);
            font-size:15px;
            font-weight: 800;
            border-radius: 5px;
        }
    }
+
+
+   @media screen and (max-width:780px) {
+
+    &-element{
+       .text-section{
+        .title{
+            h3{
+               font-size: 30px;
+            }
+        }
+       } 
+
+       .button-section{
+        >button{
+            padding: 25px 30px 25px;
+            white-space: nowrap;
+            font-size: 15px;
+        }
+       }
+    }
+
+   }
+
+
+   @media screen and (max-width:480px){
+
+   .funtime2-container-element{
+    flex-flow: column;
+
+    .img_section{
+        transform: translate(-2rem);
+        >img{
+        width: 50%;
+        object-fit: cover;
+        }
+    }
+    .text-section{
+        transform: translate(-12rem,-4rem);
+        .title{
+            >h3{
+                font-size: 20px;
+            }
+
+            >p{
+                transform: translate(10rem);
+                font-size: 14px;
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        .button-section{
+            >button{
+                 padding: 10px 30px 20px;
+            }
+        }
+
+    }
+
+   }
 }
 
-
-
-
-
+}
 

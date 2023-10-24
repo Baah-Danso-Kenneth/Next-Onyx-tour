@@ -113,5 +113,24 @@
         flex-flow: column;
     }
 }
+@media screen and (max-width:480px){
+    height: 550px;
+    transform: translate(-11rem);
+    .banner-text{
+        >h3{
+            font-size: 23px;
+        }
 
+        >p{
+          width: 80%;
+          text-align: center;
+        }
+    }
+    .flex-input{
+        flex-flow: column;
+        .flex-input-names{
+            flex-flow: column;
+        }
+    }
+}
 }
