@@ -1,0 +1,122 @@
+.funtime-container{
+    background-color: var(--cove-blue);
+
+    &-element{
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        gap: 2rem;
+
+        .img_section{
+          >img{
+            object-fit: contain;
+          }
+
+        }
+
+        .text-section{
+         transform: translateY(5rem);
+
+         .title{
+            h3{
+            font-size: var(--txtHero);
+            font-family: var(--slug_fira);
+            word-spacing: -1rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: var(--light-slate);
+            margin-bottom: 1rem;
+            }
+
+            >p{
+                font-size: var(--tlarge);
+                font-family: var(--slug_way);
+                font-weight: 300;
+            }
+         }
+
+        }
+
+        .button-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(2rem);
+            >button{
+                padding: 15px 35px 25px;
+                background-color: var(--heliotrope-violet);
+                border:none;
+                outline: none;
+                color:var(--blue-dark);
+                text-transform: uppercase;
+                font-size:15px;
+                font-weight: 800;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+
+.funtime2-container{
+   .funtime2-container-element{
+     max-width: 80%;
+     margin: 0 auto;
+     display: flex;
+     flex-flow: row-reverse;
+     gap:2rem;
+   }
+
+
+
+   .text-section{
+    transform: translateY(5rem);
+
+    .title{
+       h3{
+       font-size: var(--txtHero);
+       font-family: var(--slug_fira);
+       word-spacing: -1rem;
+       text-align: center;
+       text-transform: uppercase;
+       font-weight: 300;
+       color: var(--light-slate);
+       margin-bottom: 1rem;
+       }
+
+       >p{
+           font-size: var(--tlarge);
+           font-family: var(--slug_way);
+           font-weight: 300;
+           color: var(--lightest-slate);
+       }
+    }
+
+   }
+
+   .button-section{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transform: translateY(2rem);
+       >button{
+           padding: 15px 35px 25px;
+           background-color: var(--heliotrope-violet);
+           border:none;
+           outline: none;
+           color:var(--blue-dark);
+           text-transform: uppercase;
+           font-size:15px;
+           font-weight: 800;
+           border-radius: 5px;
+       }
+   }
+}
+
+
+
+
+
+

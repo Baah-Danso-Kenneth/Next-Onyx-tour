@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import NewsLetter from './NewsLetter'
 
 function Layout({children}:{children: ReactNode}) {
   return (
@@ -12,7 +13,11 @@ function Layout({children}:{children: ReactNode}) {
         <div className="content">
         {children}
        </div> 
-       
+
+       <div className='newsletter'>
+        <NewsLetter/>
+       </div>  
+
        <div className='footer'>
         <Footer/>
        </div> 

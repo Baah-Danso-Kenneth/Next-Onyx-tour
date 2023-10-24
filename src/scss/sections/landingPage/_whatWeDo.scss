@@ -59,6 +59,21 @@
         flex-flow: column;
      }
 
+     .what-we-do-title{
+       display: flex;
+       justify-content: center;
+       > p{
+          transform: translateX(1.8rem);
+          font-size:30px;
+          width: 90%;
+          text-align: center;
+       };
+     }
+
+     .flex-container{
+      transform:translate(2rem, 9rem);
+     }
+
 }
 
 }
