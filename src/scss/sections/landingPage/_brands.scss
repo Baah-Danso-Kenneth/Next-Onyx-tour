@@ -1,18 +1,44 @@
 .brand-container{
     height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--plum-violet);
     .brand-elements{
-        max-width: 80%;
-        margin: 0 auto;
+        transform: translate(0%,-5rem);
         display: flex;
         justify-content: center;
         align-items: center;
         >img{
-            width: 30%;
+            width: 20%;
             object-fit: contain;
         }
+    }
+   
+    @media screen and (max-width:1080px){
+    height: 30vh;
+        
+    }
+
+    @media screen and (max-width:480px){
+            height: 500px;
+             .brand-elements{
+                transform: translate(-13rem);
+                flex-flow: column;
+                >img{
+                    margin-bottom:0;
+                }
+                >img:nth-child(1){
+                    transform: translate(0%,-5rem);
+                }
+                >img:nth-child(2){
+                    transform: translate(0%,-20rem);
+                }
+                >img:nth-child(3){
+                    transform: translate(0%,-43rem);
+                }
+
+                >img:nth-child(4){
+                    transform: translate(0%,-65.8rem);
+                }
+             }
+        
     }
 }

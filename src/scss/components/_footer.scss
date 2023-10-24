@@ -68,4 +68,28 @@
             }
         }
     }
+
+    @media screen and (max-width:480px){
+     transform: translate(-11rem);
+      .sponsors{
+        flex-flow: column;
+
+      }
+
+      .footer-comment{
+        transform: translate(5.5rem);
+        >p{
+            width: 70%;
+            font-size: 14px;
+        }
+      }
+
+      .footer-tag{
+        transform: translate(3rem,0%);
+        >p{
+            font-size: 10px;
+            width: 70%;
+        }
+      }
+    }
 }

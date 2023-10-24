@@ -106,7 +106,14 @@
   }
 
   @media screen and (max-width:480px){
-    
+     .nav-bar-content-2{
+      .nav-bar-content-image{
+        transform: translate(-6rem,10%) !important;
+        >img{
+      
+        }
+      }
+     } 
   }
 
 }
