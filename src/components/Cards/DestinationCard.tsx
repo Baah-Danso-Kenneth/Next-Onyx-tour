@@ -13,7 +13,7 @@ function DestinationCard({src, itenary, name, icon}:DestinationProps) {
   return (
     <div className='destination-container'>
       <div className="destination-img">
-        <Image src={src} alt="image"  />
+        <Image src={src} alt="image"  width={100} height={100}/>
         <p>{name}</p>
         </div>  
 

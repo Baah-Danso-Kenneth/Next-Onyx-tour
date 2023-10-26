@@ -2,7 +2,9 @@
     height: 50vh;
     background-color: var(--plum-violet);
     .brand-elements{
-        transform: translate(0%,-5rem);
+        max-width: 80%;
+        margin: 0 auto;
+        transform: translate(0%,-8rem);
         display: flex;
         justify-content: center;
         align-items: center;

@@ -23,6 +23,8 @@ function NewsLetter() {
         </div>
           </div>
       <p className='small-text-2'>Lorem ipsum dolor sit amet.</p>
+
+      
     </div>
   )
 }
