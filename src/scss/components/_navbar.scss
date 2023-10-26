@@ -5,13 +5,13 @@
   @include max-width;
   @include flex;
   font-weight: 200;
-
   .nav-bar-content-1{
     ul{
           transform: translateY(1.8rem);
           display: flex;
           >li{
             color:var(--light-slate);
+            cursor: pointer;
             list-style-type: none;
             white-space: nowrap;
             margin-left: 0.8rem;
@@ -37,11 +37,13 @@
     }
     >li{
       list-style: none;
+      top: 5.9rem;
       transform: translateY(-1.5rem);
       text-transform: uppercase;
       color: var(--light-slate);
       margin-left: 1rem;
-      font-family: var(--slug_fira)
+      font-family: var(--slug_fira);
+      text-transform: uppercase;
     }
   }
 
@@ -52,6 +54,41 @@
     .nav-bar-icon-container{
       display: none;
     }
+
+  .hide-image{
+    display:none;
+  }
+
+  .show-li{
+    position: fixed;
+    >li{
+      transform: translate(0%, 1.8rem);
+    }
+  }
+
+  .custom-li{
+    transform: translate(5rem);
+  }
+
+  .show-custom-li{
+     transform: translateX(-8.5rem);
+     @media screen and (max-width:1080px){
+      color:red ;
+     }
+  }
+
+  .cut-nav{
+    height: 30vh;
+    width:100% ;
+  }
+
+  .align-items{}
+
+  .nav-items-sm-screen{
+     display: none;
+  }
+
+ 
 
   @media screen  and (max-width:1080px) {
     .nav-bar-content-1{
@@ -71,7 +108,8 @@
 
     &-3{
      transform: translateX(-3.5rem) !important;
-    }    
+    }
+
   }
 
   @media screen and (max-width:768px) {
@@ -80,7 +118,7 @@
     display: none;
   }
   .nav-bar-content-2{
-      transform: translateX(3rem);
+      transform: translateX(20rem);
     
     >li{
       display: none;
@@ -98,22 +136,80 @@
       transform: translate(-15rem, 0.8rem);
     }
 
-
-    .nav-bar-content-content-2{
-
-    }
-
   }
 
   @media screen and (max-width:480px){
+     .nav-bar-icon-container{
+       transform: translateX(-4rem);
+     }
      .nav-bar-content-2{
       .nav-bar-content-image{
-        transform: translate(-6rem,10%) !important;
-        >img{
-      
-        }
-      }
+         transform: translate(5rem,10%) }
      } 
   }
 
 }
+
+
+
+
+.nav-items-sm-screen{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    .destination{
+      cursor: pointer;
+      position: absolute;
+      transform: translate(-8rem);
+      background-color: var(--blue-dark);
+      width: 8rem;
+      height: 5.5rem;
+      font-family: var(--slug_fira);
+      color: var(--lightest-slate);
+      font-weight: 300;
+      >ul{
+    
+        >li{
+          font-size: 15px;
+          text-transform: uppercase;
+          list-style-type: none;
+          margin-bottom: 0.3rem;
+          transform: translateX(1.5rem);
+          word-spacing: -5px;
+        }
+      }
+    }
+
+    .shop{
+      @extend .destination;
+      width: 13.8rem;
+      height: 3.5rem;
+      transform: translate(23rem);
+      ul{
+        >li{
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .about{
+      @extend .destination;
+      transform:translateX(22rem);
+      height: 8.8rem;
+      width: 9rem;
+    }
+  }
+
+
+
+  .show-destination{
+    display: none;
+  } 
+
+.show-about{
+    display: none;
+  } 
+
+  .show-shop{
+     display: none;
+  }

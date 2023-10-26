@@ -32,12 +32,9 @@
     }
    }
     @media screen  and (max-width:780px) {
-        .we-go-container{
-             min-height: 300vh !important;
-             max-width: 100%;
-             margin: 0 auto;
-        }
-
+         min-height: 200vh;
+         max-width: 100%;
+        margin: 0 auto;
         .we-go-element{
             .title{
                 word-wrap: normal;

@@ -22,7 +22,7 @@
         align-items: center;
 
         >h3{
-            font-size: var(--txtHero);
+            font-size: 35px;
             font-family: var(--slug_fira);
             text-transform: uppercase;
             text-align: center;
@@ -31,12 +31,21 @@
             font-weight: 300;
             color: var(--light-slate);
             margin-top: 2rem;
+            margin-bottom: 1rem;
         }
 
         .statement{
             font-family: var(--slug_way);
             font-size: var(--tlarge);
             color:var(--lightest-slate) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            >p{
+                width: 60%;
+                font-size: 15px;
+            }
             
 
             .button-section{
@@ -45,7 +54,7 @@
                 justify-content: center;
                 align-items: center;
                 >button{
-                    padding: 15px 45px 25px;
+                    padding: 20px 45px 20px;
                     text-transform: uppercase;
                     border: none;
                     outline: none;
@@ -90,11 +99,15 @@
             }
 
             .statement{
+                display: flex;
+                justify-content: center;
+                flex-flow: column;
                 >p{
                     font-size: 14px;
                     width: 50%;
                     text-align: center;
-                    transform: translate(-2rem);
+                    transform: translate(-12rem);
+                    
                 }
                .button-section{
                 transform: translate(-12rem);
