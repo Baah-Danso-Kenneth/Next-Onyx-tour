@@ -1,0 +1,114 @@
+.nav-container{
+  &-element{
+    max-width: 53%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right-section{
+      display: flex;
+      align-items: flex-end;
+      color: var(--lightest-slate);
+      font-weight: 300;
+      >p{
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-family: var(--slug_fira);
+        font-size: var(--tbase);
+
+        word-spacing: -5px;
+      }
+      >p:nth-child(2){
+       margin-left: 1.8rem;
+      }
+    }
+
+    .logo{
+      >img{
+        width: 100%;
+        height: 6rem;
+        object-fit: cover;
+      }
+    }
+    .last-section{
+     @extend .right-section;
+
+     >p:nth-child(3){
+       margin-left: 1.8rem;
+     }
+    } 
+
+    .logo-for-mobile-tablet{
+        display: none;
+    }
+    .icon-for-mobile-tablet{
+        display: none;
+    }
+
+  }
+
+  @media screen and (max-width:1080px) {
+    &-element{
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: 0 auto;
+      .right-section{
+        p{
+            font-size: var(--tsm2);
+        }
+      }
+
+      .logo{
+        >img{
+            width: 100%;
+            object-fit: contain;
+        }
+      }
+
+      .left-section{
+
+      }
+    }
+
+  }
+
+
+  @media screen and (max-width:768px) {
+    &-element{
+
+        .icon-for-mobile-tablet{
+            display: block;
+            color: var(--light-slate);  
+            font-size: var(--tlarge);
+            .icon-content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateY(0.2rem);
+            }     
+        }
+
+        .logo-for-mobile-tablet{
+            display: block;
+            >img{
+                width: 100%;
+                height: 5rem;
+                object-fit: cover;
+            }
+        }
+
+        .right-section{
+            display: none;
+        }
+
+        .logo{
+           display: none;
+        }
+        .last-section{
+           display: none;
+        }
+    }
+  }
+}

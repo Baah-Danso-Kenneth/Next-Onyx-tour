@@ -1,10 +1,13 @@
 import React, {ReactNode} from 'react'
+import Navbar from './Navbar'
+import NewLetter from './NewLetter'
+import Footer from './Footer'
 
 function Layout({children}:{children:ReactNode}) {
   return (
     <div className='app'>
         <div className="nav-bar">
-          <h1>Navbar</h1>
+         <Navbar/> 
         </div>
 
         <div className="children">
@@ -12,11 +15,11 @@ function Layout({children}:{children:ReactNode}) {
         </div>
 
         <div className="news-letters">
-          <h2>Newsletters</h2>
+          <NewLetter/>
         </div>
 
         <div className="footer">
-          <h3>Footer</h3>
+          <Footer/>
         </div>
       
     </div>
