@@ -1,0 +1,27 @@
+.we-go-container{
+    background-color: var(--plum-violet);
+     &-elements{
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 2rem;
+      .title{
+          font-size: var(--txtHero);
+          color: var(--light-slate);
+          text-align: center;
+          font-family: var(--slug_fira);
+          text-transform: uppercase;
+          word-spacing: -20px;
+          font-weight: 100;
+          padding-bottom: 2rem;
+     
+      }
+
+      .places-container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+     } 
+  }

@@ -1,6 +1,7 @@
 .app{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    overflow-x: hidden;
     grid-template-rows: auto auto auto auto;
    
     .nav-bar{
@@ -10,7 +11,6 @@
 
     .children{
         grid-area: 2/1/span 1/-1;
-        background-color: red;
     }
 
     .news-letters{

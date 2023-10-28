@@ -1,0 +1,20 @@
+.recommend-container{
+    padding: 2rem;
+    background-color: var(--cove-blue);
+    &-elements{
+       max-width: 80%;
+       margin: 0 auto;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 2rem;
+    }
+
+
+    @media screen and (max-width:480px){
+        &-elements{
+            flex-flow: column;
+        }
+    }
+}
