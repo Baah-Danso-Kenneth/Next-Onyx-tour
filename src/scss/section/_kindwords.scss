@@ -1,3 +1,81 @@
 .kind-word-container{
     background-color: var(--cove-blue);
+    padding-bottom: 2rem;
+    &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        .title{
+            padding: 2rem;
+            >p{
+                text-align: center;
+                font-size: var(--txtLarge);
+                text-transform: uppercase;
+                font-family: var(--slug_fira);
+                word-spacing: -15px;
+                color: var(--light-slate);
+                font-weight: 300;
+            }
+        }
+
+       .float-kind-word{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+       }   
+       
+       .button{
+        justify-content: center;
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        >button{
+            padding: 15px 35px 15px;
+            text-transform: uppercase;
+            font-family: var(--slug_fira);
+            background-color: var(--heliotrope-violet);
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            font-weight: 500;
+            color: var(--blue-dark);
+        }
+       }
+    }
+
+    @media screen and (max-width:1080px) {
+
+        &-elements{
+            max-width: 60%;
+        }
+        
+    }
+
+    @media screen and (max-width:480px){
+        &-elements{
+            .title{
+                justify-content: center;
+                align-items: center;
+                p{
+                  font-size: 30px;  
+                  white-space: nowrap;
+                  text-align: center;
+                }
+            }
+        }
+    }
+
+    @media  screen and (max-width:320px) {
+        &-elements{
+            .title{
+                align-items: center;
+  
+                >p{
+                    text-align: center;
+                    transform: translateX(-1.5rem);
+                }
+            }
+        }
+    }
 }

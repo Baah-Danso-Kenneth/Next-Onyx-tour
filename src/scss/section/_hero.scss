@@ -11,6 +11,9 @@
     position: absolute;
     top: 9rem;
     left: 14rem;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     >p{
         font-size: var(--txtLarge);
