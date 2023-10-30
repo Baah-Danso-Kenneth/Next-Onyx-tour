@@ -11,6 +11,9 @@ function Navbar() {
   const [isDestinationHover, setIsDestinationHover]=useState(false)
   const [isShopHover, setIsShopHover]=useState(false)
   const [isAboutHover, setIsAboutHover]=useState(false)
+  const [showDestination, setShowDestinations]=useState(false)
+  const [showShop, setShowShop]=useState(false)
+  const [showAbout, setShowAbout]=useState(false)
 
 
   useEffect(()=>{
@@ -55,10 +58,8 @@ function Navbar() {
                 {responsive ? (<CgClose onClick={()=>setResponsive(false)}/>) : (<GiHamburgerMenu onClick={()=>setResponsive(true)}/>) }
                 </div>
             </div>
-
-            <div className="logo-for-mobile-tablet">
-                <Image src={CompanyLogo} alt="company-logo"/>
-            </div>
+            {scrolled ? " " : (<div className="logo-for-mobile-tablet"><Image src={CompanyLogo} alt="company-logo"/></div> )}
+       
         </div>
 
         <div className="hover-state-container">
@@ -109,6 +110,71 @@ function Navbar() {
 
 
         </div>
+
+        {responsive ? (
+        <div className="tablet-mobile-nav">
+           <div className="first-section">
+               <div className='smg-t'>Small group trips</div>
+
+                <div className='bucket-list'>
+                    <div className="controller">
+                        {showDestination ? <p onClick={()=>setShowDestinations(false)}>-</p> : <p onClick={()=>setShowDestinations(true)}>+</p>}
+                        <p>Destinations</p>
+                    </div>
+                    {showDestination ? (
+                      <ul>
+                        <li>Eastern Region</li>
+                        <li>Western Region</li>
+                         <li>Greater Accra </li>
+                    </ul>
+                    ) : ""}
+
+                </div>
+
+            </div>
+
+           <div className="second-section">
+              <div className='custm-t'>custom Trips</div>
+              <div className='shop-content'>
+              <div className="controller">
+                {showShop ? <p onClick={()=>setShowShop(false)}>-</p> : <p onClick={()=>setShowShop(true)}>+</p>}
+                <p>Shop</p>
+              </div>
+             {showShop ? (
+             <ul>
+                <li>lauren pics</li>
+                <li>wild terrains show</li>
+             </ul>
+             ) : ""}
+
+             </div>
+
+
+            <div className='about-content'>
+              <div className="controller">
+               { showAbout ?  <p className='plus' onClick={()=>setShowAbout(false)}>-</p> : <p className='plus' onClick={()=>setShowAbout(true)}>+</p>}
+                <p>About</p>
+              </div>
+             
+             {showAbout ? (
+               <ul>
+                <li>our story</li>
+                <li>our team</li>
+                <li>in the news</li>
+                <li>faqs</li>
+                <li>say hello</li>
+             </ul>
+
+             ) : ""}
+
+             </div>
+
+           </div>
+      </div>
+
+        ) : ""}
+
+
 
     </div>
   )

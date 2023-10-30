@@ -1,0 +1,11 @@
+.loader-container{
+    background-color: var(--blue-dark);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >img{
+        width: 40%;
+        object-fit: cover;
+    }
+}
