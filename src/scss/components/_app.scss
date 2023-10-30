@@ -6,6 +6,11 @@
     .nav-bar{
         grid-area: 1/1/span 1/-1;
         background-color:var(--blue-dark);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
     }
 
     .children{

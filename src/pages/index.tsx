@@ -8,22 +8,39 @@ import Sponsors from '@/section/Sponsors';
 import WhatWeDo from '@/section/WhatWeDo';
 import WhereWeGo from '@/section/WhereWeGo';
 import Adventure from '@/section/Adenture';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Loading from '@/components/Loading';
 
 function LandingPage() {
+  const [isLoading, setIsLoading]=useState(false)
+
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(true)
+    }, 3000);
+  },[])
+
   return (
-    <Layout>
-      <Hero />
-      <WhatWeDo />
-      <WhereWeGo />
-      <Recommend />
-      <MeetUp />
-      <Sponsors />
-      <Adventure/>
-      <Bookings/>
-      <KindWords />
-    </Layout>
-  );
+  !isLoading ? (
+    <Loading />
+  ) : (
+    <div>
+      <Layout>
+        <Hero />
+        <WhereWeGo />
+        <Recommend />
+        <MeetUp />
+        <Sponsors />
+        <Adventure />
+        <Bookings />
+        <KindWords />
+      </Layout>
+    </div>
+  )
+);
+
+
 }
 
 export default LandingPage;

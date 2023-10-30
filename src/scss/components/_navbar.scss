@@ -21,6 +21,7 @@
       }
       >p:nth-child(2){
        margin-left: 1.8rem;
+       cursor: pointer;
       }
     }
 
@@ -36,6 +37,7 @@
 
      >p:nth-child(3){
        margin-left: 1.8rem;
+       cursor: pointer;
      }
     } 
 
@@ -69,9 +71,6 @@
         }
       }
 
-      .left-section{
-
-      }
     }
 
   }
@@ -113,4 +112,189 @@
         }
     }
   }
+}
+
+.nav-increase{
+  padding: 0.8rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+.hover-state-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+
+  .destination{
+    background-color: var(--blue-dark);
+    padding: 0.6rem;
+    position: absolute;
+    transform: translate(-4.5rem, 3.5rem);
+    ul{
+      >li{
+        list-style-type:none;
+        margin-bottom: 0.8rem;
+        color: var(--lightest-slate);
+        font-size: 14px;
+        font-family: var(--slug_way);
+      }
+    }
+
+  }
+
+  .shop{
+     transform: translate(19rem, 0.8rem);
+     width: 13%;
+     @extend .destination
+  }
+
+  .about{
+    width: 10%;
+    @extend .destination;
+    transform: translate(21rem, 2.5rem);
+  }
+
+}
+
+
+.element-down-about{
+   position: relative;
+   left: 31rem;
+   top: -2rem;
+}
+
+.element-down-shop{
+  @extend .element-down-about;
+  left: 29rem;
+  top: -0.8rem;
+}
+
+.element-down-destination{
+  @extend .element-down-about;
+  left: 35rem;
+  top: -3rem;
+}
+
+
+.tablet-mobile-nav{
+  display: none;
+
+
+  @media screen and (max-width:768px){
+    display: block;
+    transform: translate(4rem);
+    width: min(85vw, 400px);
+    visibility: visible;
+    opacity: 1;
+    height: 100vh;
+    color: var(--light-slate);
+    font-family: var(--slug_way);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    .first-section{
+      .smg-t{
+        margin-bottom: 0.8rem;
+      }
+       .bucket-list{
+        .controller{
+          display: flex;
+          gap: 1rem;
+          >p:nth-child(1){
+            font-size: 30px;
+          }
+        }
+          >ul{
+             
+            li{
+              list-style-type: none;
+              margin-bottom: 1rem;
+            }
+          }
+   
+          
+        
+       }
+    }
+
+    .second-section{
+      .custm-t{
+        margin-bottom: 0.8rem;
+      }
+      .shop-content{
+      .controller{
+        display: flex;
+        gap: 1rem;
+
+        >p:nth-child(1){
+          font-size: 30px;
+        }
+      }
+
+      >ul{
+        li{
+          list-style: none;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+
+
+    .about-content{
+      .controller{
+        display: flex;
+        gap: 1rem ;
+        margin-bottom: 0.8rem;
+      }
+
+      ul{
+        li{
+          list-style: none;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+      
+  
+    }
+    
+  }
+
+  @media screen and (max-width:480px){
+    font-size: 0.8rem;
+    transform: translate(1.2rem, 4rem);
+
+   .first-section{
+    .bucket-list{
+      .controller{
+        align-items: center;
+        gap:0.8rem;
+      }
+    }
+   }  
+   
+   
+   .second-section{
+    .shop-content{
+      .controller{
+        align-items: center;
+        gap: 0.8rem;
+      }
+    }
+
+      .about-content{
+         .controller{
+          align-items: center;
+          gap: 0.8rem;
+          .plus{
+            font-size: 30px;
+          }
+         }
+      }
+   }
+  }
+
 }

@@ -74,7 +74,7 @@ cursor:pointer;
     .card-item {
         width: 336px;
         padding: 1rem;
-        background-color: var(--amaranth-pink);
+        background-color: var(--card-colors-light);
 
         >p {
             font-family: var(--slug_way);
@@ -93,7 +93,7 @@ cursor:pointer;
             /* Adjust the size of the triangle */
             border-right: 15px solid transparent;
             /* Adjust the size of the triangle */
-            border-top: 15px solid #e72988;
+            border-top: 15px solid var(--card-color-dark);
             /*atch the background color of the rectangle */
 
         }
