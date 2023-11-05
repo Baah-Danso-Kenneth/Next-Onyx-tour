@@ -1,12 +1,13 @@
 .app{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 132px auto auto auto;
    
     .nav-bar{
         grid-area: 1/1/span 1/-1;
         background-color:var(--blue-dark);
         position: fixed;
+        
         top: 0;
         left: 0;
         z-index: 100;
@@ -27,4 +28,12 @@
         background-color:var(--heliotrope-violet);
     }
 
+}
+
+.nav-bar.shrink-head{
+    height: 60px;
+
+    @media screen and (max-width:768px){
+      width: 0%;
+    }
 }
