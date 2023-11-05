@@ -12,10 +12,27 @@ function Navbar() {
   const [dropDown, setDropDown] = useState(false)
   const [about,setAbout]=useState(false)
   const [shop, setShop]=useState(false)
+  const [scrolled, setScrolled]=useState(false)
+  const [scrollPosition, setScrolledPosition]=useState(0)
 
+
+useEffect(()=>{
+  const handleScroll=()=>{
+    const scrollY = window.scrollY || document.documentElement.scrollTop
+    setScrolledPosition(scrollY)
+    const threshold=600;
+    setScrolled(scrollY > threshold)
+}
+
+window.addEventListener('scroll',handleScroll)
+return ()=>{
+  window.removeEventListener('scroll', handleScroll)
+}
+
+},[])  
   return (
-    <div className='nav-container-fix'>
-      <div className="nav-container-fix-element">
+    <div className={scrolled ?'nav-container-fix cut-head':'nav-container-fix'}>
+      <div className={scrolled ?"nav-container-fix-element center-elements":"nav-container-fix-element"}>
 
         <div className="right-section">
             <ul>
@@ -29,7 +46,7 @@ function Navbar() {
                       onMouseLeave={()=>setDropDown(false)}
                        >
                        <Link href="#" className='header-title'>{title}</Link>
-                       {dropDown && <DestinationDropDown/>}
+                       {dropDown && <div className={scrolled?"scrolled-destination":""}><DestinationDropDown/></div>}
                       </li>
                     )
                 }
@@ -43,7 +60,7 @@ function Navbar() {
             </ul>
         </div>
 
-        <div className="middle-section">
+        <div className={scrolled ?"middle-section remove-img":"middle-section"}>
           <Image src={CompanyLogo} alt='company-logo' quality={100}/>
         </div>
 
@@ -59,7 +76,7 @@ function Navbar() {
                     onMouseLeave={()=>setShop(false)}
                     >
                       <Link href="#" className='header-title'>{title}</Link>
-                      {shop && <ShopDropDown/>}
+                      {shop && <div className={scrolled ? "scrolled-shop":""}><ShopDropDown/></div>}
                     </li>
                   )
                 }
@@ -72,7 +89,7 @@ function Navbar() {
                     onMouseLeave={()=>setAbout(false)}
                     >
                       <Link href="#" className='header-title'>{title}</Link>
-                      {about && <AboutDropDown/>}
+                      {about && <div className={scrolled ? "scrolled-about":""}><AboutDropDown/></div>}
                     </li>
                   )
 

@@ -20,7 +20,7 @@
 }
 
 .destination-items.clicked{
-    display: none;
+   display: none
 }
 
 
@@ -40,4 +40,28 @@
     >li{
         transform: translateX(0.8rem);
     }
+}
+
+.scrolled-about{
+   position: absolute;
+   width: 85%;
+   transform: translate(-1.8rem,-3.8rem);
+   padding: 2em;
+   left: 2rem;
+
+}
+
+.scrolled-shop{
+    @extend .scrolled-about
+}
+
+.scrolled-destination{
+    @extend .scrolled-about;
+    left: 5rem;
+    transform: translate(8rem, -3.9rem);
+    width: 100%;
+}
+
+.drop-content{
+    background-color: red;
 }
