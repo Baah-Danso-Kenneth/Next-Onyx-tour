@@ -28,6 +28,7 @@ function LandingPage() {
     <div>
       <Layout>
         <Hero />
+        <WhatWeDo/>
         <WhereWeGo />
         <Recommend />
         <MeetUp />
