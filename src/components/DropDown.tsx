@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { AboutItem, DestinationItems, ShopItems } from './NavItems'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 export function DestinationDropDown() {
@@ -53,5 +54,7 @@ export function ShopDropDown(){
       </ul>
     )
 }
+
+
 
 
