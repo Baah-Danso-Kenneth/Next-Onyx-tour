@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import CompanyLogo from '../../public/assets/images/campalla.png'
-import {GiHamburgerMenu} from 'react-icons/gi';
-import {CgClose} from 'react-icons/cg'
-import { AboutDropDown, DestinationDropDown, ShopDropDown } from './DropDown';
+import { AboutDropDown, DestinationDropDown, ShopDropDown} from './DropDown';
 import { LeftSection, RighSection, ShopItems } from './NavItems';
 import Link from 'next/link';
-
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {CgClose} from 'react-icons/cg'
 
 function Navbar() {
   const [dropDown, setDropDown] = useState(false)
@@ -14,6 +13,7 @@ function Navbar() {
   const [shop, setShop]=useState(false)
   const [scrolled, setScrolled]=useState(false)
   const [scrollPosition, setScrolledPosition]=useState(0)
+  const [open,setOpen]=useState(false)
 
 
 useEffect(()=>{
@@ -105,8 +105,21 @@ return ()=>{
               })}
               </ul>
         </div>
+
+        <div className="small-screen-nav">
+          <div className="small-screen-nav-element">
+              <div className={scrolled ?"icons icon-scrolled":"icons"}>
+                {open? <CgClose onClick={()=>setOpen(false)}/> : <GiHamburgerMenu onClick={()=>setOpen(true)}/>}
+              </div>
+              <div className={scrolled?"logos img-logo":"logos"}>
+                  <Image src={CompanyLogo} alt="company-logo"/>
+                </div> 
+          </div>
+        </div>
+
        
-      </div>      
+      </div>  
+ 
     </div>
   )
 }

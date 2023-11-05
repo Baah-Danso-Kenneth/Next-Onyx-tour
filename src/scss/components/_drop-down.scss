@@ -17,6 +17,10 @@
     color: var(--lightest-slate);
     text-align: start;
   }
+  @media screen and (max-width:768px){
+    display: none;
+    
+  }
 }
 
 .destination-items.clicked{
