@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import GroupImage from '../../public/assets/images/all-img.jpg'
+import GroupImage from '../../../public/assets/images/all-img.jpg'
 
 
 function MeetUp() {

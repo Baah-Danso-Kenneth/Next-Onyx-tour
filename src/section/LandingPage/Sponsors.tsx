@@ -1,9 +1,9 @@
 import React from 'react'
-import TiyacImage from '../../public/assets/images/tiyac.png';
-import TouchImage from '../../public/assets/images/touch.png';
+import TiyacImage from '../../../public/assets/images/tiyac.png';
+import TouchImage from '../../../public/assets/images/touch.png';
 import Image from 'next/image';
-import AnimeImage from '../../public/assets/images/anime.png';
-import KenteImage from '../../public/assets/images/kente.png'
+import AnimeImage from '../../../public/assets/images/anime.png';
+import KenteImage from '../../../public/assets/images/kente.png'
 
 
 function Sponsors() {

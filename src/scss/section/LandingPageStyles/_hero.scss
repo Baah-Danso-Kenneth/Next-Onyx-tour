@@ -40,7 +40,7 @@
  }
  @media screen and (max-width:768px) {
     .hero-image{
-        content: url('../../../public/assets/images/hero-img-md-screen.jpg');
+        content: url('../../../../public/assets/images/hero-img-md-screen.jpg');
     }
 
     .hero-section-info{
@@ -57,7 +57,7 @@
 
  @media screen and (max-width:480px){
     .hero-image{
-        content: url('../../../public/assets/images/hero-img-sm-screen.jpg');
+        content:url('../../../../public/assets/images/hero-img-sm-screen.jpg')
     }
 
 

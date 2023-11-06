@@ -1,5 +1,5 @@
 import React from 'react'
-import BackDrop from '../../public/assets/images/hero-img-lg-screen.jpg'
+import BackDrop from '../../../public/assets/images/hero-img-lg-screen.jpg'
 import Image from 'next/image'
 
 function Hero() {
