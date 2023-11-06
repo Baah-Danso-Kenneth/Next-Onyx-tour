@@ -60,26 +60,9 @@ export const TabletNav=()=>{
     const [toggleDestination,setToggleDestination]=useState(false)
     const [toggleshop,setToggleShop]=useState(false)
     const [toggleAbout,setToggleAbout]=useState(false)
-    const [scrolled, setScrolled]=useState(false)
-    const [scrollPosition, setScrolledPosition]=useState(0)
-
-    useEffect(()=>{
-  const handleScroll=()=>{
-    const scrollY = window.scrollY || document.documentElement.scrollTop
-    setScrolledPosition(scrollY)
-    const threshold=600;
-    setScrolled(scrollY > threshold)
-}
-
-window.addEventListener('scroll',handleScroll)
-return ()=>{
-  window.removeEventListener('scroll', handleScroll)
-}
-
-},[]) 
 
     return(
-        <div className={scrolled ?'stretch':'tablet-nav'}>
+        <div className='tablet-nav'>
             <div className="tablet-nav-elements">
                 <div className="tablet-nav-small-group-trips">
                     <h3>small group trips</h3>
@@ -130,8 +113,12 @@ return ()=>{
                         <li>faqs</li>
                         <li>teams</li>
                       </ul>
-                      )}              
+                      )}
+
+              
                </div>
+
+
             </div> 
         </div>
     )
