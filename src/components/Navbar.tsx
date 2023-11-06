@@ -37,7 +37,7 @@ return ()=>{
 
         <div className="right-section">
             <ul>
-              {RighSection.map(({id,title,cName})=>{
+              {RighSection.map(({id,title,cName,path})=>{
                 if(title==='destination'){
                     return(
                       <li
@@ -46,7 +46,7 @@ return ()=>{
                       onMouseEnter={()=>setDropDown(true)}
                       onMouseLeave={()=>setDropDown(false)}
                        >
-                       <Link href="#" className='header-title'>{title}</Link>
+                       <Link href={path} className='header-title'>{title}</Link>
                        {dropDown && <div className={scrolled?"scrolled-destination":""}><DestinationDropDown/></div>}
                       </li>
                     )
@@ -54,7 +54,7 @@ return ()=>{
 
                 return(
                   <li key={id} className={cName}>
-                    <Link href="#" className='list-itm'>{title}</Link>
+                    <Link href={path} className='list-itm'>{title}</Link>
                   </li>
                 )
               })}

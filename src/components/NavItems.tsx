@@ -2,7 +2,7 @@ export const DestinationItems=[
     {
         id:1,
         title:"Central Region",
-        path:"#",
+        path:"/central",
         cName:"list-item"
     },
 
@@ -42,25 +42,30 @@ export const AboutItem=[
     path:"/OurStory",
     cName:"list-item"
   },
-
-    {
+   {
     id:2,
+    title:"Our team",
+    cName:"list-item",
+    path:"/Team"
+   },
+    {
+    id:3,
     title:"In the News",
-    path:"/in-the-news",
+    path:"/InNews",
     cName:"list-item"
   },
 
     {
-    id:3,
+    id:4,
     title:"FAQ'S",
     path:"/faq",
     cName:"list-item"
   },
 
     {
-    id:4,
+    id:5,
     title:"Say hello",
-    path:"/say-hello",
+    path:"/Sayhello",
     cName:"list-item"
   },
 ]
@@ -88,13 +93,15 @@ export const RighSection=[
     {
         id:1,
         title:"small group trips",
-        cName:"nav-item"
+        cName:"nav-item",
+        path:"/"
     },
 
     {
         id:2,
         title:"destination",
-        cName:"nav-item"
+        cName:"nav-item",
+        path:"#"
     }
 ]
 
