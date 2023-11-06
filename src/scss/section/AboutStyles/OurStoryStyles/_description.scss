@@ -1,0 +1,22 @@
+.description-container{
+    background-color: var(--cove-blue);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-element{
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: var(--slug_way);
+    >p{
+        font-size: 18px;
+        color: var(--light-slate);
+
+        >span{
+            color: var(--blue-dark);
+            font-weight: 500;
+        }
+    }
+
+    }
+}
