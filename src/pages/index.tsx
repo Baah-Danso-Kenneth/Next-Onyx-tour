@@ -1,13 +1,13 @@
 import Layout from '@/components/Layout';
-import Bookings from '@/section/Bookings';
-import Hero from '@/section/Hero';
-import KindWords from '@/section/KindWords';
-import MeetUp from '@/section/MeetUp';
-import Recommend from '@/section/Recommend';
-import Sponsors from '@/section/Sponsors';
-import WhatWeDo from '@/section/WhatWeDo';
-import WhereWeGo from '@/section/WhereWeGo';
-import Adventure from '@/section/Adenture';
+import Bookings from '@/section/LandingPage/Bookings';
+import Hero from '@/section/LandingPage/Hero';
+import KindWords from '@/section/LandingPage/KindWords';
+import MeetUp from '@/section/LandingPage/MeetUp';
+import Recommend from '@/section/LandingPage/Recommend';
+import Sponsors from '@/section/LandingPage/Sponsors';
+import WhatWeDo from '@/section/LandingPage/WhatWeDo';
+import WhereWeGo from '@/section/LandingPage/WhereWeGo';
+import Adventure from '@/section/LandingPage/Adenture';
 import React, { useEffect, useState } from 'react';
 import Loading from '@/components/Loading';
 
