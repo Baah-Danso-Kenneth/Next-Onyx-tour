@@ -1,11 +1,13 @@
+import Layout from '@/components/Layout'
+import Hero from '@/section/About/OurStory/Hero'
 import React from 'react'
 
-function our_story() {
+function OurStory() {
   return (
-    <div>
-      our story
-    </div>
+    <Layout>
+      <Hero/>
+    </Layout>
   )
 }
 
-export default our_story
+export default OurStory
