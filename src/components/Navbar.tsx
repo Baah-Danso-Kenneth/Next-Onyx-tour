@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import CompanyLogo from '../../public/assets/images/campalla.png'
-import { AboutDropDown, DestinationDropDown, ShopDropDown} from './DropDown';
+import { AboutDropDown, DestinationDropDown, ShopDropDown, TabletNav} from './DropDown';
 import { LeftSection, RighSection, ShopItems } from './NavItems';
 import Link from 'next/link';
 import {GiHamburgerMenu} from 'react-icons/gi';
@@ -31,6 +31,7 @@ return ()=>{
 
 },[])  
   return (
+    <div className='block-nav'>
     <div className={scrolled ?'nav-container-fix cut-head':'nav-container-fix'}>
       <div className={scrolled ?"nav-container-fix-element center-elements":"nav-container-fix-element"}>
 
@@ -110,18 +111,16 @@ return ()=>{
           <div className="small-screen-nav-element">
               <div className={scrolled ?"icons icon-scrolled":"icons"}>
                 {open? <CgClose onClick={()=>setOpen(false)}/> : <GiHamburgerMenu onClick={()=>setOpen(true)}/>}
-                {open? <CgClose/> : <GiHamburgerMenu/>}
               </div>
               <div className={scrolled?"logos img-logo":"logos"}>
                   <Image src={CompanyLogo} alt="company-logo"/>
                 </div> 
           </div>
         </div>
-
-       
       </div>  
- 
     </div>
+    {open &&  <TabletNav/>}
+     </div>
   )
 }
 
