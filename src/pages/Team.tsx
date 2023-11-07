@@ -3,6 +3,7 @@ import Loading from '@/components/Loading';
 import Hero from '@/section/About/Team/Hero';
 import Information from '@/section/About/Team/Information';
 import MeetTeam from '@/section/About/Team/MeetTeam';
+import Objective from '@/section/About/Team/Objective';
 import React, { useEffect, useState } from 'react';
 
 
@@ -26,6 +27,7 @@ function Team() {
           <Hero/>
           <MeetTeam/>
           <Information/>
+          <Objective/>
         </Layout>
     </div>
      )

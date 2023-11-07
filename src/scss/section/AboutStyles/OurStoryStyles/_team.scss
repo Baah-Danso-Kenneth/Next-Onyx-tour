@@ -93,3 +93,51 @@
 
     }
 }
+
+
+.objective-container{
+    padding: 5rem;
+    background-color: var(--cove-blue);
+    &-element{
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+        .img-content{
+            flex: 0.3;
+          >img{
+            border-radius: 50%;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border: 3px solid var(--blue-dark);
+          }
+        }
+
+        .statement{
+            flex: 0.7;
+            >h1{
+                font-size: 25px;
+                color: var(--blue-dark);
+                text-transform: uppercase;
+                font-family: var(--slug_fira);
+                margin-bottom: 0.8rem;
+                font-weight: 400;
+            }
+            >p{
+                color: var(--light-slate);
+                font-family: var(--slug_way);
+            }
+
+            >p:nth-child(2){
+                margin-bottom: 0.8rem;
+            }
+
+            >p:nth-child(3){
+                margin-bottom: 0.8rem
+            }
+        }
+    }
+}
