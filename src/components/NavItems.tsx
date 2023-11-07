@@ -65,7 +65,7 @@ export const AboutItem=[
     {
     id:5,
     title:"Say hello",
-    path:"/Sayhello",
+    path:"/TalkToUs",
     cName:"list-item"
   },
 ]
