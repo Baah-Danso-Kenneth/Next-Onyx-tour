@@ -4,6 +4,7 @@ import Hero from '@/section/About/Team/Hero';
 import Information from '@/section/About/Team/Information';
 import MeetTeam from '@/section/About/Team/MeetTeam';
 import Objective from '@/section/About/Team/Objective';
+import { Eastern, GreaterAccra, Volta } from '@/section/About/Team/Places';
 import React, { useEffect, useState } from 'react';
 
 
@@ -27,6 +28,9 @@ function Team() {
           <Hero/>
           <MeetTeam/>
           <Information/>
+          <Eastern/>
+          <Volta/>
+          <GreaterAccra/>
           <Objective/>
         </Layout>
     </div>

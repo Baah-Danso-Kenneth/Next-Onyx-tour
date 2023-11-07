@@ -141,3 +141,61 @@
         }
     }
 }
+
+
+.eastern-container{
+    @extend .meet-team-container;
+    background-color: var(--blue-dark);
+    >h1{
+        color: var(--light-slate);
+    }
+    &-element{
+        max-width: 80%;
+        margin:0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .btn-travel{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        >button{
+            padding: 15px 25px 15px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: var(--heliotrope-violet);
+            font-family: var(--slug_way);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.greater-container{
+    @extend .eastern-container;
+    background-color: var(--plum-violet);
+    &-element{
+        max-width: 80%;
+        margin: 0 auto;
+        gap:2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+}
+
+.volta-container{
+    background-color: var(--cove-blue);
+    @extend .greater-container;
+    &-element{
+      @extend .eastern-container-element;
+    }
+
+}
