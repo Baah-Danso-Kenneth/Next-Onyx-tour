@@ -120,3 +120,32 @@ cursor:pointer;
     }
 
 }
+
+
+
+
+.bio-card{
+    &-img{
+        >img{
+            object-fit: cover;
+        }
+    }
+    &-detail{
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 1rem;
+        >h3{
+           font-family: var(--slug_fira);
+           color: var(--blue-dark);
+           text-transform: uppercase;
+        }
+        >h5{
+            font-family: var(--slug_way);
+            font-style: italic;
+            color: var(--lightest-slate);
+            font-weight: 500;
+        }
+    }
+}

@@ -9,11 +9,11 @@ interface TeamProps{
 
 function TeamBio({name,role,src}:TeamProps) {
   return (
-   <div>
-      <div>
-        <Image src={src}alt={name}/>
+   <div className='bio-card'>
+      <div className='bio-card-img'>
+        <Image src={src}alt={name} width={234.7} height={233.7} quality={100}/>
       </div>
-      <div className="detail">
+      <div className="bio-card-detail">
         <h3>{name}</h3>
         <h5>{role}</h5>
       </div>
