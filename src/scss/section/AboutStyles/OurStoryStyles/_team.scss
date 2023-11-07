@@ -1,0 +1,6 @@
+.team-hero-img{
+    @extend .hero-img;
+    >img{
+        height: 130vh;
+    }
+}
