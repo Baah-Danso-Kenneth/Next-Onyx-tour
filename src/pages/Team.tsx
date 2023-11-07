@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 import Loading from '@/components/Loading';
 import Hero from '@/section/About/Team/Hero';
+import Information from '@/section/About/Team/Information';
 import MeetTeam from '@/section/About/Team/MeetTeam';
 import React, { useEffect, useState } from 'react';
 
@@ -24,6 +25,7 @@ function Team() {
         <Layout>
           <Hero/>
           <MeetTeam/>
+          <Information/>
         </Layout>
     </div>
      )
