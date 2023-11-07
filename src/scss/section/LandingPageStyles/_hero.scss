@@ -30,7 +30,7 @@
  @media screen and (max-width:1080px){
     .hero-section-info{
        left: 5rem;
-       top: 7rem;
+       top: 10rem;
         >p{
           font-size: 40px;
           font-weight: 600;
@@ -40,12 +40,12 @@
  }
  @media screen and (max-width:768px) {
     .hero-image{
-        content: url('../../../public/assets/images/hero-img-md-screen.jpg');
+        content: url('../../../../public/assets/images/hero-img-md-screen.jpg');
     }
 
     .hero-section-info{
         left: 7.5rem;
-        top: 6rem;
+        top: 10rem;
         >p{
             font-size: 25px;
             width: 80%;
@@ -57,7 +57,7 @@
 
  @media screen and (max-width:480px){
     .hero-image{
-        content: url('../../../public/assets/images/hero-img-sm-screen.jpg');
+        content:url('../../../../public/assets/images/hero-img-sm-screen.jpg')
     }
 
 

@@ -1,0 +1,52 @@
+.description-container{
+    background-color: var(--cove-blue);
+    margin-top: -0.8rem;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-element{
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: var(--slug_way);
+    >p{
+        font-size: 18px;
+        color: var(--light-slate);
+
+        >span{
+            color: var(--blue-dark);
+            font-weight: 500;
+        }
+    }
+
+    }
+
+    @media screen and (max-width:480px){
+
+        &-element{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >p{
+                font-size: 15px;
+                transform: translateY(1rem);
+            }
+        }
+        
+    }
+
+
+        @media screen and (max-width:320px){
+
+        &-element{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >p{
+                font-size: 12px;
+                transform: translateY(1rem);
+            }
+        }
+        
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../../public/assets/images/campalla.png';
-import PricingImage from '../../public/assets/images/booking.png';
-import SwimImage from '../../public/assets/images/swim-shade.png'
-import Starimg from '../../public/assets/images/star.png';
+import Logo from '../../../public/assets/images/campalla.png';
+import PricingImage from '../../../public/assets/images/booking.png';
+import SwimImage from '../../../public/assets/images/swim-shade.png'
+import Starimg from '../../../public/assets/images/star.png';
 
 function Bookings() {
   return (

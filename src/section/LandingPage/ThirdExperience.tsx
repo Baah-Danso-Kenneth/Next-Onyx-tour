@@ -1,8 +1,8 @@
 import React from 'react'
-import InspoImage from '../../public/assets/images/artsszone.png';
+import InspoImage from '../../../public/assets/images/artsszone.png';
 import Image from 'next/image';
 
-function FirstExperience() {
+function ThirdExperience() {
   return (
     <div className='first-experience-container'>
       <div className="first-experience-container-elements">
@@ -17,7 +17,7 @@ function FirstExperience() {
             </div>    
 
             <div className="button">
-                <button>2023 + 2024 calender</button>
+                <button>get to know</button>
             </div>
 
          </div>
@@ -26,4 +26,4 @@ function FirstExperience() {
   )
 }
 
-export default FirstExperience
+export default ThirdExperience

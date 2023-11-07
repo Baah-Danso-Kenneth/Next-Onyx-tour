@@ -1,0 +1,267 @@
+.welcome-travel-container{
+    background-color: var(--plum-violet);
+   &-element{
+    padding: 4rem;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+
+    .img-content{
+        flex: 0.5;
+        >img{
+            width: 100%;
+            object-fit: cover;
+            height: 450px;
+            border-radius: 50%;
+        }
+    }
+
+    .text-content{
+        flex: 0.5;
+        >h1{
+           font-family: var(--slug_fira);
+           color: var(--light-slate);
+           text-transform: uppercase;
+           width: 95%;
+           font-weight: 500;
+           text-align: center;
+           margin-bottom: 1rem;
+        }
+
+        >p{
+            color: var(--lightest-slate);
+            font-size: 18px;
+            font-family: var(--slug_way);
+            text-align: center;
+        }
+    }
+   }    
+
+   @media screen and (max-width:1080px){
+
+    &-element{
+
+        .img-content{
+            >img{
+                height: 300px;
+            }
+        }
+
+        .text-content{
+            >h1{
+               width: 100%;
+               font-size: 25px;
+                
+            }
+        }
+
+    }
+    
+   }
+
+   @media screen and (max-width:780px){
+    &-element{
+        .img-content{
+            >img{
+                height: 200px;
+            }
+        }
+
+        .text-content{
+            >h1{
+                font-size: 20px;
+            }
+
+            >p{
+                font-size: 13px;
+            }
+        }
+    }
+    
+   }
+
+   @media screen and (max-width:480px){
+    &-element{
+        flex-flow: column;
+    }
+    
+   }
+
+       @media screen and (max-width:320px){
+    &-element{
+        flex-flow: column;
+        .img-content{
+            >img{
+                height: 150px;
+            }
+        }
+
+      .text-content{
+         h1{
+            font-size: 16px;
+            width: 90%;
+            text-align: center;
+         }
+
+         >p{
+            font-size: 10px;
+         }
+      }
+
+      .button-up{
+        >button{
+            white-space: nowrap;
+            font-size: 10px;
+            padding: 10px 20px 10px;
+        }
+      }
+    }
+    
+   }
+}
+
+.travel-by-women-container{
+  background-color: var(--blue-dark);
+  &-element{
+    padding: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 3rem;
+
+    .img-content{
+        flex: 0.5;
+        >img{
+            width: 100%;
+            object-fit: cover;
+            height: 450px;
+            border-radius: 50%;
+        }
+    }
+
+    .text-content{
+        flex: 0.5;
+        >h1{
+           font-family: var(--slug_fira);
+           color: var(--light-slate);
+           text-transform: uppercase;
+           width: 95%;
+           font-weight: 500;
+           text-align: center;
+           margin-bottom: 1rem;
+        }
+
+        >p{
+            color: var(--lightest-slate);
+            font-size: 18px;
+            font-family: var(--slug_way);
+            text-align: center; 
+            margin-bottom: 3rem;
+        }
+
+        .button-up{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            >button{
+                padding: 15px 35px 15px;
+                font-family: var(--slug_fira);
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                color: var(--blue-dark);
+                background-color: var(--heliotrope-violet);
+            }
+
+        }
+
+        >button{
+            padding: 15px 30px 15px;
+        }
+
+    }
+  }
+
+  @media screen and (max-width:1080px){
+    &-element{
+        .img-content{
+        >img{
+            height: 300px;
+        }
+    }
+
+        .text-content{
+            >h1{
+                width: 100%;
+                font-size: 25px;
+            }
+        }
+    }
+  }
+
+     @media screen and (max-width:780px){
+    &-element{
+        .img-content{
+            >img{
+                height: 200px;
+            }
+        }
+
+        .text-content{
+            >h1{
+                font-size: 20px;
+            }
+
+            >p{
+                font-size: 13px;
+            }
+        }
+    }
+    
+   }
+
+
+    @media screen and (max-width:480px){
+    &-element{
+        flex-flow: column;
+    }
+    
+   }
+
+
+    @media screen and (max-width:320px){
+    &-element{
+        flex-flow: column;
+        .img-content{
+            >img{
+                height: 150px;
+            }
+        }
+
+      .text-content{
+         h1{
+            font-size: 16px;
+            width: 90%;
+            text-align: center;
+         }
+
+         >p{
+            font-size: 10px;
+         }
+      }
+
+      .button-up{
+        >button{
+            white-space: nowrap;
+            font-size: 10px;
+            padding: 10px 20px 10px;
+        }
+      }
+    }
+    
+   }
+
+}

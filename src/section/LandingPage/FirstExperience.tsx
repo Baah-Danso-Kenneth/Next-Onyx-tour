@@ -1,16 +1,15 @@
 import React from 'react'
-import InspoImage from '../../public/assets/images/artsszone.png';
+import InspoImage from '../../../public/assets/images/artsszone.png';
 import Image from 'next/image';
 
-
-function SecondExperience() {
+function FirstExperience() {
   return (
-<div className='second-experience-container'>
-      <div className="second-experience-container-elements">
-         <div className="second-experience-container-elements-image">
+    <div className='first-experience-container'>
+      <div className="first-experience-container-elements">
+         <div className="first-experience-container-elements-image">
             <Image src={InspoImage} alt="expo-1"/>
          </div>
-         <div className="second-experience-container-elements-text">
+         <div className="first-experience-container-elements-text">
             <h3>Lorem ipsum dolor sit amet.</h3>
             < div className='p-tag'>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sed illo aut debitis, perspiciatis necessitatibus odit velit dicta rem a ad alias et sequi voluptas voluptatem ipsa nulla saepe totam non quo explicabo incidunt! Ullam mollitia molestias dolorum 
@@ -18,7 +17,7 @@ function SecondExperience() {
             </div>    
 
             <div className="button">
-                <button>tell me more</button>
+                <button>2023 + 2024 calender</button>
             </div>
 
          </div>
@@ -27,4 +26,4 @@ function SecondExperience() {
   )
 }
 
-export default SecondExperience
+export default FirstExperience

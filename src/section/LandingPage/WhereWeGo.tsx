@@ -1,8 +1,8 @@
 import React from 'react'
-import CentralImage from '../../public/assets/images/central.jpg';
-import VoltaImage from '../../public/assets/images/central.jpg';
-import EasternImage from '../../public/assets/images/eastern.jpg';
-import GreaterImage from '../../public/assets/images/greater_accra.jpg';
+import CentralImage from '../../../public/assets/images/central.jpg';
+import VoltaImage from '../../../public/assets/images/central.jpg';
+import EasternImage from '../../../public/assets/images/eastern.jpg';
+import GreaterImage from '../../../public/assets/images/greater_accra.jpg';
 import DestinationCard from '@/components/Card/DestinationCard';
 
 
