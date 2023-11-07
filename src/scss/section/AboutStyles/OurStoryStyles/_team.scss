@@ -109,13 +109,6 @@
     h1{
         margin-bottom: 10rem;
     }
-        &-element{
-            .first-part{
-                p{
-
-                }
-            }
-       }
 
 }
 
@@ -308,6 +301,17 @@
             font-weight: 500;
             text-transform: uppercase;
         }
+    }
+
+    @media screen and (max-width:330px) {
+       .btn-travel{
+          >button{
+            padding: 15px 25px 15px;
+            font-size: 10px;
+            font-weight: 500;
+          }
+       }
+        
     }
 }
 
