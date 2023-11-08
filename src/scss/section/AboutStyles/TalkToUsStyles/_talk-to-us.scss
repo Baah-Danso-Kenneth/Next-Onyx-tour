@@ -145,17 +145,31 @@
                 }
                  
                 .checkbox-item{
-                    display: flex;
-                    flex-flow: column;
+                   
+                   .custom-checkbox{
+                      width: 30px;
+                      height: 30px;
+                      border: 1px solid var(--blue-dark);
+                      margin-bottom: 2rem;
+                   }
 
-                    .checkbox-label{
-                        text-transform: uppercase;
-                    }
+                   .custom-checkbox input{
+                    display: none;
+                   }
 
-                    #yes{
-                        padding: 20px 50px;
-                    }
+                //    .custom-checkbox input:checked {
+                      
+                //    }
 
+                   .custom-checkbox label{
+                    display: inline-block;
+                    width: 100%;
+                    white-space: nowrap;
+                    transform: translate(2.5rem, 0.3rem);
+                    font-family: var(--slug_way);
+                    text-transform: uppercase;
+
+                   }
                 }
 
                     
@@ -179,6 +193,7 @@
                             margin-bottom: 1rem;
                     }
                 }
+
 
 
                 .time-to-reach-out{
@@ -210,5 +225,209 @@
         }
 
 
+     }
+
+     @media screen and (max-width:780px) {
+        &-element{
+            max-width: 80%;
+            margin: 0 auto;
+            .statement{
+                >p:nth-child(3){
+                    width: 80%;
+                }
+            }
+        }
+        
+     }
+
+     @media screen and (max-width:480px){
+        &-element{
+            max-width: 100%;
+            margin: 0 auto  ;
+            .statement{
+                margin-bottom: 2rem;
+                h1{
+                    font-size: 1.3rem;
+                    word-spacing: -5px;
+                }
+
+                >p{
+                    font-size: 13px;
+                    width: 100%;
+                }
+                >p:nth-child(2){
+                    text-align: center;
+                }
+
+                >p:nth-child(3){
+                  text-align: center;
+                  width: 100%
+                };
+
+                >p:nth-child(4){
+                    text-align: center;
+                }
+            }
+
+           form{
+            .name-content{       
+                transform: translateX(-0.08rem);
+                h3{
+                    font-size: 0.8rem;
+                }
+
+                .first-name-last-name{
+                    .first-name{
+                      >input{
+                        padding: 5px 0px 5px;
+
+                      }
+                    }
+                }
+            }
+
+
+                .email{
+                    transform: translateX(-0.08rem);
+                    label{
+                        font-size: 0.7rem;
+                    }
+
+                    >input{
+                        padding: 5px 100px 5px;
+                    }
+                }
+
+                .message{
+                    transform: translateX(-0.08rem);
+                    >textarea{
+                        padding: 50px 105px 50px;
+                    }
+                }
+
+                .checkbox{
+                    transform: translateX(-0.08rem);
+                    h3{
+                        font-size: 0.7rem;
+                    }
+                    .checkbox-item{
+                        .custom-checkbox{
+                            width: 20px;
+                            height: 20px;
+                            margin-bottom: 1rem;
+                        }
+
+                    }
+
+                    .custom-checkbox label{
+                        font-size: 0.6rem;
+                    }
+                    
+                }
+
+                .phone{
+                    transform: translateX(-0.08rem);
+                    label{
+                        font-size: 0.8rem;
+                    }
+
+                    input{
+                        padding: 5px 100px 5px;
+                    }
+                }
+
+                .submit{
+                    >button{
+                        padding: 10px 175px 10px;
+                        font-size: 0.7rem;
+                    }
+                }
+           }
+
+
+        }
+     }
+
+     @media screen and (max-width:380px){
+
+        &-element{
+
+            form{
+                transform: translateX(0.3rem);
+                .name-content{
+                    .first-name-last-name{
+                        .first-name{
+                            >input{
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .email{
+                    input{width: 315px;}
+                }
+
+                .message{
+                    textarea{width: 315px;}
+                }
+
+                .phone{
+                    input{width: 315px;}
+                }
+
+                .submit{
+                    >button{
+                       padding: 10px 140px 10px;
+                    }
+                }
+            }
+        }
+        
+     }
+
+
+     @media screen and (max-width:320px){
+        &-element{
+            form{
+               .name-content{
+                .first-name-last-name{
+                    .first-name{
+                        input{width: 130px;}
+                    }
+                }
+               } 
+
+               .email{
+                input{width: 280px;}
+               }
+
+               .message{
+                 textarea{width: 280px;}
+               }
+
+               .phone{
+                 input{width: 280px;}
+               }
+
+               .checkbox{
+
+                .custom-checkbox{
+                    width: 15px;
+                    height: 15px;
+                }
+
+                .custom-checkbox label{
+                   font-size: 0.5rem;
+                }
+               }
+               .submit{
+                >button{
+                    padding: 10px 120px 10px;
+                }
+               }
+
+            }
+        }
      }
 }

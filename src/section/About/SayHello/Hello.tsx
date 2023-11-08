@@ -46,14 +46,19 @@ function Hello() {
                    <div className="checkbox">
                     <h3>do you want us to give you a call? <span>(required)</span></h3>
 
-                    <div className="checkbox-item">
-                       <label htmlFor="yes" className="checkbox-label">
-                          <input type="checkbox" id="yes" className="box-checks" /> Yes please
-                        </label>
-                     <label htmlFor="no" className="checkbox-label">
-                      <input type="checkbox" id="no" /> No please, I prefer communication via email only
-                     </label>
+                
+                <div className="checkbox-item">
+                      <div className="custom-checkbox">
+                          <input type="checkbox" id="yes" className="box-checks" />
+                          <label htmlFor="yes">Yes please</label>
+                     </div>
+
+                   <div className="custom-checkbox">
+                      <input type="checkbox" id="no" />
+                      <label htmlFor="no">No please, I prefer communication via email only</label>
                   </div>
+           </div>
+
 
 
                    </div>
