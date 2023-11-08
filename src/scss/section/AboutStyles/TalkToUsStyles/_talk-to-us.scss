@@ -1,0 +1,214 @@
+.talk-to-us-container{
+    background-color: var(--cove-blue);
+    padding: 5rem;
+     &-element{
+        min-height: 100vh;
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .statement{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+             text-transform: uppercase;
+             font-size: 3rem;
+             font-family: var(--slug_fira);
+             font-weight: 300;
+             color: var(--blue-dark);
+             word-spacing: -15px;
+             margin-bottom: 0.8rem;
+            }
+
+            >p{
+                font-family: var(--slug_way);
+            }
+            >p:nth-child(3){
+                margin-bottom: 0.8rem;
+                width: 40%;
+                text-align: center;
+            }
+
+            >p:nth-child(2){
+                margin-bottom: 0.5rem;
+            }
+            >p:nth-child(4){
+                margin-bottom: 1rem;
+            }
+        }
+
+        form{
+            .name-content{
+                h3{
+                    color: var(--blue-dark);
+                    font-family: var(--slug_way);
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 1rem;
+                    margin-bottom: 0.8rem;
+                }
+                span{
+                    color: var(--plum-violet);
+                    margin-left: 0.3rem;
+                }
+                .first-name-last-name{
+                    display: flex;
+                    margin-bottom: 1rem;
+                    gap: 1rem;
+                    .first-name{
+                        label{
+                            font-size: 0.7rem;
+                            color: var(--blue-dark);
+                            font-weight: 500;
+                            font-family: var(--slug_fira);
+                            text-transform: uppercase;
+                            margin-bottom: 0.8rem;
+                        }
+
+                        >input{
+                            padding: 15px 35px 15px;
+                            background-color: var(--cove-blue);
+                            outline: none;
+                            border: 1px solid var(--blue-dark);
+                        }
+                    }
+                    .last-name{
+                        @extend .first-name;
+                    }
+
+
+                }
+
+            }
+
+
+                 .email{
+                         label{
+                    color: var(--blue-dark);
+                    font-family: var(--slug_way);
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 1rem;
+                    margin-bottom: 0.8rem;
+                         }
+
+                        span{
+                        color: var(--plum-violet);
+                        margin-left: 0.3rem; 
+                        }
+
+                        >input{
+                            padding: 15px 170px 15px;
+                            background-color: var(--cove-blue);
+                            outline: none;
+                            border: 1px solid var(--blue-dark);
+                            margin-top: 0.8rem;
+                            
+                        }
+                    }
+
+
+                    .subject{
+                        @extend .email;
+                        margin-top: 1rem;
+                    }
+
+                    .message{
+                        @extend .subject;
+                        >textarea{
+                            padding: 50px 170px 50px;
+                             background-color: var(--cove-blue);
+                            outline: none;
+                            border: 1px solid var(--blue-dark);
+                            margin-top: 0.8rem;
+                            
+                        }
+                        margin-bottom: 1rem;
+                    }
+
+                    .checkbox{
+                     h3{
+                    color: var(--blue-dark);
+                    font-family: var(--slug_way);
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 1rem;
+                    margin-bottom: 0.8rem;
+                   }
+                span{
+                    color: var(--plum-violet);
+                    margin-left: 0.3rem;
+                }
+                 
+                .checkbox-item{
+                    display: flex;
+                    flex-flow: column;
+
+                    .checkbox-label{
+                        text-transform: uppercase;
+                    }
+
+                    #yes{
+                        padding: 20px 50px;
+                    }
+
+                }
+
+                    
+                    }
+
+                .phone{
+                    margin-top: 0.8rem;
+                    label{
+                        text-transform: uppercase;
+                        color: var(--blue-dark);
+                        font-family: var(--slug_way);
+                        font-weight: 800;
+                    }
+
+                    input{
+                            padding: 15px 170px 15px;
+                            background-color: var(--cove-blue);
+                            outline: none;
+                            border: 1px solid var(--blue-dark);
+                            margin-top: 0.8rem;
+                            margin-bottom: 1rem;
+                    }
+                }
+
+
+                .time-to-reach-out{
+                    @extend .phone
+                }
+
+
+                .submit{
+                    display: flex;
+                    justify-content: center;
+                    >button{
+                        margin-top: 1.2rem;
+                        background-color: var(--heliotrope-violet);
+                        padding: 16px 240px 16px;
+                        border-radius: 5px;
+                        border:none ;
+                        outline: none;
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: var(--blue-dark);
+                        font-family: var(--slug_way);
+
+                    }
+                }
+
+
+            
+        }
+
+
+     }
+}
