@@ -59,15 +59,6 @@ function Hello() {
                   </div>
            </div>
 
-                    <div className="checkbox-item">
-                       <label htmlFor="yes" className="checkbox-label">
-                          <input type="checkbox" id="yes" className="box-checks" /> Yes please
-                        </label>
-                     <label htmlFor="no" className="checkbox-label">
-                      <input type="checkbox" id="no" /> No please, I prefer communication via email only
-                     </label>
-                  </div>
-
 
                    </div>
 
