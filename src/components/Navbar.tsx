@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import CompanyLogo from '../../public/assets/images/campalla.png'
+import CompanyLogo from '../../public/assets/images/main-logo.png'
 import { AboutDropDown, DestinationDropDown, ShopDropDown, TabletNav} from './DropDown';
 import { LeftSection, RighSection, ShopItems } from './NavItems';
 import Link from 'next/link';
