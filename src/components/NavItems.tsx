@@ -39,7 +39,7 @@ export const AboutItem=[
   {
     id:1,
     title:"Our story",
-    path:"/OurStory",
+    path:"/About/OurStory",
     cName:"list-item"
   },
    {

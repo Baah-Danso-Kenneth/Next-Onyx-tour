@@ -79,7 +79,12 @@
   &-elements{
     max-width: 50%;
     margin: 0 auto;
-
+        .icons{
+      font-size: 13px;
+      .icon{
+        transform: translateY(-0.5rem);
+      }
+    }
     .tablet-nav-small-group-trips{
       >h3{
         font-size: 20px;
@@ -107,31 +112,214 @@
 
       ul{
         transform: translateX(2rem);
-        >li{
-          text-decoration: none;
-          list-style: none;
-          margin-bottom: 0.5rem;
-          font-size: 18px;
-          text-transform: uppercase;
-          font-family: var(--slug_way);
-          color: var(--light-slate);
+        display: flex;
+        flex-flow: column;
+        .header-title{
+        text-decoration: none;
+        color: var(--light-slate);
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: var(--slug_way);
+        margin-bottom: 0.8rem;
         }
       }
     }
 
     .tablet-nav-custom-trips{
-      @extend .tablet-nav-small-group-trips;
-
+      >h3{
+        font-size: 20px;
+        color: var(--light-slate);
+        font-family: var(--slug_way);
+        text-transform: uppercase;
+      }
+      margin-bottom: 1rem; 
     }
 
     .tablet-nav-shop{
-      @extend .tablet-nav-destination
+        .icons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--light-slate);
+        font-size: 18px;
+        >h3{
+          text-transform: uppercase;
+          font-family: var(--slug_way);
+          margin-bottom: 0.8rem;
+        }
+      }
+      margin-bottom: 1rem;
+
+      ul{
+        transform: translateX(2rem);
+        display: flex;
+        flex-flow: column;
+        .header-title{
+        text-decoration: none;
+        color: var(--light-slate);
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: var(--slug_way);
+        margin-bottom: 0.8rem;
+        }
+      }
     }
 
     .tablet-nav-about{
-      @extend .tablet-nav-destination
+        .icons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--light-slate);
+        font-size: 18px;
+        >h3{
+          text-transform: uppercase;
+          font-family: var(--slug_way);
+          margin-bottom: 0.8rem;
+        }
+      }
+      margin-bottom: 1rem;
+
+      ul{
+        transform: translateX(2rem);
+        display: flex;
+        flex-flow: column;
+        .header-title{
+        text-decoration: none;
+        color: var(--light-slate);
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: var(--slug_way);
+        margin-bottom: 0.8rem;
+        }
+      }
     }
+  } 
+}
+
+@media screen and (max-width:480px){
+  &-elements{
+    .icons{
+      font-size: 15px;
+      .icon{
+        transform: translateY(-0.5rem);
+      }
+ 
+    }
+
+    .tablet-nav-small-group-trips{
+      h3{
+        font-size: 1rem;
+      }
+    }
+ 
+    .tablet-nav-custom-trips{
+      h3{
+        font-size: 1rem;
+      }
+    }
+   .tablet-nav-destination{
+     h3{
+       font-size: 1rem;
+     }
+
+     ul{
+      .header-title{
+        font-size: 1rem;
+      }
+     }
+   }
+
+   .tablet-nav-about{
+         h3{
+       font-size: 1rem;
+     }
+
+     ul{
+      .header-title{
+        font-size: 1rem;
+      }
+     }
+   }
+
+   .tablet-nav-shop{
+             h3{
+       font-size: 1rem;
+     }
+
+     ul{
+      .header-title{
+        font-size: 1rem;
+      }
+     }
+   }
   }
-   
 }
+
+
+@media screen and (max-width:380px){
+  &-elements{
+    .icons{
+      font-size: 13px;
+      .icon{
+        transform: translateY(-0.5rem);
+      }
+ 
+    }
+
+    .tablet-nav-small-group-trips{
+      h3{
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+    }
+ 
+    .tablet-nav-custom-trips{
+      h3{
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+    }
+   .tablet-nav-destination{
+     h3{
+       font-size: 0.8rem;
+     }
+
+     ul{
+      .header-title{
+        font-size: 0.8rem;
+      }
+     }
+   }
+
+   .tablet-nav-about{
+         h3{
+       font-size: 0.8rem;
+     }
+
+     ul{
+      .header-title{
+        font-size: 0.8rem;
+      }
+     }
+   }
+
+   .tablet-nav-shop{
+             h3{
+       font-size: 0.8rem;
+     }
+
+     ul{
+      .header-title{
+        font-size: 0.8rem;
+      }
+     }
+   }
+  }
 }
+
+}
+

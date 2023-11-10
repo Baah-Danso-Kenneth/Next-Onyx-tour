@@ -1,7 +1,7 @@
 .app{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 132px auto auto auto;
+    grid-template-rows: 130px auto auto auto;
    
     .nav-bar{
         grid-area: 1/1/span 1/-1;
@@ -28,12 +28,17 @@
         background-color:var(--heliotrope-violet);
     }
 
+
+    @media screen and (max-width:780px){
+      grid-template-rows: 80px auto auto auto;}
+
+    @media screen and (max-width:480px){
+        grid-template-rows: 50px auto auto auto;
+    }
+
 }
 
 .nav-bar.shrink-head{
     height: 60px;
-
-    @media screen and (max-width:768px){
-      width: 0%;
-    }
+    width: 0%;
 }
