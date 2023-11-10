@@ -79,7 +79,12 @@
   &-elements{
     max-width: 50%;
     margin: 0 auto;
-
+        .icons{
+      font-size: 13px;
+      .icon{
+        transform: translateY(-0.5rem);
+      }
+    }
     .tablet-nav-small-group-trips{
       >h3{
         font-size: 20px;
@@ -315,4 +320,6 @@
    }
   }
 }
+
 }
+

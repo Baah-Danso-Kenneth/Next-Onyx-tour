@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import CompanyLogo from '../../public/assets/images/main-logo.png'
-import { AboutDropDown, DestinationDropDown, ShopDropDown, TabletNav} from './DropDown';
+import { AboutDropDown, DestinationDropDown, ShopDropDown} from './DropDown';
 import { LeftSection, RighSection, ShopItems } from './NavItems';
 import Link from 'next/link';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {CgClose} from 'react-icons/cg'
+import {TfiPlus} from 'react-icons/tfi'
+import { TfiMinus } from 'react-icons/tfi'
 
 function Navbar() {
   const [dropDown, setDropDown] = useState(false)
@@ -13,7 +15,12 @@ function Navbar() {
   const [shop, setShop]=useState(false)
   const [scrolled, setScrolled]=useState(false)
   const [scrollPosition, setScrolledPosition]=useState(0)
+  const [toggleDestination,setToggleDestination]=useState(false)
+  const [toggleshop,setToggleShop]=useState(false)
+  const [toggleAbout,setToggleAbout]=useState(false)
+
   const [open,setOpen]=useState(false)
+
 
 
 useEffect(()=>{
@@ -30,6 +37,8 @@ return ()=>{
 }
 
 },[])  
+
+
   return (
     <div className='block-nav'>
     <div className={scrolled ?'nav-container-fix cut-head':'nav-container-fix'}>
@@ -117,9 +126,76 @@ return ()=>{
                 </div> 
           </div>
         </div>
+
       </div>  
     </div>
-    {open &&  <TabletNav/>}
+
+
+    {open &&
+       (   <div id="nav-itmm">
+           <div className='tablet-nav'>
+            <div className="tablet-nav-elements">
+                <div className="tablet-nav-small-group-trips">
+                    <h3>small group trips</h3>
+                </div>
+
+               <div className="tablet-nav-destination">
+                      <div className="icons">
+                        {toggleDestination ? <TfiPlus  className='icon'onClick={()=>setToggleDestination(false)}/> : <TfiMinus  className='icon'onClick={()=>setToggleDestination(true)}/>}
+                        <h3>destination</h3>
+                      </div>
+                      {toggleDestination && (
+                       <ul>
+                        <Link href="#" className='header-title'>volta region</Link>
+                        <Link href="#" className='header-title'>eastern region</Link>
+                        <Link href="#" className='header-title'>Kente movement</Link>
+                        <Link href="#" className='header-title'>2024+ 2025 calender</Link>
+                      </ul>
+
+                      )}         
+               </div>
+
+                <div className="tablet-nav-custom-trips">
+                    <h3>Custom trips</h3>
+                </div>
+
+                <div className="tablet-nav-shop">
+                      <div className="icons">
+                        {toggleshop ? <TfiPlus className='icon' onClick={()=>setToggleShop(false)}/> : <TfiMinus className='icon'onClick={()=>setToggleShop(true)} />}
+                        <h3>shop</h3>
+                      </div>
+                      {toggleshop && (
+                       <ul>
+                        <Link href="#" className='header-title'>Lorem, ipsum.</Link>
+                        <Link href="#" className='header-title'>Lorem, ipsum.</Link>
+                      </ul>
+              
+                      )}
+               </div>
+
+              <div className="tablet-nav-about">
+                      <div className="icons">
+                        {toggleAbout ? <TfiPlus className='icon' onClick={()=>setToggleAbout(false)}/> : <TfiMinus className='icon' onClick={()=>setToggleAbout(true)}/>}
+                        <h3>About</h3>
+                      </div>
+                      {toggleAbout && (
+                       <ul>
+                        <Link href="About/OurStory" className='header-title'>our story</Link>
+                        <Link href="About/TalkToUs" className='header-title'>faqs</Link>
+                        <Link href="About/Team" className='header-title'>teams</Link>
+                      </ul>
+                      )}
+
+              
+               </div>
+
+
+            </div> 
+        </div>
+        </div>
+       )
+      
+      }
      </div>
   )
 }
