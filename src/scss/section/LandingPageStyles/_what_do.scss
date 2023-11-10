@@ -46,37 +46,42 @@
     }
   
     @media screen and (max-width: 768px) {
-      &-elements > h1 {
-        /* Styles for h1 on screens <= 768px width */
-      }
+
   
       .what-we-do-content {
         .content-1 > h3 {
           font-size: var(--tx2large);
         }
   
-        .content-2 {
-          /* Styles for content-2 on screens <= 768px width */
-        }
       }
     }
   
     @media screen and (max-width: 480px) {
       &-elements > h1 {
-        font-size: var(--tlarge);
+        font-size: 15px;
       }
   
       .what-we-do-content {
         flex-direction: column;
   
-        .content-1, .content-2, .content-3 {
+        .content-1 {
            >h3{
               text-align: center;
+              font-size: 18px;
            }
            >p{
             text-align: center;
+            font-size: 13px;
            }
         }
+
+
+        .content-2{
+          >h3{
+           font-size: 18px;
+          }
+        }
+
       }
     }
   }
