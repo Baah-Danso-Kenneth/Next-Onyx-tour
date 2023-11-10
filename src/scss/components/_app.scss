@@ -39,11 +39,16 @@
 }
 
 // .nav-bar.shrink-head{
+//     height: 0%;
 //     height: 60px;
 //     display: none;
 //     // width: 0%;
 // }
 
 .cut-head{
-    height: 10vh;
+    height: 8vh;
+    @media screen and (max-width:780px){
+     height: 10vh;
+    }
+ 
 }
