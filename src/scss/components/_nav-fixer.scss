@@ -104,7 +104,7 @@
 }
 
 .nav-container-fix-element.center-elements{
-   transform: translateY(-2rem);
+   transform: translateY(-0.1rem);
 }
 
 .small-screen-nav{
@@ -122,14 +122,17 @@
            
 
             .icons{
-                z-index: 300;
+                z-index: 500;
                 font-size: 2rem;
                 display: block;
                 color: var(--light-slate);
                 background-color:var(--blue-dark);
                 border: 1px solid var(--lightest-slate);
- 
+                .icon{
+                    z-index: 500;
+                }
             }
+
             .logos{
                 z-index: 300;
                 >img{
@@ -153,6 +156,10 @@
 
             .icons{
                 font-size: 1.2rem;
+                z-index: 500;
+                .icon{
+                    z-index: 500;
+                }
             }
         }
     }
@@ -165,10 +172,12 @@
 }
 
 .icons.icon-scrolled{
-    transform: translate(5rem,3rem);
+ transform: translateY(0.3rem);
 }
 
 
 .block-nav{
     position: relative;
 }
+
+

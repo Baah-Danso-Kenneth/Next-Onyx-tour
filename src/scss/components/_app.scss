@@ -38,7 +38,16 @@
 
 }
 
-.nav-bar.shrink-head{
-    height: 60px;
-    width: 0%;
+// .nav-bar.shrink-head{
+//     height: 0%;
+//     display: none;
+//     // width: 0%;
+// }
+
+.cut-head{
+    height: 8vh;
+    @media screen and (max-width:780px){
+     height: 10vh;
+    }
+ 
 }
