@@ -70,15 +70,15 @@ export const TabletNav=()=>{
 
                <div className="tablet-nav-destination">
                       <div className="icons">
-                        {toggleDestination ? <TfiPlus onClick={()=>setToggleDestination(false)}/> : <TfiMinus onClick={()=>setToggleDestination(true)}/>}
+                        {toggleDestination ? <TfiPlus  className='icon'onClick={()=>setToggleDestination(false)}/> : <TfiMinus  className='icon'onClick={()=>setToggleDestination(true)}/>}
                         <h3>destination</h3>
                       </div>
                       {toggleDestination && (
                        <ul>
-                        <li>volta region</li>
-                        <li>eastern region</li>
-                        <li>Kente movement</li>
-                        <li>2024+ 2025 calender</li>
+                        <Link href="#" className='header-title'>volta region</Link>
+                        <Link href="#" className='header-title'>eastern region</Link>
+                        <Link href="#" className='header-title'>Kente movement</Link>
+                        <Link href="#" className='header-title'>2024+ 2025 calender</Link>
                       </ul>
 
                       )}         
@@ -90,13 +90,13 @@ export const TabletNav=()=>{
 
                 <div className="tablet-nav-shop">
                       <div className="icons">
-                        {toggleshop ? <TfiPlus onClick={()=>setToggleShop(false)}/> : <TfiMinus onClick={()=>setToggleShop(true)}/>}
+                        {toggleshop ? <TfiPlus className='icon' onClick={()=>setToggleShop(false)}/> : <TfiMinus className='icon'onClick={()=>setToggleShop(true)} />}
                         <h3>shop</h3>
                       </div>
                       {toggleshop && (
                        <ul>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
+                        <Link href="#" className='header-title'>Lorem, ipsum.</Link>
+                        <Link href="#" className='header-title'>Lorem, ipsum.</Link>
                       </ul>
               
                       )}
@@ -104,14 +104,14 @@ export const TabletNav=()=>{
 
               <div className="tablet-nav-about">
                       <div className="icons">
-                        {toggleAbout ? <TfiPlus onClick={()=>setToggleAbout(false)}/> : <TfiMinus onClick={()=>setToggleAbout(true)}/>}
+                        {toggleAbout ? <TfiPlus className='icon' onClick={()=>setToggleAbout(false)}/> : <TfiMinus className='icon' onClick={()=>setToggleAbout(true)}/>}
                         <h3>About</h3>
                       </div>
                       {toggleAbout && (
                        <ul>
-                        <li>our story</li>
-                        <li>faqs</li>
-                        <li>teams</li>
+                        <Link href="About/OurStory" className='header-title'>our story</Link>
+                        <Link href="About/TalkToUs" className='header-title'>faqs</Link>
+                        <Link href="About/Team" className='header-title'>teams</Link>
                       </ul>
                       )}
 
