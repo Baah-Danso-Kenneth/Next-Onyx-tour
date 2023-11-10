@@ -46,12 +46,12 @@ export const AboutItem=[
     id:2,
     title:"Our team",
     cName:"list-item",
-    path:"/Team"
+    path:"/About/Team"
    },
     {
     id:3,
     title:"In the News",
-    path:"/InNews",
+    path:"/About/InNews",
     cName:"list-item"
   },
 
@@ -65,7 +65,7 @@ export const AboutItem=[
     {
     id:5,
     title:"Say hello",
-    path:"/TalkToUs",
+    path:"/About/TalkToUs",
     cName:"list-item"
   },
 ]

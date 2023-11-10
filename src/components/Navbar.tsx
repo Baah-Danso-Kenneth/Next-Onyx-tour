@@ -119,7 +119,7 @@ return ()=>{
         <div className="small-screen-nav">
           <div className="small-screen-nav-element">
               <div className={scrolled ?"icons icon-scrolled":"icons"}>
-                {open? <CgClose onClick={()=>setOpen(false)}/> : <GiHamburgerMenu onClick={()=>setOpen(true)}/>}
+                {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu classsName='icon' onClick={()=>setOpen(true)}/>}
               </div>
               <div className={scrolled?"logos img-logo":"logos"}>
                   <Image src={CompanyLogo} alt="company-logo"/>
@@ -131,8 +131,10 @@ return ()=>{
     </div>
 
 
-    {open &&
-       (   <div id="nav-itmm">
+    {open
+       && 
+
+              (
            <div className='tablet-nav'>
             <div className="tablet-nav-elements">
                 <div className="tablet-nav-small-group-trips">
@@ -192,10 +194,8 @@ return ()=>{
 
             </div> 
         </div>
-        </div>
        )
-      
-      }
+    }
      </div>
   )
 }
