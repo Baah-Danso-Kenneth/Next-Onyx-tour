@@ -92,7 +92,7 @@ export const ShopItems=[
 export const RighSection=[
     {
         id:1,
-        title:"small group trips",
+        title:"home",
         cName:"nav-item",
         path:"/"
     },
@@ -108,5 +108,6 @@ export const RighSection=[
 export const LeftSection=[
     {id:1, title:"Custom trips", cName:"nav-item"},
     {id:2, title:"shop",cName:"nav-item"},
-    {id:3,title:"about", cName:"nav-item"}
+    {id:3,title:"about", cName:"nav-item"},
+    {id:4, title:"gallery", cName:"nav-item"}
 ]
