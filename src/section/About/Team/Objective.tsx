@@ -1,5 +1,5 @@
 import React from 'react'
-import CompanyLogo from '../../../../public/assets/images/campalla.png';
+import CompanyLogo from '../../../../public/assets/images/annex-logo.png';
 import Image from 'next/image';
 
 
