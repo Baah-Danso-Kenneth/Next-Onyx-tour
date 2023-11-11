@@ -2,7 +2,7 @@ export const DestinationItems=[
     {
         id:1,
         title:"winter trip",
-        path:"/GroupTrip/winter",
+        path:"/GroupTrip/Winter",
         cName:"list-item"
     },
 
