@@ -51,14 +51,18 @@ cursor:pointer;
     z-index:50;
 
     >h3{
-        font-weight:200;
-        font-size:13px;
+        font-weight:500;
+        font-size:11px;
         font-family: var(--slug_way);
+        text-transform: uppercase;
     }
 
     >p{
         margin-left:0.8rem;
         font-weight:200;
+        font-size: 12px;
+        font-weight: 500;
+        ;
     }
 
 }

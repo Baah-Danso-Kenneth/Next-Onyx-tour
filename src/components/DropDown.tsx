@@ -8,7 +8,8 @@ export function DestinationDropDown() {
     const [dropDown, setDropDown]=useState(false)
 
   return (
-     <div className='drop-content'>
+    //  <div className='drop-content'>
+    <>
       <ul className={dropDown ?"destination-items clicked":`destination-items`} onClick={()=>setDropDown(!dropDown)}>
         {DestinationItems.map(({id,path,title,cName})=>{
             return(
@@ -18,7 +19,8 @@ export function DestinationDropDown() {
             )
         })}
       </ul>
-      </div>
+      </>
+    //   </div>
 
   )
 }
