@@ -1,37 +1,17 @@
 export const DestinationItems=[
     {
         id:1,
-        title:"Central Region",
+        title:"winter trip",
         path:"/central",
         cName:"list-item"
     },
 
     {
         id:2,
-        title:"Eastern Region",
+        title:"summer trip",
         path:"#",
         cName:"list-item"
     },
-
-    {
-        id:3,
-        title:"Volta Region",
-        path:"#",
-        cName:"list-item"
-    },
-    {
-        id:4,
-        title:"Kente Movement",
-        path:"#",
-        cName:"list-item"
-    },
-
-    {
-        id:5,
-        title:"2024+2025 Calender",
-        path:"#",
-        cName:"list-item"
-    }
 ]
 
 
@@ -48,44 +28,17 @@ export const AboutItem=[
     cName:"list-item",
     path:"/About/Team"
    },
-    {
-    id:3,
-    title:"In the News",
-    path:"/About/InNews",
-    cName:"list-item"
-  },
-
-    {
-    id:4,
-    title:"FAQ'S",
-    path:"/faq",
-    cName:"list-item"
-  },
-
-    {
-    id:5,
-    title:"Say hello",
-    path:"/About/TalkToUs",
-    cName:"list-item"
-  },
 ]
 
 
 export const ShopItems=[
     {
       id:1,
-      title:"Onyx Pick",
+      title:"Onyx group shop",
       path:"/onyx",
       cName:"list-item"
 
     },
-
-    {
-      id:2,
-      title:"Laura Shop",
-      path:"/laura",
-      cName:"list-item"
-    }
 ]
 
 
@@ -99,15 +52,16 @@ export const RighSection=[
 
     {
         id:2,
-        title:"destination",
+        title:"group trips",
         cName:"nav-item",
         path:"#"
-    }
+    },
+    {id:3, path:"#",title:"gallery", cName:"nav-item"}
 ]
 
 export const LeftSection=[
     {id:1, title:"Custom trips", cName:"nav-item"},
     {id:2, title:"shop",cName:"nav-item"},
     {id:3,title:"about", cName:"nav-item"},
-    {id:4, title:"gallery", cName:"nav-item"}
+
 ]

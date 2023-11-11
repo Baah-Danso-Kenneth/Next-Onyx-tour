@@ -47,7 +47,7 @@ return ()=>{
         <div className="right-section">
             <ul>
               {RighSection.map(({id,title,cName,path})=>{
-                if(title==='destination'){
+                if(title==='group trips'){
                     return(
                       <li
                       key={id}
