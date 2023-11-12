@@ -1,0 +1,110 @@
+.season-container{
+    .season-hero-container{
+        position: relative;
+    .img{
+        position: relative;
+        >img{
+            height: 130vh;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+
+    .text{
+        position: absolute;
+        top: 0;
+        left: 3rem;
+        >p{
+            text-transform: uppercase;
+            text-align: center;
+            transform: translate(33rem,3rem);
+            font-size: 3rem;
+            font-family: var(--slug_fira);
+            color: var(--blue-dark);
+            word-spacing: -18px;
+        }
+        
+    }
+}
+
+.season-hero-elements{
+    background-color: var(--cove-blue);
+    margin-top: -0.8rem;
+    padding-bottom: 2rem;
+    .season-hero-info{
+        max-width: 80%;
+        margin: 0 auto;
+        >h1{
+            text-align: center;
+            padding-top: 5rem;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-family: var(--slug_fira);
+            color: var(--light-slate);
+            word-spacing: -15px;
+            margin-bottom: 0.5rem;
+        }
+        .duration{
+            display: flex;
+            justify-content: center;
+            h6{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 200;
+            text-transform: uppercase;
+            font-family: var(--slug_fira);
+            margin-bottom: 0.8rem;
+            color: var(--blue-dark);
+        }
+
+        .line{
+            color: var(--blue-dark);
+            font-weight: 400;
+            font-size: 1.2rem;
+            transform: translate(-4.6rem,-0.2rem);
+        }
+
+        }
+
+        p{
+            font-family: var(--slug_way);
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: var(--blue-dark);
+
+        }
+
+        .routes-link{
+            margin-top: 1rem;
+            ul{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .divss{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .link{
+                    text-decoration: none;
+                    color: var(--light-slate);
+                    text-transform: uppercase;
+                    font-family: var(--slug_fira);
+
+                }
+
+                >p{
+                    transform: translateX(0.5rem);
+                    color: var(--blue-dark);
+                }
+            }
+            }
+
+        }
+    }
+}
+
+}
