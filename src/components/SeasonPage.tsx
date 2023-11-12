@@ -62,7 +62,6 @@ function SeasonPage({season,src,title,info,name,days}:SeasonalProps) {
 
                  <div className='divss'>
                    <Link href="/about/#" className='link'>faqs</Link>
-                   <p>|</p>
               </div>
 
             </ul>
