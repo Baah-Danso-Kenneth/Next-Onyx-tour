@@ -62,16 +62,17 @@
             color: var(--blue-dark);
             font-weight: 400;
             font-size: 1.2rem;
-            transform: translate(-4.6rem,-0.2rem);
+            transform: translate(-4.6rem,-0.6rem);
         }
 
         }
 
         p{
             font-family: var(--slug_way);
-            font-size: 1rem;
+            font-size: 1.4rem;
             text-align: center;
-            font-weight: 600;
+            line-height: 2.3rem;
+            font-weight: 500;
             color: var(--blue-dark);
 
         }
@@ -93,6 +94,8 @@
                     color: var(--light-slate);
                     text-transform: uppercase;
                     font-family: var(--slug_fira);
+                    font-size: 1.3rem;
+                    font-weight: 100;
 
                 }
 

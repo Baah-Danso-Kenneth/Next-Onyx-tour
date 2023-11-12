@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import SeasonPage from '@/components/SeasonPage'
 import HeroImage from '../../../public/assets/images/winter-scence.jpg'
+import WinterTripsContent from '@/components/WinterTripsContent'
+
 
 
 function Winter() {
@@ -9,11 +11,13 @@ function Winter() {
   ]
   return (
     <Layout>
+      <div>
       {information.map(({id,title,info,src,days})=>{
         return(
           <SeasonPage key={id} title={title} info={info} src={src} season='winter trip' days={days}/>
         )
       })}
+      </div>
     </Layout>
   )
 }

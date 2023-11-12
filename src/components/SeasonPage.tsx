@@ -2,6 +2,9 @@ import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 import {TbMinusVertical} from 'react-icons/tb'
 import Link from 'next/link';
+import {Link as ScrollLink} from 'react-scroll'
+import {animateScroll as scroll} from 'react-scroll'
+
 interface SeasonalProps{
     season?:string;
     name?:string;
@@ -35,7 +38,10 @@ function SeasonPage({season,src,title,info,name,days}:SeasonalProps) {
             <ul>
 
              <div className='divss'>
-                <Link href="/about/#" className='link'>trip dates</Link>
+              <ScrollLink to="about">
+                
+              </ScrollLink>
+                <Link href="/GroupTrip/Tester/#" className='link'>trip dates</Link>
                 <p>|</p>
               </div>
 
@@ -65,6 +71,20 @@ function SeasonPage({season,src,title,info,name,days}:SeasonalProps) {
               </div>
 
             </ul>
+          </div>
+
+
+          <div>
+            about
+          </div>
+
+
+          <div>
+            faqx
+          </div>
+
+          <div>
+            shop
           </div>
         </div>
         
