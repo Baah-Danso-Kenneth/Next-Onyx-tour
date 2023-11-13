@@ -18,6 +18,7 @@ function Winter() {
         )
       })}
       </div>
+        <WinterTripsContent/>
     </Layout>
   )
 }

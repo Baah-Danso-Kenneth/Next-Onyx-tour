@@ -17,7 +17,7 @@ function MiniRoute() {
           <div className="routes-link">
             <ul>
              <div className='divss'>
-              <ScrollLink to="about" smooth={true} duration={500} className='items'>
+              <ScrollLink to="trip-date" smooth={true} duration={500} className='items'>
                 <span className='link' onClick={()=>scrollToSection('trip-date')}>trip dates</span>
                 <p>|</p>
               </ScrollLink>
@@ -60,6 +60,8 @@ function MiniRoute() {
               </div>
 
             </ul>
+
+
           </div>
   )
 }

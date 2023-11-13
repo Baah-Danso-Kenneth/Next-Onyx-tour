@@ -84,6 +84,7 @@
 
 .routes-link{
     margin-top: 2rem;
+    margin-bottom: 3rem;
    ul{
     max-width: 80%;
     margin: 0 auto;
@@ -118,3 +119,46 @@
     }
    }
 }
+
+.trips-date-container{
+    background-color: var(--plum-violet);
+    min-height: auto;
+    .trips-date-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+ 
+        &-text{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 3rem;
+                font-weight: 300;
+                font-family: var(--slug_fira);
+                text-transform: uppercase;
+                word-spacing: -15px;
+                color: var(--light-slate);
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 1.1rem;
+                font-family: var(--slug_way);
+                color: var(--lightest-slate);
+                margin-bottom: 0.8rem;
+                font-weight: 300;
+            }
+            h6{
+                font-size: 1.1rem;
+                font-family: var(--slug_way);
+                text-align: center;
+                color:var(--lightest-slate);
+                font-weight: 300;
+            }
+        }
+    }
+}
+
