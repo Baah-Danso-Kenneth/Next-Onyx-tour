@@ -4,22 +4,31 @@ import React from 'react'
 interface BookedTripInterface{
     sold?:string;
     date:string;
-    img:StaticImageData;
+    src:StaticImageData;
 }
 
-function BookedTrip({sold,date,img}:BookedTripInterface) {
+function BookedTrip({sold,date,src}:BookedTripInterface) {
+    const randomValue=Math.random();
+    const showSold = randomValue < 0.5;
+
   return (
-    <div className='booked-container'>
+    <div className="booked-container">
         <div className="booked-container-img">
-            <div className="sold">
+
+            {showSold && (
+             <div className="sold">
                 <p>{sold}</p>
             </div>
-            <Image src={img} alt="book-img"/>
+            )}
+
+            <Image src={src} alt="book-img" />
         </div>
         <div className="text">
             <p>{date}</p>
-            <div className="button-content">
-                <button>book now</button>
+            <div className={showSold ? "diff-color": "button-content"}>
+                <button>
+                    {showSold ? "Join wait list" :"book now"}
+                </button>
             </div>
         </div>
       

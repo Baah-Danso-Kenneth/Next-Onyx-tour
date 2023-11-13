@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import SeasonPage from '@/components/SeasonPage'
 import HeroImage from '../../../public/assets/images/winter-scence.jpg'
 import WinterTripsContent from '@/components/WinterTripsContent'
+import Recommend from '@/section/GroupTrips/Recommend'
 
 
 
@@ -18,7 +19,9 @@ function Winter() {
         )
       })}
       </div>
-        <WinterTripsContent/>
+      
+         <WinterTripsContent/>
+         <Recommend/>
     </Layout>
   )
 }

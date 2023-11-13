@@ -119,7 +119,7 @@ return ()=>{
         <div className="small-screen-nav">
           <div className="small-screen-nav-element">
               <div className={scrolled ?"icons icon-scrolled":"icons"}>
-                {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu classsName='icon' onClick={()=>setOpen(true)}/>}
+                {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu className='icon' onClick={()=>setOpen(true)}/>}
               </div>
               <div className={scrolled?"logos img-logo":"logos"}>
                   <Image src={CompanyLogo} alt="company-logo"/>

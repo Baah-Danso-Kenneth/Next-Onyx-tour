@@ -10,12 +10,12 @@ import BookedTrip from './Card/BookedTrip';
 
 function WinterTripsContent() {
   const bookedInfo=[
-    {id:1, sold:"sold out", date:"Winter trip: November 3 -12, 2023", img:WinterImg1},
-     {id:2, sold:"sold out", date:"Winter trip: November 3 -12, 2023", img:WinterImg2},
-      {id:3, sold:"sold out", date:"Winter trip: November 3 -12, 2023", img:WinterImg3},
-       {id:4, sold:"sold out", date:"Winter trip: November 3 -12, 2023", img:WinterImg4},
-        {id:5, sold:"sold out", date:"Winter trip: November 3 -12, 2023", img:WinterImg5},
-         {id:6, sold:"sold out", date:"Winter trip: November 3 -12, 2023", img:WinterImg6},
+    {id:1, sold:"sold out", date:"Winter trip: November 3 -12, 2023", src:WinterImg1},
+     {id:2, sold:"sold out", date:"Winter trip: November 3 -12, 2023", src:WinterImg2},
+      {id:3, sold:"sold out", date:"Winter trip: November 3 -12, 2023", src:WinterImg3},
+       {id:4, sold:"sold out", date:"Winter trip: November 3 -12, 2023", src:WinterImg4},
+        {id:5, sold:"sold out", date:"Winter trip: November 3 -12, 2023", src:WinterImg5},
+         {id:6, sold:"sold out", date:"Winter trip: November 3 -12, 2023", src:WinterImg6},
   ]
 
   return (
@@ -30,9 +30,9 @@ function WinterTripsContent() {
         </div>
 
         <div className="trips-date-elements-card">
-             {bookedInfo.map(({sold, img,date,id})=>{
+             {bookedInfo.map(({sold, src,date,id})=>{
               return(
-                <BookedTrip key={id} sold={sold} img={img} date={date}/>
+                <BookedTrip key={id} sold={sold} src={src} date={date}/>
               )
              })}
           </div>
