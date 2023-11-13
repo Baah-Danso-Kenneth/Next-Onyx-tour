@@ -161,3 +161,63 @@ cursor:pointer;
         }
     }
 }
+
+
+.booked-container{
+    &-img{ 
+        position: relative;
+        .sold{
+            position: absolute;
+            left:2rem;
+            top:1rem;
+            background-color: red;
+            padding: 0.5rem;
+            transform: translateX(6.2rem);
+            >p{
+               text-align: center;
+               text-transform: uppercase;
+               font-family: var(--slug_way);
+             }
+        }
+        >img{
+        width:225.5px;
+        height:229.6px;
+        object-fit: cover;
+        }
+        margin-bottom: 1.5rem;
+
+    }
+    .text{
+        p{
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+            width: 70%;
+            color: var(--lightest-slate);
+            font-family: var(--slug_fira);
+            font-size: 15px;
+            margin-bottom: 2rem;
+
+        }
+
+        .button-content{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           transform: translateX(-2.5rem);
+           margin-bottom: 3rem;
+           >button{
+            padding: 15px 40px 15px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: none;
+            outline:none ;
+            font-family: var(--slug_way);
+            font-size: 13px;
+            color: var(--blue-dark);
+            font-weight: 600;
+            background-color: var(--heliotrope-violet);
+           }
+        }
+    }
+}
