@@ -25,35 +25,35 @@ function MiniRoute() {
 
 
               <div className='divss'>
-              <ScrollLink to="about" smooth={true} duration={500} className='items'>
+              <ScrollLink to="itenary" smooth={true} duration={500} className='items'>
                 <span className='link' onClick={()=>scrollToSection('itenary')}>itenary</span>
                 <p>|</p>
               </ScrollLink>
               </div>
 
               <div className='divss'>
-                <ScrollLink to="about" smooth={true} duration={500} className='items'>
+                <ScrollLink to="accomodation" smooth={true} duration={500} className='items'>
                 <span className='link' onClick={()=>scrollToSection('accomodation')}>accomodation</span>
                 <p>|</p>
               </ScrollLink>
               </div>
 
               <div className='divss'>
-               <ScrollLink to="about" smooth={true} duration={500} className='items'>
+               <ScrollLink to="included" smooth={true} duration={500} className='items'>
                 <span className='link' onClick={()=>scrollToSection('included')}>what included</span>
                 <p>|</p>
               </ScrollLink>
               </div>
 
                 <div className='divss'>
-                <ScrollLink to="about" smooth={true} duration={500} className='items'>
+                <ScrollLink to="leaders" smooth={true} duration={500} className='items'>
                 <span className='link' onClick={()=>scrollToSection('leaders')}>trip leaders</span>
                 <p>|</p>
               </ScrollLink>
               </div>
 
               <div className='divss'>
-                 <ScrollLink to="about" smooth={true} duration={500} className='items'>
+                 <ScrollLink to="faqs" smooth={true} duration={500} className='items'>
                 <span className='link' onClick={()=>scrollToSection('faqs')}>faq</span>
                   <p>|</p>
               </ScrollLink>
