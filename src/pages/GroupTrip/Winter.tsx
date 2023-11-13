@@ -8,6 +8,7 @@ import Itenary from '@/components/Itenary'
 import WinterComponents from '@/section/GroupTrips/WinterComponents'
 import WinterItenaryComponent from '@/section/GroupTrips/WinterItenaryComponent'
 import WinterWhatIncluded from '@/section/GroupTrips/WinterWhatIncluded'
+import WinterRecommends from '@/section/GroupTrips/WinterRecommends'
 
 
 
@@ -17,6 +18,7 @@ function Winter() {
        <WinterComponents/>
        <WinterItenaryComponent/>
        <WinterWhatIncluded/>
+       <WinterRecommends/>
     </Layout>
   )
 }

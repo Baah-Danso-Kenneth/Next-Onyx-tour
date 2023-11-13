@@ -256,3 +256,19 @@ cursor:pointer;
         gap: 2rem;
     }
 }
+
+
+.card-winter-recommend-container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--cove-blue);
+    &-elements{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 60%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+}
