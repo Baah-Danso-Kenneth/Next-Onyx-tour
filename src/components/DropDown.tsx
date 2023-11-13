@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import { AboutItem, DestinationItems, ShopItems } from './NavItems'
 import Link from 'next/link'
 
@@ -8,7 +8,6 @@ export function DestinationDropDown() {
     const [dropDown, setDropDown]=useState(false)
 
   return (
-    //  <div className='drop-content'>
     <>
       <ul className={dropDown ?"destination-items clicked":`destination-items`} onClick={()=>setDropDown(!dropDown)}>
         {DestinationItems.map(({id,path,title,cName})=>{
@@ -20,8 +19,6 @@ export function DestinationDropDown() {
         })}
       </ul>
       </>
-    //   </div>
-
   )
 }
 
