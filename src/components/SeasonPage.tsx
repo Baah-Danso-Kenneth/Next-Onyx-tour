@@ -1,9 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react'
-import {TbMinusVertical} from 'react-icons/tb'
-import Link from 'next/link';
-import {Link as ScrollLink} from 'react-scroll'
-import {animateScroll as scroll} from 'react-scroll'
 import MiniRoute from './MiniRoute';
 
 interface SeasonalProps{
