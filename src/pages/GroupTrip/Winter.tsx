@@ -7,6 +7,7 @@ import WinterPlace1 from '../../../public/assets/images/day-winter-1.jpg';
 import Itenary from '@/components/Itenary'
 import WinterComponents from '@/section/GroupTrips/WinterComponents'
 import WinterItenaryComponent from '@/section/GroupTrips/WinterItenaryComponent'
+import WinterWhatIncluded from '@/section/GroupTrips/WinterWhatIncluded'
 
 
 
@@ -15,6 +16,7 @@ function Winter() {
     <Layout>
        <WinterComponents/>
        <WinterItenaryComponent/>
+       <WinterWhatIncluded/>
     </Layout>
   )
 }
