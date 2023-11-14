@@ -5,6 +5,7 @@
         position: relative;
         >img{
             height: 130vh;
+            z-index: 50;
             width:100%;
             object-fit: cover;
         }

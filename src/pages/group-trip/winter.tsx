@@ -7,10 +7,12 @@ import WinterAccomodation from '@/section/GroupTrips/WinterAccomodation'
 import WinterLeader from '@/section/GroupTrips/WinterLeader'
 import MeetTeam from '@/section/About/Team/MeetTeam'
 import HaveQuestion from '@/components/HaveQuestion'
+import StraightLayout from '@/components/StraightLayout'
 
 
 function Winter() {
   return (
+    
     <Layout>
        <WinterComponents/>
        <WinterItenaryComponent/>

@@ -23,6 +23,8 @@
   }
 }
 
+
+
 .destination-items.clicked{
    display: none
 }
@@ -55,6 +57,13 @@
 
 }
 
+
+.plane-about{
+  transform: translateX(8rem,2rem);
+  background-color: red
+
+}
+
 .scrolled-shop{
     @extend .scrolled-about
 }
@@ -64,6 +73,13 @@
     left: -3rem;
     transform: translate(8rem, -3.9rem);
     width: 100%;
+}
+
+.plain-scrolled-destination{
+  background-color: red;
+  position: absolute;
+
+  z-index: 300;
 }
 
 

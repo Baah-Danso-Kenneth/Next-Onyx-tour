@@ -23,6 +23,26 @@ export function DestinationDropDown() {
 }
 
 
+export function PlaneDestinationDropDown() {
+    const [dropDown, setDropDown]=useState(false)
+
+  return (
+    <>
+      <ul className="plane-destination-items" onClick={()=>setDropDown(!dropDown)}>
+        {DestinationItems.map(({id,path,title,cName})=>{
+            return(
+                <li key={id}>
+                    <Link href={path} className={cName} onClick={()=>setDropDown(false)}>{title}</Link>
+                </li>
+            )
+        })}
+      </ul>
+      </>
+  )
+}
+
+
+
 
 export function AboutDropDown(){
     const [dropAbout, setAbout]=useState(false)
