@@ -19,8 +19,7 @@ function WinterTripsContent() {
   ]
 
   return (
-    <div id='trip-date'>
-      <div className="trips-date-container">
+      <div id='trip-date' className="trips-date-container">
         <div className="trips-date-elements">
           <div className="trips-date-elements-text">
              <h1>Winter Group trips</h1>
@@ -38,7 +37,6 @@ function WinterTripsContent() {
           </div>
 
       </div>
-     </div>
   )
 }
 
