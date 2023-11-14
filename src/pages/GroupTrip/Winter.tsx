@@ -4,6 +4,7 @@ import WinterItenaryComponent from '@/section/GroupTrips/WinterItenaryComponent'
 import WinterWhatIncluded from '@/section/GroupTrips/WinterWhatIncluded'
 import WinterRecommends from '@/section/GroupTrips/WinterRecommends'
 import WinterAccomodation from '@/section/GroupTrips/WinterAccomodation'
+import WinterLeader from '@/section/GroupTrips/WinterLeader'
 
 
 function Winter() {
@@ -14,6 +15,7 @@ function Winter() {
        <WinterWhatIncluded/>
        <WinterRecommends/>
        <WinterAccomodation/>
+       <WinterLeader/>
     </Layout>
   )
 }
