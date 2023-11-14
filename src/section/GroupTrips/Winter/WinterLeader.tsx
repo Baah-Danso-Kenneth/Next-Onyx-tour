@@ -1,5 +1,5 @@
 import React from 'react'
-import Instructor from '../../../public/assets/images/instructor.jpg';
+import Instructor from '../../../../public/assets/images/instructor.jpg';
 import Leader from '@/components/Leader';
 
 

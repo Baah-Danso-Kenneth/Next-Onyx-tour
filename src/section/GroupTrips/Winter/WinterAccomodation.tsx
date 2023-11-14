@@ -1,8 +1,8 @@
 import React from 'react'
-import Accommodation1 from '../../../public/assets/images/winter-ac-img-1.jpg';
-import Accommodation2 from '../../../public/assets/images/winter-ac-2.jpg';
-import Accommodation3 from '../../../public/assets/images/winter-ac-3.jpg';
-import Accommodation4 from '../../../public/assets/images/winter-ac-4.jpg';
+import Accommodation1 from '../../../../public/assets/images/winter-ac-img-1.jpg';
+import Accommodation2 from '../../../../public/assets/images/winter-ac-2.jpg';
+import Accommodation3 from '../../../../public/assets/images/winter-ac-3.jpg';
+import Accommodation4 from '../../../../public/assets/images/winter-ac-4.jpg';
 import Accomodation from '@/components/Accomodation';
 
 

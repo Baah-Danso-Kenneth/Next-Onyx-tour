@@ -1,15 +1,15 @@
 import React from 'react'
-import WinterPlace1 from '../../../public/assets/images/day-winter-2.jpg';
-import WinterPlace2 from '../../../public/assets/images/day-winter-3.jpg';
-import WinterPlace3 from '../../../public/assets/images/day-winter-2.jpg';
-import WinterPlace4 from '../../../public/assets/images/day-winter-7.jpg';
-import WinterPlace5 from '../../../public/assets/images/day-winter-6.jpg';
-import WinterPlace6 from '../../../public/assets/images/day-winter-7.jpg';
-import WinterPlace7 from '../../../public/assets/images/day-winter-3.jpg';
-import WinterPlace8 from '../../../public/assets/images/day-winter-6.jpg';
-import WinterPlace9 from '../../../public/assets/images/day-winter-10.jpg';
-import WinterPlace10 from '../../../public/assets/images/day-winter-11.jpg';
-import WinterPlace11 from '../../../public/assets/images/day-winter-2.jpg';
+import WinterPlace1 from '../../../../public/assets/images/day-winter-2.jpg';
+import WinterPlace2 from '../../../../public/assets/images/day-winter-3.jpg';
+import WinterPlace3 from '../../../../public/assets/images/day-winter-2.jpg';
+import WinterPlace4 from '../../../../public/assets/images/day-winter-7.jpg';
+import WinterPlace5 from '../../../../public/assets/images/day-winter-6.jpg';
+import WinterPlace6 from '../../../../public/assets/images/day-winter-7.jpg';
+import WinterPlace7 from '../../../../public/assets/images/day-winter-3.jpg';
+import WinterPlace8 from '../../../../public/assets/images/day-winter-6.jpg';
+import WinterPlace9 from '../../../../public/assets/images/day-winter-10.jpg';
+import WinterPlace10 from '../../../../public/assets/images/day-winter-11.jpg';
+import WinterPlace11 from '../../../../public/assets/images/day-winter-2.jpg';
 
 
 import Itenary from '@/components/Itenary';

@@ -2,7 +2,7 @@ import WinterTripsContent from '@/components/WinterTripsContent'
 import React from 'react'
 import Recommend from './Recommend'
 import SeasonPage from '@/components/SeasonPage'
-import HeroImage from '../../../public/assets/images/winter-scence.jpg'
+import HeroImage from '../../../../public/assets/images/winter-scence.jpg'
 
 function WinterComponents() {
 
