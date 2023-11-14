@@ -5,6 +5,8 @@ import WinterWhatIncluded from '@/section/GroupTrips/WinterWhatIncluded'
 import WinterRecommends from '@/section/GroupTrips/WinterRecommends'
 import WinterAccomodation from '@/section/GroupTrips/WinterAccomodation'
 import WinterLeader from '@/section/GroupTrips/WinterLeader'
+import MeetTeam from '@/section/About/Team/MeetTeam'
+import HaveQuestion from '@/components/HaveQuestion'
 
 
 function Winter() {
@@ -16,6 +18,8 @@ function Winter() {
        <WinterRecommends/>
        <WinterAccomodation/>
        <WinterLeader/>
+       <MeetTeam/>
+       <HaveQuestion/>
     </Layout>
   )
 }

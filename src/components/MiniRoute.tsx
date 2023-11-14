@@ -46,8 +46,8 @@ function MiniRoute() {
               </div>
 
                 <div className='divss'>
-                <ScrollLink to="leaders" smooth={true} duration={500} className='items'>
-                <span className='link' onClick={()=>scrollToSection('leaders')}>trip leaders</span>
+                <ScrollLink to="leader" smooth={true} duration={500} className='items'>
+                <span className='link' onClick={()=>scrollToSection('leader')}>trip leaders</span>
                 <p>|</p>
               </ScrollLink>
               </div>
