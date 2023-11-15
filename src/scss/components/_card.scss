@@ -51,14 +51,18 @@ cursor:pointer;
     z-index:50;
 
     >h3{
-        font-weight:200;
-        font-size:13px;
+        font-weight:500;
+        font-size:11px;
         font-family: var(--slug_way);
+        text-transform: uppercase;
     }
 
     >p{
         margin-left:0.8rem;
         font-weight:200;
+        font-size: 12px;
+        font-weight: 500;
+        ;
     }
 
 }
@@ -106,7 +110,7 @@ cursor:pointer;
         transform: translate(12rem, 0.5rem);
         font-style: italic;
         color: var(--light-slate);
-        font-weight: 500;
+        font-weight: 900;
     }
 
     @media screen and (max-width:1080px) {
@@ -156,4 +160,158 @@ cursor:pointer;
             font-weight: 500;
         }
     }
+}
+
+
+.booked-container{
+    &-img{ 
+        position: relative;
+        .sold{
+            position: absolute;
+            left:2rem;
+            top:1rem;
+            background-color: red;
+            color:var(--light-slate);
+            font-style: italic;
+            padding: 0.5rem;
+            transform: translateX(6.2rem);
+            >p{
+               text-align: center;
+               text-transform: uppercase;
+               font-family: var(--slug_way);
+             }
+        }
+        >img{
+        width:225.5px;
+        height:229.6px;
+        object-fit: cover;
+        }
+        margin-bottom: 1.5rem;
+
+    }
+    .text{
+        p{
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+            width: 70%;
+            color: var(--lightest-slate);
+            font-family: var(--slug_fira);
+            font-size: 15px;
+            margin-bottom: 2rem;
+
+        }
+
+        .button-content{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-2.5rem);
+            margin-bottom: 3rem;
+           >button{
+            padding: 15px 40px 15px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: none;
+            outline:none ;
+            font-family: var(--slug_way);
+            font-size: 13px;
+            color: var(--blue-dark);
+            font-weight: 600;
+            background-color: var(--heliotrope-violet);
+           }
+        }
+    }
+}
+
+ .diff-color{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-2.5rem);
+        margin-bottom: 3rem;
+    >button{
+    background-color: var(--cove-blue);
+            padding: 15px 40px 15px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: none;
+            outline:none ;
+            font-family: var(--slug_way);
+            font-size: 13px;
+            color: var(--blue-dark);
+            font-weight: 600;
+    }
+}
+
+
+
+.winter-recommend-container{
+    &-elements{
+        background-color: var(--cove-blue);
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+.card-winter-recommend-container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--cove-blue);
+    &-elements{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 60%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+
+.motivation-card-container{
+  margin-top: 5rem;
+  position: relative;
+  .motivation-card-item{
+    width: 800px;
+        padding: 1.5rem;
+        background-color: var(--card-colors-light);
+
+        >p {
+            font-family: var(--slug_way);
+            color: var(--blue-dark);
+            font-weight: 500;
+        }
+
+        &::after {
+            position: absolute;
+            left: 80%;
+            transform: translateY(15px) rotate(80deg);
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid var(--card-color-dark);
+        }
+  }
+
+
+      h6 {
+        font-family: var(--slug_fira);
+        font-size: var(--tsm1);
+        transform: translate(43rem, 0.5rem);
+        font-style: italic;
+        color: var(--light-slate);
+        font-weight: 900;
+    }
+
+
+
+
 }

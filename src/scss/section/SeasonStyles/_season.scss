@@ -1,0 +1,183 @@
+.season-container{
+    .season-hero-container{
+        position: relative;
+    .img{
+        position: relative;
+        >img{
+            height: 130vh;
+            z-index: 50;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+
+    .text{
+        position: absolute;
+        top: 0;
+        left: 3rem;
+        >p{
+            text-transform: uppercase;
+            text-align: center;
+            transform: translate(33rem,3rem);
+            font-size: 3rem;
+            font-family: var(--slug_fira);
+            color: var(--blue-dark);
+            word-spacing: -18px;
+        }
+        
+    }
+}
+
+.season-hero-elements{
+    background-color: var(--cove-blue);
+    margin-top: -0.8rem;
+    padding-bottom: 2rem;
+    .season-hero-info{
+        max-width: 80%;
+        margin: 0 auto;
+        >h1{
+            text-align: center;
+            padding-top: 5rem;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-family: var(--slug_fira);
+            color: var(--light-slate);
+            word-spacing: -15px;
+            margin-bottom: 0.5rem;
+        }
+        .duration{
+            display: flex;
+            justify-content: center;
+            h6{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 200;
+            text-transform: uppercase;
+            font-family: var(--slug_fira);
+            margin-bottom: 0.8rem;
+            color: var(--blue-dark);
+        }
+
+        .line{
+            color: var(--blue-dark);
+            font-weight: 400;
+            font-size: 1.2rem;
+            transform: translate(-4.6rem,-0.6rem);
+        }
+
+        }
+
+        p{
+            font-family: var(--slug_way);
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 2.3rem;
+            font-weight: 500;
+            color: var(--blue-dark);
+
+        }
+    }
+}
+
+}
+
+
+.routes-link{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+   ul{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .divss{
+        cursor: pointer;
+        .items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: var(--light-slate);
+                text-transform: uppercase;
+                word-spacing: -0.2rem;
+                font-family: var(--slug_fira);
+                font-size: 1.3rem;
+                font-weight: 100;
+            }
+
+            p{
+                    transform: translateX(0.5rem);
+                    color: var(--blue-dark);
+            }
+        }
+
+    }
+   }
+}
+
+.trips-date-container{
+    background-color: var(--plum-violet);
+    min-height: auto;
+    .trips-date-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+ 
+        &-text{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 3rem;
+                font-weight: 300;
+                font-family: var(--slug_fira);
+                text-transform: uppercase;
+                word-spacing: -15px;
+                color: var(--light-slate);
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 1.1rem;
+                font-family: var(--slug_way);
+                color: var(--lightest-slate);
+                margin-bottom: 0.8rem;
+                font-weight: 300;
+            }
+            h6{
+                font-size: 1.1rem;
+                font-family: var(--slug_way);
+                text-align: center;
+                color:var(--lightest-slate);
+                font-weight: 300;
+            }
+        }
+
+        &-card{
+            margin-top: 3rem;
+            max-width: 100%;
+            margin: 0 auto;
+            transform: translateX(2.1rem);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         
+        }
+    }
+}
+
+.summer-date-elements-card{
+    max-width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}

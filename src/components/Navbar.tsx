@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import CompanyLogo from '../../public/assets/images/main-logo.png'
+import CompanyLogo from '../../public/assets/images/onyxx-logo.png'
 import { AboutDropDown, DestinationDropDown, ShopDropDown} from './DropDown';
 import { LeftSection, RighSection, ShopItems } from './NavItems';
 import Link from 'next/link';
@@ -47,7 +47,7 @@ return ()=>{
         <div className="right-section">
             <ul>
               {RighSection.map(({id,title,cName,path})=>{
-                if(title==='destination'){
+                if(title==='group trips'){
                     return(
                       <li
                       key={id}
@@ -119,7 +119,7 @@ return ()=>{
         <div className="small-screen-nav">
           <div className="small-screen-nav-element">
               <div className={scrolled ?"icons icon-scrolled":"icons"}>
-                {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu classsName='icon' onClick={()=>setOpen(true)}/>}
+                {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu className='icon' onClick={()=>setOpen(true)}/>}
               </div>
               <div className={scrolled?"logos img-logo":"logos"}>
                   <Image src={CompanyLogo} alt="company-logo"/>
