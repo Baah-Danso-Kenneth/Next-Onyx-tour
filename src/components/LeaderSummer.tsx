@@ -16,7 +16,7 @@ function LeaderSummer({src, leader}:LeaderProps) {
          <div className="button-btn">
 
           <button>
-            <Link href="#" className='link'>meet  {leader}</Link>
+            <Link href="/instructors/summer-instructor" className='link'>meet  {leader}</Link>
           </button>
          </div>
     </div>
