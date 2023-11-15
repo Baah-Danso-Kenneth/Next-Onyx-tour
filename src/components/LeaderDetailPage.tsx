@@ -24,7 +24,7 @@ interface MoreAboutprops{
     type2_message?:string;
     type3_message?:string;
     meet?:string;
-    link?:string;
+    link:string;
 }
 
 
@@ -124,7 +124,7 @@ function LeaderDetailPage({...props}:InstructorProps) {
              </div>
              <div className='btn-more-details'>
                <button>
-                    <Link href='#' className='link'>travel with us</Link>
+                    <Link href={link} className='link'>travel with us</Link>
                 </button>
             </div>
     </div>

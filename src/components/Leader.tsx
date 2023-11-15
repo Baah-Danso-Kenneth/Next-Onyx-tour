@@ -20,7 +20,7 @@ function Leader({src,leader}:LeaderProps) {
          <div className="button-btn">
 
           <button>
-            <Link href="#" className='link'>meet {leader}</Link>
+            <Link href="/instructors/winter-instructor" className='link'>meet {leader}</Link>
           </button>
          </div>
     </div>
