@@ -18,7 +18,7 @@ import Itenary from '@/components/Itenary';
 
 function WinterItenaryComponent() {
 
-      const itenary=[
+  const itenary=[
     {id:1, 
     days:"day one - patogonia", 
     meals:"Meals included: breakfast, dinner",

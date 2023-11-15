@@ -1,15 +1,11 @@
-import { StaticImageData } from 'next/image'
 import React from 'react'
-import Image from 'next/image';
-import Link from 'next/link';
+import { LeaderProps } from './Leader'
+import Image from 'next/image'
+import Link from 'next/link'
 
 
-export interface LeaderProps{
-    src:StaticImageData;
-    leader:string;
-}
-function Leader({src,leader}:LeaderProps) {
-  return (
+function LeaderSummer({src, leader}:LeaderProps) {
+   return (
     <div className='leader-content'>
        <div className='leader-content-title'>
         <h2>Meet your trip leader</h2>
@@ -20,11 +16,12 @@ function Leader({src,leader}:LeaderProps) {
          <div className="button-btn">
 
           <button>
-            <Link href="#" className='link'>meet {leader}</Link>
+            <Link href="#" className='link'>meet  {leader}</Link>
           </button>
          </div>
     </div>
   )
 }
 
-export default Leader
+
+export default LeaderSummer
