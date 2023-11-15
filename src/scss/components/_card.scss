@@ -272,3 +272,46 @@ cursor:pointer;
         gap: 5rem;
     }
 }
+
+
+.motivation-card-container{
+  margin-top: 5rem;
+  position: relative;
+  .motivation-card-item{
+    width: 800px;
+        padding: 1.5rem;
+        background-color: var(--card-colors-light);
+
+        >p {
+            font-family: var(--slug_way);
+            color: var(--blue-dark);
+            font-weight: 500;
+        }
+
+        &::after {
+            position: absolute;
+            left: 80%;
+            transform: translateY(15px) rotate(80deg);
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid var(--card-color-dark);
+        }
+  }
+
+
+      h6 {
+        font-family: var(--slug_fira);
+        font-size: var(--tsm1);
+        transform: translate(43rem, 0.5rem);
+        font-style: italic;
+        color: var(--light-slate);
+        font-weight: 900;
+    }
+
+
+
+
+}
