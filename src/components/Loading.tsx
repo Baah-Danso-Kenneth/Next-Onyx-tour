@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import CompanyLogo from '../../public/assets/images/annex-logo.png';
+import CompanyLogo from '../../public/assets/images/demo-loader.png';
 
 function Loading() {
   return (

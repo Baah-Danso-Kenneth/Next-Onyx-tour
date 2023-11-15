@@ -10,13 +10,27 @@ import SummerLeader from '@/section/GroupTrips/Summer/SummerLeader'
 import SummerAccomodation from '@/section/GroupTrips/Summer/SummerAccomodation'
 import SummerKindWords from '@/section/GroupTrips/Summer/SummerKindWords'
 import SummerWhatIncluded from '@/section/GroupTrips/Summer/SummerWhatIncluded'
+import { useEffect, useState } from 'react'
+import Loading from '@/components/Loading'
 
 function Summer() {
+  const [isLoading, setIsLoading]=useState(false)
   const information=[
     {id:1, title:"onyx summer trip", info:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas natus minus inventore officiis earum! Provident laudantium ut quae, corporis, enim laborum placeat molestias architecto nobis ad veniam beatae id eveniet ex quidem dicta! Omnis nisi fuga sequi autem sunt modi sapiente commodi aspernatur at, tempora natus molestiae tenetur praesentium doloribus!",days:"10days  8nights",src:HeroImage}
   ]
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(true)
+    },3000)
+  },[])
   return (
-    <Layout>
+
+    !isLoading ? (
+      <Loading/>
+    ) : (
+
+      <>
+          <Layout>
       {information.map(({id,title,info,src,days})=>{
         return(
           <SeasonPage key={id} title={title} info={info} src={src} season='Summer trip' days={days}/>
@@ -32,6 +46,10 @@ function Summer() {
       <MeetTeam/>
       <HaveQuestion/>
     </Layout>
+      
+      </>
+    )
+
   )
 }
 
