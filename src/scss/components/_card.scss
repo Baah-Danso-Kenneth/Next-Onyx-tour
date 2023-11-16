@@ -174,7 +174,7 @@ cursor:pointer;
             color:var(--light-slate);
             font-style: italic;
             padding: 0.5rem;
-            transform: translateX(6.2rem);
+            transform: translateX(4.5rem);
             >p{
                text-align: center;
                text-transform: uppercase;
@@ -182,7 +182,7 @@ cursor:pointer;
              }
         }
         >img{
-        width:225.5px;
+        width:200.5px;
         height:229.6px;
         object-fit: cover;
         }
@@ -222,6 +222,75 @@ cursor:pointer;
            }
         }
     }
+@media screen and (max-width:480px){
+  .text{
+    .button-content{
+        transform: translateX(-3rem);
+    }
+  }
+}
+
+
+   @media screen and (max-width:380px){
+    transform: translateX(-2rem);
+     &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         >img{
+           .img{ width: 200px};
+    
+         }
+
+         .sold{
+            transform: translateX(6.1rem);
+         }
+     }
+
+     .text{
+        p{
+            width: 100%;
+        }
+        .button-content{
+            transform: translateX(0rem);
+            >button{
+                padding: 10px 30px 10px;
+            }
+        }
+     }
+
+
+   }
+
+   @media screen and (max-width:320px){
+    transform: translateX(-2rem);
+     &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         >img{
+           .img{ width: 200px};
+    
+         }
+         .sold{
+            transform: translateX(4.5rem);
+         }
+     }
+
+     .text{
+        p{
+            width: 100%;
+        }
+        .button-content{
+            transform: translateX(0rem);
+            >button{
+                padding: 10px 30px 10px;
+            }
+        }
+     }
+
+
+   }
 }
 
  .diff-color{
@@ -242,7 +311,32 @@ cursor:pointer;
             color: var(--blue-dark);
             font-weight: 600;
     }
-}
+
+
+    @media screen and (max-width:480px){
+        transform: translateX(-3rem);
+    }
+
+    @media screen and (max-width:380px){
+        transform: translateX(0rem);
+        >button{
+            padding: 15px 30px 15px;
+        }
+    }
+
+
+    @media screen and (max-width:320px){
+          transform: translateX(0rem);
+            >button{
+                padding: 10px 30px 10px;
+            }
+        }
+     
+   }
+
+
+
+
 
 
 
@@ -253,7 +347,17 @@ cursor:pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
+
+    }
+
+
+
+    @media screen and (max-width:480px){
+        &-elements{
+            padding: 4rem;
+            flex-flow: column;
+        }
     }
 }
 

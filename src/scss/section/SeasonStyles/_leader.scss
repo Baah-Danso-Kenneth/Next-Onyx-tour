@@ -46,7 +46,36 @@
         }
 
     }
+
+    @media screen and (max-width:480px) {
+        &-title{
+            >h2{
+                font-size: 2rem;
+                text-align: center;
+                width: 80%;
+            }
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        &-title{
+            >h2{
+                font-size: 2rem;
+                text-align: center;
+                width: 80%;}
+             }
+
+            .image-content{
+                >img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+    }
+
 }
+
+
 
 
 .leader-container{
@@ -58,6 +87,12 @@
     align-items: center;
     }
     margin-bottom: 2rem;
+
+    @media screen and (max-width:320px){
+        &-element{
+            height: 50vh;
+        }
+    }
 }
 
 .instructor-container{
