@@ -14,6 +14,7 @@
             text-transform: uppercase;
             font-weight: 300;
             font-size: 3rem;
+            text-align: center;
             color: var(--light-slate);
             font-family: var(--slug_fira);
             word-spacing: -10px;
@@ -39,6 +40,18 @@
                 background-color: var(--heliotrope-violet);
                 color:var(--blue-dark);
                 font-weight: 600;
+            }
+        }
+    }
+
+
+    @media screen and (max-width:320px){
+        &-element{
+            .question-text{
+                >h1{
+                    font-size: 2rem;
+                    text-align: center;
+                }
             }
         }
     }

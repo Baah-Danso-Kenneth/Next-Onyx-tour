@@ -3,6 +3,8 @@ import React from 'react'
 import Image  from 'next/image';
 import Link from 'next/link';
 import Motivation from './Card/Motivation';
+import Recommend from '@/section/LandingPage/Recommend';
+import RecommendCard from './Card/RecommendCard';
 
 interface DetailsProps{
     brand:StaticImageData;
@@ -76,8 +78,9 @@ function LeaderDetailPage({...props}:InstructorProps) {
         </div>
 
        <div className="info-details">
-          <Motivation name='Philipa' statement='What’s more empowering than becoming aware of your own strengths and who you are as a person? And what better vehicle for this experience than travel?'/>
-       </div>
+           <Motivation name='Philipa' statement='What’s more empowering than becoming aware of your own strengths and who you are as a person? And what better vehicle for this experience than travel?'/> 
+          </div>
+
  
      <div className="more-details">
            <div className="more-details-banner">

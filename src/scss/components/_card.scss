@@ -174,7 +174,7 @@ cursor:pointer;
             color:var(--light-slate);
             font-style: italic;
             padding: 0.5rem;
-            transform: translateX(6.2rem);
+            transform: translateX(4.5rem);
             >p{
                text-align: center;
                text-transform: uppercase;
@@ -182,7 +182,7 @@ cursor:pointer;
              }
         }
         >img{
-        width:225.5px;
+        width:200.5px;
         height:229.6px;
         object-fit: cover;
         }
@@ -222,6 +222,75 @@ cursor:pointer;
            }
         }
     }
+@media screen and (max-width:480px){
+  .text{
+    .button-content{
+        transform: translateX(-3rem);
+    }
+  }
+}
+
+
+   @media screen and (max-width:380px){
+    transform: translateX(-2rem);
+     &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         >img{
+           .img{ width: 200px};
+    
+         }
+
+         .sold{
+            transform: translateX(6.1rem);
+         }
+     }
+
+     .text{
+        p{
+            width: 100%;
+        }
+        .button-content{
+            transform: translateX(0rem);
+            >button{
+                padding: 10px 30px 10px;
+            }
+        }
+     }
+
+
+   }
+
+   @media screen and (max-width:320px){
+    transform: translateX(-2rem);
+     &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         >img{
+           .img{ width: 200px};
+    
+         }
+         .sold{
+            transform: translateX(4.5rem);
+         }
+     }
+
+     .text{
+        p{
+            width: 100%;
+        }
+        .button-content{
+            transform: translateX(0rem);
+            >button{
+                padding: 10px 30px 10px;
+            }
+        }
+     }
+
+
+   }
 }
 
  .diff-color{
@@ -242,7 +311,32 @@ cursor:pointer;
             color: var(--blue-dark);
             font-weight: 600;
     }
-}
+
+
+    @media screen and (max-width:480px){
+        transform: translateX(-3rem);
+    }
+
+    @media screen and (max-width:380px){
+        transform: translateX(0rem);
+        >button{
+            padding: 15px 30px 15px;
+        }
+    }
+
+
+    @media screen and (max-width:320px){
+          transform: translateX(0rem);
+            >button{
+                padding: 10px 30px 10px;
+            }
+        }
+     
+   }
+
+
+
+
 
 
 
@@ -253,7 +347,17 @@ cursor:pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
+
+    }
+
+
+
+    @media screen and (max-width:480px){
+        &-elements{
+            padding: 4rem;
+            flex-flow: column;
+        }
     }
 }
 
@@ -274,21 +378,60 @@ cursor:pointer;
 }
 
 
-.motivation-card-container{
-  margin-top: 5rem;
-  position: relative;
-  .motivation-card-item{
-    width: 800px;
-        padding: 1.5rem;
-        background-color: var(--card-colors-light);
+// .motivation-card-container{
 
-        >p {
+//   .motivation-card-item{
+//         padding: 1.5rem;
+//         background-color: var(--card-colors-light);
+
+//         >p {
+//             font-family: var(--slug_way);
+//             color: var(--blue-dark);
+//             font-weight: 500;
+//         }
+
+//         &::after {
+//             position: absolute;
+//             left: 80%;
+//             transform: translateY(15px) rotate(80deg);
+//             content: '';
+//             width: 0;
+//             height: 0;
+//             border-left: 15px solid transparent;
+//             border-right: 15px solid transparent;
+//             border-top: 15px solid var(--card-color-dark);
+//         }
+//   }
+
+
+//       h6 {
+//         font-family: var(--slug_fira);
+//         font-size: var(--tsm1);
+//         transform: translate(43rem, 0.5rem);
+//         font-style: italic;
+//         color: var(--light-slate);
+//         font-weight: 900;
+//     }
+
+
+
+
+// }
+
+
+
+
+.motivation-card-container{
+    .motivation-card-item{
+           background-color: var(--card-colors-light);
+           padding: 1.5rem;
+            >p {
             font-family: var(--slug_way);
             color: var(--blue-dark);
             font-weight: 500;
         }
 
-        &::after {
+        &::after{
             position: absolute;
             left: 80%;
             transform: translateY(15px) rotate(80deg);
@@ -296,22 +439,50 @@ cursor:pointer;
             width: 0;
             height: 0;
             border-left: 15px solid transparent;
+            /* Adjust the size of the triangle */
             border-right: 15px solid transparent;
+            /* Adjust the size of the triangle */
             border-top: 15px solid var(--card-color-dark);
+            /*atch the background color of the rectangle */ 
         }
-  }
+        }
 
-
-      h6 {
+        h6{
         font-family: var(--slug_fira);
         font-size: var(--tsm1);
-        transform: translate(43rem, 0.5rem);
+        position: absolute;
+        transform: translate(55rem,0.8rem);
         font-style: italic;
         color: var(--light-slate);
         font-weight: 900;
-    }
+        }
 
 
 
 
+        @media screen and (max-width:1080px) {
+            h6{
+                transform: translate(33rem,0.5rem);
+            }
+        }
+
+
+        @media screen and (max-width:780px) {
+            h6{
+                transform: translate(25rem,1rem);
+            }
+        }
+
+         @media screen and (max-width:480px) {
+           .motivation-card-item{
+            &::after{
+                transform: translate(-3rem,1rem) rotate(80deg);
+            }
+           }
+
+           h6{
+            transform: translate(8rem,1rem);
+           }
+        }
+    
 }

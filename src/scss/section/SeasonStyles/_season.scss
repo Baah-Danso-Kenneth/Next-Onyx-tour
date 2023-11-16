@@ -2,10 +2,11 @@
     .season-hero-container{
         position: relative;
     .img{
+        width: 100%;
         position: relative;
         >img{
-            height: 130vh;
-            z-index: 50;
+            height: 100vh;
+          
             width:100%;
             object-fit: cover;
         }
@@ -26,6 +27,9 @@
         }
         
     }
+
+
+
 }
 
 .season-hero-elements{
@@ -80,6 +84,87 @@
     }
 }
 
+
+
+
+@media screen and (max-width:1445px){
+    .season-hero-container{
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >p{
+                font-size: 5rem;
+                transform: translate(26rem,6rem);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1080px){
+
+    .season-hero-container{
+        
+        .text{
+             >p{
+                transform: translate(13rem,8rem);
+             }
+
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:780px){
+    .season-hero-container{
+        .text{
+            >p{
+                font-size:3.5rem;
+                transform: translate(10.3rem,8rem);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    .season-hero-container{
+
+        .img{
+            >img{
+                height: 50vh;
+            }
+        }
+        .text{
+            >p{
+                font-size:2.3rem;
+                transform: translate(3.5rem,8rem);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px){
+    .season-hero-container{
+        .text{
+            >p{
+               font-size: 1.5rem;
+               transform: translate(2.9rem,8rem);
+            }
+        }
+    }
+
+    .season-hero-elements{
+        .season-hero-info{
+            >h1{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
 }
 
 
@@ -119,11 +204,19 @@
 
     }
    }
+
+
+
+   @media screen and (max-width:780px){
+      ul{
+        flex-wrap: wrap;
+      }
+   }
 }
 
 .trips-date-container{
     background-color: var(--plum-violet);
-    min-height: auto;
+    padding: 4rem;
     .trips-date-elements{
         max-width: 80%;
         margin: 0 auto;
@@ -150,6 +243,7 @@
                 font-family: var(--slug_way);
                 color: var(--lightest-slate);
                 margin-bottom: 0.8rem;
+                text-align: center;
                 font-weight: 300;
             }
             h6{
@@ -158,19 +252,61 @@
                 text-align: center;
                 color:var(--lightest-slate);
                 font-weight: 300;
+        
+                margin-bottom: 2rem;
             }
         }
 
         &-card{
             margin-top: 3rem;
-            max-width: 100%;
-            margin: 0 auto;
             transform: translateX(2.1rem);
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
          
+        }
+    }
+
+    @media screen and (max-width:780px){
+        .trips-date-elements{
+            &-text{
+                >h1{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+        @media screen and (max-width:480px){
+        .trips-date-elements{
+            &-text{
+                >h1{
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+   @media screen and (max-width:320px){
+        .trips-date-elements{
+            &-text{
+                >h1{
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+                p{  
+                    width: 200%;
+                }
+
+                h6{
+                    width: 200%;
+                }
+            }
         }
     }
 }

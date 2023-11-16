@@ -46,7 +46,36 @@
         }
 
     }
+
+    @media screen and (max-width:480px) {
+        &-title{
+            >h2{
+                font-size: 2rem;
+                text-align: center;
+                width: 80%;
+            }
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        &-title{
+            >h2{
+                font-size: 2rem;
+                text-align: center;
+                width: 80%;}
+             }
+
+            .image-content{
+                >img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+    }
+
 }
+
+
 
 
 .leader-container{
@@ -58,6 +87,12 @@
     align-items: center;
     }
     margin-bottom: 2rem;
+
+    @media screen and (max-width:320px){
+        &-element{
+            height: 50vh;
+        }
+    }
 }
 
 .instructor-container{
@@ -68,8 +103,7 @@
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        max-width: 80%;
-        margin: 0 auto;
+
         .img-content{
             margin-bottom: 4rem;
             >img{
@@ -84,7 +118,7 @@
         .brief-bio{
             display: flex;
             gap:3rem;
-            .bio-img-content{
+        .bio-img-content{
                 >img{
                     width: 486.6px;
                     height: 651.2px;
@@ -145,7 +179,7 @@
 
             .more-detail-flex-content{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 gap: 2rem;
 
@@ -223,11 +257,81 @@
         }
 
         .info-details{
-           margin-top: 5rem;
-            max-width: 80%;
-            margin: 0 auto;
+             max-width: 80%;
+             margin: 0 auto;
+             padding-top: 5rem;
+             padding-bottom: 5rem;
         }
 
 
+    }
+
+
+    @media screen and (max-width:780px){
+
+        &-element{
+            .brief-bio{
+                .bio-img-content{
+                    >img{
+                        width: 300px;
+                        height: 500px;
+                    }
+                }
+
+                .bio-text-name{
+                    >p{
+                        font-size: 2rem;
+                    }
+                }
+
+                .bio-text-location{
+                    font-size: 1rem;
+                }
+            }
+
+            .more-details{
+
+                .more-details-banner{
+                    text-align: center;
+                
+                }
+
+
+            }
+        }
+        
+    }
+
+
+        @media screen and (max-width:480px){
+
+        &-element{
+            .brief-bio{
+                flex-flow: column;
+                .bio-img-content{
+                    >img{
+                        width: 300px;
+                        height: 500px;
+                    }
+                }
+
+                .bio-text-name{
+                    >p{
+                        font-size: 2rem;
+                    }
+                }
+
+                .bio-text-location{
+                    font-size: 1rem;
+                }
+            }
+
+            .more-details{
+                .more-detail-flex-content{
+                    flex-flow: column;
+                }
+            }
+        }
+        
     }
 }
