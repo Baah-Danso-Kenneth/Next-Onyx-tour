@@ -11,6 +11,7 @@
        font-weight: 300;
        text-transform: uppercase;
        font-family: var(--slug_fira);
+       text-align: center;
        word-spacing: -15px;
       }
     }
@@ -19,6 +20,23 @@
         max-width: 80%;
         margin: 0 auto;
     }
+
+   @media screen and (max-width:1080px){
+    &-title{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+   }    
+
+    @media screen and (max-width:380px){
+    &-title{
+        h1{
+            font-size: 2rem;
+            word-spacing: 5px;
+        }
+    }
+   }  
 }
 
 
@@ -61,6 +79,66 @@
                 font-style: italic;
                 font-family: var(--slug_way);
                 color: var(--lightest-slate);
+            }
+        }
+    }
+
+
+    @media screen and (max-width:1080px){
+        .content{
+            gap: 3rem;
+            .images{
+                >img{
+                    width: 450px;
+                    height: 400px;
+                }
+            }
+
+            .text{
+                h6{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width:780px){
+        .content{
+            .images{
+               >img{
+                    width: 300px;
+                    height: 250px;}
+        
+            }
+        }
+    }
+
+
+    @media screen and (max-width:480px){
+        .content{
+            flex-flow: column;
+            .images{
+               >img{
+                    width: 300px;
+                    height: 250px;}
+        
+            }
+        }
+    }
+
+        @media screen and (max-width:320px){
+        .content{
+            .images{
+               >img{
+                    width: 250px;
+                    height: 250px;}
+            }
+            .text{
+                h6{
+                    font-size: 1.5rem;
+
+                }
             }
         }
     }

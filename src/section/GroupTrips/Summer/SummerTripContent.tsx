@@ -13,7 +13,7 @@ function SummerTripContent() {
               <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptate fugiat unde laboriosam consequatur.</h6>
           </div>
         </div>
-        <div className="summer-date-elements-card">
+        <div className="trips-date-elements-card">
             <BookedTrip sold='sold out' date='summer trip: July 8 - 14, 2024' src={SummerTrip}/>
              <BookedTrip sold='sold out' date='summer trip: July 8 - 14, 2024' src={SummerTrip}/>
               <BookedTrip sold='sold out' date='summer trip: July 8 - 14, 2024' src={SummerTrip}/>

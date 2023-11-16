@@ -5,8 +5,8 @@
      max-width: 80%;
      margin: 0 auto;
      display: flex;
-     justify-content: center;
      gap: 10rem;
+     justify-content: center;
      align-items: center;
 
      .include{
@@ -60,4 +60,80 @@
      }
 
     }
+
+    @media screen and (max-width:780px){
+        
+        .what-included-container-elements{
+            gap: 5rem;
+            .include{
+                transform: translateX(2.5rem);
+                >p{
+                    font-size: 0.8rem;
+                }
+            }
+
+            .not-included{
+                transform: translateX(2rem);
+                h5{
+                    width: 85%;
+                }
+            }
+
+            .link{
+                font-size: 0.5rem;
+                
+            }
+        }
+    }
+
+
+        @media screen and (max-width:480px){
+        
+        .what-included-container-elements{
+            gap: 5rem;
+            flex-flow: column;
+            .include{
+                transform: translateX(2.5rem);
+                >p{
+                    font-size: 0.8rem;
+                }
+            }
+
+            .not-included{
+                transform: translateX(2rem);
+                h5{
+                    width: 85%;
+                }
+            }
+
+            .link{
+                font-size: 0.5rem;
+                
+            }
+        }
+    }
+  @media screen and (max-width:320px){
+    .what-included-container-elements{
+        // gap:2rem;
+        .include{
+            >h5{
+        
+            }
+            >p{
+                font-size: 0.8rem;
+            }
+        }
+
+        .not-included{
+            >h5{
+                width: 100%;
+                transform: translateX(-1.5rem);
+            }
+        }
+        .link{
+
+        }
+    }
+  }
+
 }
