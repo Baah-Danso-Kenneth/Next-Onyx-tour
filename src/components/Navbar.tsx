@@ -80,13 +80,8 @@ return ()=>{
 
                 if(title==='shop'){
                   return(
-                    <li key={id}
-                    className={cName}
-                    onMouseEnter={()=>setShop(true)}
-                    onMouseLeave={()=>setShop(false)}
-                    >
-                      <Link href="#" className='header-title'>{title}</Link>
-                      {shop && <div className={scrolled ? "scrolled-shop":""}><ShopDropDown/></div>}
+                    <li key={id} className={cName}>
+                    <Link href="/shop" className="list-itm">{title}</Link>
                     </li>
                   )
                 }
@@ -118,10 +113,10 @@ return ()=>{
 
         <div className="small-screen-nav">
           <div className="small-screen-nav-element">
-              <div className={scrolled ?"icons icon-scrolled":"icons"}>
+              <div className="icons">
                 {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu className='icon' onClick={()=>setOpen(true)}/>}
               </div>
-              <div className={scrolled?"logos img-logo":"logos"}>
+              <div className="logos">
                   <Image src={CompanyLogo} alt="company-logo"/>
                 </div> 
           </div>
@@ -138,7 +133,7 @@ return ()=>{
            <div className='tablet-nav'>
             <div className="tablet-nav-elements">
                 <div className="tablet-nav-small-group-trips">
-                    <h3>small group trips</h3>
+                    <Link href="/" className='link'>home</Link>
                 </div>
 
                <div className="tablet-nav-destination">
@@ -148,10 +143,8 @@ return ()=>{
                       </div>
                       {toggleDestination && (
                        <ul>
-                        <Link href="#" className='header-title'>volta region</Link>
-                        <Link href="#" className='header-title'>eastern region</Link>
-                        <Link href="#" className='header-title'>Kente movement</Link>
-                        <Link href="#" className='header-title'>2024+ 2025 calender</Link>
+                        <Link href="/group-trip/winter" className='header-title'>winter trip</Link>
+                        <Link href="/group-trip/summer" className='header-title'>summer trip</Link>
                       </ul>
 
                       )}         
@@ -163,16 +156,9 @@ return ()=>{
 
                 <div className="tablet-nav-shop">
                       <div className="icons">
-                        {toggleshop ? <TfiPlus className='icon' onClick={()=>setToggleShop(false)}/> : <TfiMinus className='icon'onClick={()=>setToggleShop(true)} />}
-                        <h3>shop</h3>
+                        <Link href="/shop" className='link'>shop</Link>
                       </div>
-                      {toggleshop && (
-                       <ul>
-                        <Link href="#" className='header-title'>Lorem, ipsum.</Link>
-                        <Link href="#" className='header-title'>Lorem, ipsum.</Link>
-                      </ul>
-              
-                      )}
+
                </div>
 
               <div className="tablet-nav-about">
@@ -182,9 +168,8 @@ return ()=>{
                       </div>
                       {toggleAbout && (
                        <ul>
-                        <Link href="About/OurStory" className='header-title'>our story</Link>
-                        <Link href="About/TalkToUs" className='header-title'>faqs</Link>
-                        <Link href="About/Team" className='header-title'>teams</Link>
+                        <Link href="/about/our-story" className='header-title'>our story</Link>
+                        <Link href="/about/team" className='header-title'>teams</Link>
                       </ul>
                       )}
 

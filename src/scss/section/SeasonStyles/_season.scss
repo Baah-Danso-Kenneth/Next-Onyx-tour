@@ -14,23 +14,25 @@
 
     .text{
         position: absolute;
-        top: 0;
-        left: 3rem;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        width: 80%;
         >p{
             text-transform: uppercase;
             text-align: center;
-            transform: translate(33rem,3rem);
             font-size: 3rem;
+            width: 100%;
             font-family: var(--slug_fira);
             color: var(--blue-dark);
             word-spacing: -18px;
+
         }
         
     }
 
-
-
-}
+   }
 
 .season-hero-elements{
     background-color: var(--cove-blue);
@@ -85,17 +87,12 @@
 }
 
 
-
-
 @media screen and (max-width:1445px){
     .season-hero-container{
         .text{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             >p{
                 font-size: 5rem;
-                transform: translate(26rem,6rem);
+           
             }
         }
     }
@@ -108,7 +105,7 @@
         
         .text{
              >p{
-                transform: translate(13rem,8rem);
+              font-size: 4rem;
              }
 
         }
@@ -116,17 +113,6 @@
     
 }
 
-
-@media screen and (max-width:780px){
-    .season-hero-container{
-        .text{
-            >p{
-                font-size:3.5rem;
-                transform: translate(10.3rem,8rem);
-            }
-        }
-    }
-}
 
 @media screen and (max-width:480px){
     .season-hero-container{
@@ -138,34 +124,50 @@
         }
         .text{
             >p{
-                font-size:2.3rem;
-                transform: translate(3.5rem,8rem);
-            }
-        }
-    }
-}
-
-@media screen and (max-width:320px){
-    .season-hero-container{
-        .text{
-            >p{
-               font-size: 1.5rem;
-               transform: translate(2.9rem,8rem);
+            font-size: 2rem;
             }
         }
     }
 
     .season-hero-elements{
         .season-hero-info{
-            >h1{
-                font-size: 2rem;
+            h1{
+                font-size: 1.5rem;
+                word-spacing: -5px;
+            }
+            .duration{
+               .line{
+                transform: translate(-4.7rem,0.2rem);
+               }
+            }
+      
+            p{
+                font-size: 0.8rem;
+                line-height: 20px;
             }
         }
     }
 }
 
 
+@media screen and (max-width:320px){
+    .season-hero-container{
+
+        .img{
+            >img{
+                height: 50vh;
+            }
+        }
+        .text{
+            >p{
+            font-size: 2rem;
+            }
+        }
+    }
 }
+
+}
+
 
 
 .routes-link{
@@ -211,6 +213,32 @@
       ul{
         flex-wrap: wrap;
       }
+   }
+
+   @media screen and (max-width:480px){
+    ul{
+        .divss{
+            .items{
+                span{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    
+   }
+
+   @media screen and (max-width:320px){
+      ul{
+       .divss{
+        .items{
+            span{
+                font-size: 1rem;
+            }
+        }
+       }
+      }
+    
    }
 }
 
@@ -282,10 +310,20 @@
 
         @media screen and (max-width:480px){
         .trips-date-elements{
+            padding: 0;
+            max-width: 100%;
             &-text{
                 >h1{
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     text-align: center;
+                }
+                p{
+                    font-size: 0.8rem;
+                    width: 100%;
+                }
+
+                h6{
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -294,17 +332,22 @@
 
    @media screen and (max-width:320px){
         .trips-date-elements{
+            padding: 2rem;
             &-text{
                 >h1{
-                    font-size: 1.8rem;
                     text-align: center;
+                    font-size: 1.3rem;
+                    white-space: nowrap;
+                    word-spacing: -5px;
                 }
                 p{  
                     width: 200%;
+                    font-size: 0.8rem;
                 }
 
                 h6{
                     width: 200%;
+                    font-size: 0.8rem;
                 }
             }
         }

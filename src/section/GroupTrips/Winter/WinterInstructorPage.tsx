@@ -1,5 +1,5 @@
 import React from 'react'
-import BrandImage from '../../../../public/assets/images/demo-loader.png';
+import BrandImage from '../../../../public/assets/images/loder-loader.png';
 import LeaderDetailPage from '@/components/LeaderDetailPage';
 import LeaderImg from '../../../../public/assets/images/instructor.jpg'
 

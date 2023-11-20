@@ -335,24 +335,35 @@ cursor:pointer;
    }
 
 
-
-
-
-
-
 .winter-recommend-container{
     &-elements{
-        background-color: var(--cove-blue);
         min-height: 50vh;
+        background-color: var(--cove-blue);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
-
     }
 
+    @media screen and (max-width:1445px) {
+        &-elements{
+        min-height: 20vh;
+        gap: 1.8rem;
+        }
+    }
 
+        @media screen and (max-width:1080px) {
+        &-elements{
+        min-height: 20vh;
+        gap: 10rem;
+        }
+    }
 
+    @media screen and (max-width:780px) {
+        &-elements{
+        min-height: 20vh;
+        gap: 5rem;
+        }
+    }
     @media screen and (max-width:480px){
         &-elements{
             padding: 4rem;
@@ -369,57 +380,13 @@ cursor:pointer;
     &-elements{
         display: flex;
         flex-wrap: wrap;
-        max-width: 60%;
+        max-width: 80%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        gap: 5rem;
+        gap: 10rem;
     }
 }
-
-
-// .motivation-card-container{
-
-//   .motivation-card-item{
-//         padding: 1.5rem;
-//         background-color: var(--card-colors-light);
-
-//         >p {
-//             font-family: var(--slug_way);
-//             color: var(--blue-dark);
-//             font-weight: 500;
-//         }
-
-//         &::after {
-//             position: absolute;
-//             left: 80%;
-//             transform: translateY(15px) rotate(80deg);
-//             content: '';
-//             width: 0;
-//             height: 0;
-//             border-left: 15px solid transparent;
-//             border-right: 15px solid transparent;
-//             border-top: 15px solid var(--card-color-dark);
-//         }
-//   }
-
-
-//       h6 {
-//         font-family: var(--slug_fira);
-//         font-size: var(--tsm1);
-//         transform: translate(43rem, 0.5rem);
-//         font-style: italic;
-//         color: var(--light-slate);
-//         font-weight: 900;
-//     }
-
-
-
-
-// }
-
-
-
 
 .motivation-card-container{
     .motivation-card-item{

@@ -26,11 +26,21 @@
         gap: 3rem;
     }
 
+    @media screen and (max-width:480px) {
+        .title{
+            >h3{
+                text-align: center;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
     @media screen and (max-width:380px) {
         .title{
             >h3{
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.1rem;
             }
         }
     }
@@ -90,6 +100,14 @@
                     height: 300px;
                 }
             }
+            .accomodation-text{
+                h5{
+                    font-size: 1.2rem
+                }
+                >p:nth-child(2){
+                    font-size: 1rem;
+                }
+            }
         }
 
 
@@ -101,6 +119,7 @@
                     height: 250px;
                 }
             }
+
         }
 
             @media screen and (max-width:320px){
