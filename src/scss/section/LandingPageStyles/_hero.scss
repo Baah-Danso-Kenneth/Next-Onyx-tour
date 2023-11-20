@@ -9,15 +9,17 @@
    
     .hero-section-info{
        position: absolute;
-       top: 9rem;
-       left: 14rem;
+       top:20%;
+       left: 50%;
+       transform: translate(-50%,-50%);
        display: flex;
+       width: 80%;
        >p{
            font-size: var(--txtLarge);
            text-transform: uppercase;
            text-align: center;
            color: var(--blue-dark);
-           width: 80%;
+           width: 100%;
            font-family: var(--slug_way);
            font-weight: 600;
        }
@@ -26,14 +28,8 @@
    
     @media screen and (max-width:1450px){
        .hero-section-info{
-          left: 5rem;
-          top: 10rem;
            >p{
              font-size: 3rem;
-             font-weight: 600;
-             width: 55%;
-             transform: translateX(18.2rem);
-             font-weight: 400;
            }
        }
     }
@@ -42,14 +38,8 @@
 
         @media screen and (max-width:1080px){
        .hero-section-info{
-          left: 5rem;
-          top: 10rem;
            >p{
-             font-size: 2.2rem;
-             font-weight: 600;
-             width: 65%;
-             transform: translateX(9.2rem);
-             font-weight: 400;
+            font-size: 2rem;
            }
        }
     }
@@ -61,15 +51,7 @@
        }
    
        .hero-section-info{
-           left: 7.5rem;
-           top: 6rem;
-           >p{
-               font-size: 25px;
-               transform: translateX(0.8rem);
-               width: 80%;
-               text-align: center;
-               font-weight: 400;
-           }
+          top: 20%;
        }
     }
    
@@ -80,28 +62,15 @@
    
    
        .hero-section-info{
-           left: 4rem;
-           top: 4rem;
+        top: 15%;
+        width: 80%;
            >p{
-               font-size: 15px;
-               width: 80%;
-               font-weight: 800;
-               font-weight: 450;
-               transform: translateX(0.3rem);
+              font-size: 1rem;
+              font-weight: 500;
            }
        }
     }
    
    
-    @media screen and (max-width:320px){
-       .hero-section-info{
-           left: 3rem;
-           >p{
-               font-size: 13px;
-               width: 80%;
-               font-weight: 400;
-           }
-       }
-    }
-   
+
    }
