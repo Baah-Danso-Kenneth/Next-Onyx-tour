@@ -1,10 +1,12 @@
+import Layout from '@/components/Layout'
+import Hero from '@/section/Shop/Hero'
 import React from 'react'
 
 function ShopePage() {
   return (
-    <div>
-      wild
-    </div>
+    <Layout>
+      <Hero/>
+    </Layout>
   )
 }
 
