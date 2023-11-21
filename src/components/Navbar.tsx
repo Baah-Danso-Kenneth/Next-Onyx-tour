@@ -9,9 +9,6 @@ import {TfiPlus} from 'react-icons/tfi'
 import { TfiMinus } from 'react-icons/tfi'
 
 
-
-
-
 function Navbar() {
  const [scrolled,setScrolled]=useState(false)
  const [scrollPosition, setSCrollPosition]=useState(0)
@@ -192,3 +189,4 @@ export function FullNavbar() {
     </div>
   )
 }
+
