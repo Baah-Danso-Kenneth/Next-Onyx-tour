@@ -81,7 +81,7 @@ return ()=>{
                 if(title==='shop'){
                   return(
                     <li key={id} className={cName}>
-                    <Link href="/shop" className="list-itm">{title}</Link>
+                    <Link href="/shop/shop_page" className="list-itm">{title}</Link>
                     </li>
                   )
                 }
@@ -156,7 +156,7 @@ return ()=>{
 
                 <div className="tablet-nav-shop">
                       <div className="icons">
-                        <Link href="/shop" className='link'>shop</Link>
+                        <Link href="/shop/shop_page" className='link'>shop</Link>
                       </div>
 
                </div>

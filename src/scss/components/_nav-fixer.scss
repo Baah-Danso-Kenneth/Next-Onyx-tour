@@ -28,6 +28,8 @@
                 text-decoration: none;
                 font-family: var(--slug_fira);
                 font-weight: 600;
+                word-wrap: none;
+                white-space: nowrap;
 
                 .list-itm{
                     text-decoration: none;
@@ -57,6 +59,7 @@
         margin-right: 2.5rem;
         text-transform: uppercase;
         list-style: none;
+        white-space: nowrap;
         text-decoration: none;
         font-family: var(--slug_fira);
 

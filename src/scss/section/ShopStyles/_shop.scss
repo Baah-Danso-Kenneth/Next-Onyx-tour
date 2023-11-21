@@ -26,3 +26,30 @@
      }
     }
 }
+
+.shop-container{
+   background-color: var(--plum-violet);
+   &-elements{
+      max-width: 80%;
+      margin: 0 auto;
+      min-height: auto;
+      .nav-shop-items{
+         max-width: 70%;
+         margin: 0 auto;
+         padding:1rem;
+         nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >button{
+              border: none;
+              background-color: transparent;
+              font-family: var(--slug_fira);
+              text-transform: uppercase;
+              color: var(--light-slate);
+              font-weight: 300;
+            }
+         }
+      }
+   }
+}
