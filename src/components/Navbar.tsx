@@ -11,6 +11,7 @@ import { TfiMinus } from 'react-icons/tfi'
 
 
 
+
 function Navbar() {
 
   return (
@@ -96,11 +97,7 @@ export default Navbar
 
 
 
-
-
-
-
-export function StraightNavbar() {
+export function FullNavbar() {
 
   return (
     <div className='nav-bar-container'>
@@ -178,4 +175,3 @@ export function StraightNavbar() {
     </div>
   )
 }
-
