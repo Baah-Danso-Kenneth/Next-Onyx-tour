@@ -1,0 +1,33 @@
+.app{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+   
+    .nav-bar{
+        grid-area: 1/1/span 1/-1;
+        background-color:var(--blue-dark);
+        position: fixed;
+        
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .content{
+        grid-area: 2/1/span 1/-1;
+    }
+
+    .news-letters{
+        grid-area:3/1/span 1/-1;
+        background-color: pink;
+    }
+
+    .footer{
+        grid-area: 4/1/span 1/-1;
+        background-color:var(--heliotrope-violet);
+    }
+
+
+}
+
