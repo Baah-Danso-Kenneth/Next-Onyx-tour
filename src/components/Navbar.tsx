@@ -11,8 +11,26 @@ import { TfiMinus } from 'react-icons/tfi'
 
 
 
-function Navbar() {
 
+function Navbar() {
+ const [scrolled,setScrolled]=useState(false)
+ const [scrollPosition, setSCrollPosition]=useState(0)
+ const [open,setOpen]=useState(false)
+
+
+ useEffect(()=>{
+  const handleScroll=()=>{
+    const scrollY = window.scrollY || document.documentElement.scrollTop
+    setSCrollPosition(scrollY)
+    const threshold = 500
+    setScrolled(scrollY > threshold)
+  }
+
+  window.addEventListener('scroll',handleScroll)
+  return()=>{
+    window.removeEventListener('scroll', handleScroll)
+  }
+ },[])
   return (
     <div className='nav-bar-container'>
 
@@ -42,7 +60,7 @@ function Navbar() {
             </ul>
         </div>
 
-        <div className='middle-section'>
+        <div className={scrolled ? 'hide-middle-section':'middle-section'}>
           <Image src={CompanyLogo} alt='company-logo' quality={100}/>
         </div>
 
@@ -96,11 +114,7 @@ export default Navbar
 
 
 
-
-
-
-
-export function StraightNavbar() {
+export function FullNavbar() {
 
   return (
     <div className='nav-bar-container'>
@@ -178,4 +192,3 @@ export function StraightNavbar() {
     </div>
   )
 }
-

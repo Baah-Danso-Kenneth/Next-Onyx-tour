@@ -42,7 +42,7 @@
     
   }
 
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 768px) and (max-width: 991.98px){
     &-elements{
         .menu-icon{
             display: none;
@@ -103,4 +103,10 @@
     white-space: nowrap;
     font-size: 13px;
     text-transform: uppercase;
+}
+
+
+// logics
+.hide-middle-section{
+    display: none;
 }
