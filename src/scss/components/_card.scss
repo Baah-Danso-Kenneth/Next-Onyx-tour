@@ -1,0 +1,113 @@
+.recommend-content-container{
+    min-height: auto;
+    padding: 3rem;
+    background-color: var(--blue-dark);
+    &-elements{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.recommendation-items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  margin-bottom: 1rem;
+
+@media (min-width:575.98px) and (max-width:767.98px) {
+    grid-template-columns: 1fr;
+}
+
+@media (max-width:575.98px){
+    grid-template-columns: 1fr;
+}
+}
+
+
+
+.card-container{
+      position: relative;
+      margin-bottom: 2rem;
+      .card-item{
+         background-color: var(--card-colors-light);
+         padding: 2rem;
+
+            >p {
+            font-family: var(--slug_way);
+            color: var(--blue-dark);
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+
+                &::after {
+            position: absolute;
+            left: 80%;
+            transform: translateY(22px) rotate(80deg);
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid var(--card-color-dark);
+
+        }
+
+      }
+
+        h6 {
+        position: absolute;
+        font-family: var(--slug_fira);
+        font-size: var(--tsm1);
+        transform: translate(12rem, 1rem);
+        font-style: italic;
+        color: var(--light-slate);
+        font-weight: 300;
+
+    }
+
+    @media (min-width:768px) and (max-width:991.98px) {
+      margin-bottom: 0.8rem;
+       h6{
+        transform: translate(5rem,0.8rem);
+       }
+    }
+    @media (min-width:575.98px) and (max-width:767.98px) {
+
+        h6{
+            transform: translate(18rem,1rem);
+        }
+    }
+
+    @media (max-width:575.98px) {
+        .card-item{
+            >p{
+                font-size: 1rem;
+
+            }
+        }
+         h6{
+            transform: translate(6rem,1rem);
+            font-size: 0.8rem;
+        }
+}
+
+
+    @media (min-width:380px) and (max-width:500px){
+        .card-item{
+            >p{
+                font-size: 1rem;
+            }
+        }
+         h6{
+            transform: translate(12rem,1rem);
+            font-size: 0.8rem;
+
+        }
+}
+
+    // @media (max-width:380px) {
+    //     }
+    //      h6{
+    //         transform: translate(6rem,1rem);
+    //     }
+}

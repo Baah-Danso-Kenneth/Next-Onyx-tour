@@ -9,9 +9,6 @@ import {TfiPlus} from 'react-icons/tfi'
 import { TfiMinus } from 'react-icons/tfi'
 
 
-
-
-
 function Navbar() {
  const [scrolled,setScrolled]=useState(false)
  const [scrollPosition, setSCrollPosition]=useState(0)
@@ -32,7 +29,7 @@ function Navbar() {
   }
  },[])
   return (
-    <div className='nav-bar-container'>
+    <div className={scrolled ?'increase-padding': 'nav-bar-container'}>
 
       <div className='nav-bar-container-elements'>
 
@@ -192,3 +189,4 @@ export function FullNavbar() {
     </div>
   )
 }
+

@@ -1,9 +1,0 @@
-@import 'variables';
-@import 'globals';
-@import 'app';
-@import 'components/nav_bar.scss';
-@import 'components/LandingPageStyles/_index.scss';
-
-
-
-

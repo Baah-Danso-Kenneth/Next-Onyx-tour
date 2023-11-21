@@ -1,0 +1,338 @@
+.where-we-go-container{
+    min-height: auto;
+    padding: 4rem;
+    background-color: var(--cove-blue);
+    &-elements{
+        max-width: 90%;
+        margin: 0 auto;
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >h1{
+                text-transform: uppercase;
+                font-family: var(--slug_fira);
+                font-size: 3rem;
+                font-weight: 300;
+                color: var(--light-slate);
+                word-spacing: -1rem;
+                margin-bottom: 2rem;
+
+            }
+        }
+        .places{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap: 2rem;
+
+        }
+
+    }
+
+  @media (min-width: 768px) and (max-width: 991.98px){
+    &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        .places{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+  }
+    @media (min-width: 575.98px) and (max-width: 767.98px){
+        &-elements{
+            .places{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+    }
+
+      @media (max-width: 575px){
+       &-elements{
+        max-width: 100%;
+        margin: 0 auto;
+        .title{
+            h1{
+                font-size: 1.8rem;
+                word-wrap: none;
+                white-space: nowrap;
+                word-spacing: -0.5rem;
+            }
+        }
+        .places{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+        }
+       }
+      }   
+      
+      
+
+
+      @media (max-width: 480px){
+       &-elements{
+        max-width: 60%;
+        margin: 0 auto;
+        .title{
+            h1{
+                font-size: 1.8rem;
+                word-wrap: none;
+                white-space: nowrap;
+                word-spacing: -0.5rem;
+            }
+        }
+        .places{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+        }
+       }
+      }  
+
+     @media (max-width:400px) {
+        .places{
+            grid-template-columns: repeat(2,1fr);
+
+        }
+      }
+
+      @media (max-width:380px) {
+        .places{
+            grid-template-columns: 1fr;
+        }
+      }
+}
+
+
+
+.places-container{
+    position: relative;
+    cursor:pointer; 
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 240.8px;
+        height: 317px;
+        background-color: rgba(0,0,0,0.5);
+        pointer-events:none;
+        transition: background-color 0.5s ease;
+    }  
+    
+    &:hover::after{
+        background-color: rgba(0,0,0,0.3);
+    }
+    >img{
+        width: 240.8px;
+        height: 317px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    .place{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%);
+    z-index:50;
+    font-size:2rem;
+    word-wrap:break-word;
+    color: #fff;
+    text-align:center;
+    text-transform:uppercase;
+    font-family:var(--slug_fira);
+    line-height:25px;
+
+    }
+
+    .logo-itenary{
+        position:absolute;
+    top:80%;
+    color:#fff;
+    left:18%;
+
+    display:flex;
+    align-items:center;
+    z-index:50;
+
+    >h1{
+        font-weight:500;
+        font-size:11px;
+        white-space: nowrap;
+        font-family: var(--slug_way);
+        text-transform: uppercase;
+    }
+
+    >p{
+        margin-left:0.8rem;
+        font-weight:200;
+        font-size: 12px;
+        font-weight: 500;
+        ;
+    }
+    }
+
+
+    @media (min-width: 768px) and (max-width: 991.98px){
+       >img{
+        width: 160px;
+        height: 210px;
+        margin-bottom: 1rem;
+       }
+       &::after{
+        width: 160px;
+        height: 210px;
+       }
+       .logo-itenary{
+         font-size: 0.7rem;
+         left: 10%;
+       }
+       .place{
+        left: 50%;
+        top: 30%;
+       }
+    }
+    @media (min-width: 575.98px) and (max-width: 767.98px){
+        >img{
+            width: 230px;
+            height: 280px;
+        }
+        &::after{
+            width: 230px;
+            height: 280px;
+        }
+
+        .place{
+           left: 50%;
+        }
+    }
+
+    @media (max-width: 575px){
+        >img{
+            width:200px;
+            height: 260px;
+            margin-bottom: 0.3rem;
+        }
+        &::after{
+            width: 200px;
+            height: 260px;
+        }
+
+     .place{
+        font-size: 1.3rem;
+        white-space: nowrap;
+     }
+     .logo-itenary{
+        left: 20%;
+        h1{
+            white-space: nowrap;
+            font-size: 0.7rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+     }
+    }   
+
+
+        @media (max-width: 480px){
+        >img{
+            width:180px;
+            height:250px;
+            margin-bottom: 0.3rem;
+        }
+        &::after{
+            width: 180px;
+            height: 250px;
+        }
+
+     .place{
+        font-size: 1.5rem;
+        white-space: nowrap;
+        top:40%;
+        left:50%;
+     }
+     .logo-itenary{
+        left: 15%;
+        top: 85%;
+        h1{
+            white-space: nowrap;
+            font-size: 0.7rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+     }
+    }   
+
+
+     @media (max-width: 400px){
+        >img{
+            width:150px;
+            height:250px;
+            margin-bottom: 0.3rem;
+        }
+        &::after{
+            width: 150px;
+            height: 250px;
+        }
+
+     .place{
+        font-size: 1.5rem;
+        white-space: nowrap;
+        top:40%;
+        left:50%;
+     }
+     .logo-itenary{
+        left: 20%;
+        top: 85%;
+        h1{
+            white-space: nowrap;
+            font-size: 0.6rem;
+        }
+        p{
+            font-size: 0.5rem;
+        }
+     }
+    }  
+        @media (max-width: 380px){
+        >img{
+            width:200px;
+            height:280px;
+            margin-bottom: 0.3rem;
+        }
+        &::after{
+            width: 200px;
+            height: 280px;
+        }
+
+     .place{
+        font-size: 1.5rem;
+        white-space: nowrap;
+        top:40%;
+        left:50%;
+     }
+     .logo-itenary{
+        left: 20%;
+        top: 85%;
+        h1{
+            white-space: nowrap;
+            font-size: 0.8rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+     }
+    }  
+
+
+}
