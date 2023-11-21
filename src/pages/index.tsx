@@ -1,13 +1,14 @@
+import Hero from '@/components/LandingPage/Hero'
 import Layout from '@/components/shared/Layout'
 import React from 'react'
 
 function HomePage() {
   return (
-    <Layout>
-      <h3>wild</h3>
-      <h3>wild</h3>
+  <Layout>
+    <Hero/>
     </Layout>
   )
 }
 
 export default HomePage
+
