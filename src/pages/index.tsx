@@ -1,3 +1,4 @@
+import Grouped from '@/components/LandingPage/Grouped'
 import Hero from '@/components/LandingPage/Hero'
 import Recommend from '@/components/LandingPage/Recommend'
 import WhatWeDo from '@/components/LandingPage/WhatWeDo'
@@ -12,6 +13,7 @@ function HomePage() {
     <WhatWeDo/>
     <WhereWeGo/>
     <Recommend/>
+    <Grouped/>
     </Layout>
   )
 }
