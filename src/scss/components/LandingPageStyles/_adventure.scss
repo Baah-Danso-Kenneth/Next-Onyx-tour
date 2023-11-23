@@ -1,0 +1,198 @@
+.adventure-components{
+    min-height: auto;
+    padding: 4rem;
+    background-color: var(--plum-violet);
+    &-elements{
+        max-width: 90%;
+        margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     .title{
+        display: flex;
+        justify-content: center;
+         h1{
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        width: 85%;
+        font-family: var(--slug_fira);
+        text-transform: uppercase;
+        color: var(--light-slate);
+
+      }
+     }
+     &-image{
+        >img{
+            width: 559.7px;
+            height: 544.5px;
+            object-fit: cover;
+        }
+     }
+
+     &-text{
+
+      p{
+        line-height: 2rem;
+        text-align: center;
+        color: var(--lightest-slate);
+        font-family: var(--slug_way);
+      }
+
+      .adventure-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        >button{
+           padding: 15px 50px 15px;
+           background-color: var(--heliotrope-violet);
+           border: none;
+           outline: none;
+           border-radius: 5px;
+           color: var(--blue-dark);
+           font-size: 1rem;
+           text-transform: uppercase;
+           font-family: var(--slug_fira);
+           font-weight: 400;
+           white-space: nowrap;
+        }
+      }
+     }
+    }
+
+    @media (min-width:768px) and (max-width:991.98px) {
+      &-elements{
+        max-width: 100%;
+        margin: 0 auto;
+        .title{
+          h1{
+            font-size: 1.5rem;
+            width: 100%;
+          }
+        }
+        &-image{
+          >img{
+          width: 400px;
+          height: 400px;
+          }
+        }
+
+        &-text{
+          p{
+            font-family: 1rem;
+          }
+
+          .adventure-btn{
+            >buttton{
+              padding: 13px 40px 13px;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+.adventure-components-second{
+     background-color: var(--cove-blue);
+     min-height: auto;
+     padding: 4rem;
+
+     &-elements{
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap:1rem;
+      flex-flow: row-reverse;
+      .title{
+         display: flex;
+        justify-content: center;
+
+            h1{
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        width: 70%;
+        font-family: var(--slug_fira);
+        text-transform: uppercase;
+        color: var(--light-slate);
+      }
+     }
+
+       .adventure-components-elements-second-image{
+        >img{
+            width: 559.7px;
+            height: 544.5px;
+            object-fit: cover;
+        }
+     }
+
+      .adventure-components-elements-second-text{
+      p{
+        line-height: 2rem;
+        text-align: center;
+        color: var(--blue-dark);
+        font-family: var(--slug_way);
+      }
+
+      .adventure-second-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        >button{
+           padding: 15px 50px 15px;
+           background-color: var(--heliotrope-violet);
+           border: none;
+           outline: none;
+           border-radius: 5px;
+           color: var(--blue-dark);
+           font-size: 1rem;
+           text-transform: uppercase;
+           font-family: var(--slug_fira);
+           font-weight: 400;
+        }
+      }
+     }
+}
+
+
+
+    @media (min-width:768px) and (max-width:991.98px) {
+      &-elements{
+        max-width: 100%;
+        margin: 0 auto;
+        .title{
+          h1{
+            font-size: 1.5rem;
+            width: 100%;
+          }
+        }
+        .adventure-components-elements-second-image{
+          >img{
+          width: 400px;
+          height: 400px;
+          }
+        }
+
+        &-text{
+          p{
+            font-family: 1rem;
+          }
+
+          .adventure-second-btn{
+            >buttton{
+              padding: 13px 40px 13px;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+}
