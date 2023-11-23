@@ -1,0 +1,263 @@
+.news-letter-container{
+    min-height: auto;
+    background-color: var(--blue-dark);
+    padding: 2rem;
+    &-elements{
+        max-width: 90%;
+        margin: 0 auto;
+
+        .text-content{
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            &-title{
+                display: flex;
+                justify-content: center;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+               
+                >h1{
+                  font-family: var(--slug_fira);
+                   font-weight: 300;
+                   color: var(--light-slate);
+                   word-spacing: -10px;
+                }
+            }
+
+            >p{
+                font-size: 0.8rem;
+                color: var(--lightest-slate);
+                text-align: center;
+                margin-bottom: 2rem;
+                font-family: var(--slug_way);
+            }
+        }
+
+        .form-content{
+            form{
+                margin-bottom: 2rem;
+                .names{
+                    display: flex;
+                    gap: 1rem;
+                    input{
+                      padding: 15px 15px 15px;
+                    }
+                }
+                .email{
+                    input{
+                        padding: 15px 15px 15px;
+                    }
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                .news-letter-btn{
+                    >button{
+                        padding: 15px 30px 15px;
+                        white-space: nowrap;
+                        color: var(--blue-dark);
+                        border-radius: 5px;
+                        border: none;
+                        outline: none;
+                        font-weight: 500;
+                        font-size: 0.8rem;
+                        font-family: var(--slug_fira);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .p-tag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           p{
+            font-size: 0.8rem;
+            font-family: var(--slug_way);
+            color: var(--lightest-slate);
+            font-style: italic;
+           }
+        }
+
+    }
+
+
+    @media (min-width:768px) and (max-width:991.98px) {
+      &-elements{
+
+        .text-content{
+            &-title{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .form-content{
+            form{
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+
+              .names{
+                input{
+                    padding: 13px 10px 13px;
+                }
+              }
+
+              .email{
+                margin-bottom: 0.5rem;
+                input{
+                    padding: 13px 10px 13px;
+                }
+              }
+
+
+              .news-letter-btn{
+                margin-bottom: 2rem;
+                >button{
+                    padding: 15px 50px 15px;
+                }
+              }
+            }
+            
+        }
+      }
+    }
+
+
+@media (min-width:575px) and (max-width:767.98px){
+        &-elements{
+
+        .text-content{
+            &-title{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .form-content{
+            form{
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+
+              .names{
+                input{
+                    padding: 13px 10px 13px;
+                }
+              }
+
+              .email{
+                margin-bottom: 0.5rem;
+                input{
+                    padding: 13px 10px 13px;
+                }
+              }
+
+
+              .news-letter-btn{
+                margin-bottom: 2rem;
+                >button{
+                    padding: 15px 50px 15px;
+                }
+              }
+            }
+            
+        }
+      }
+}
+
+@media (max-width:575px){
+       &-elements {
+        .text-content {
+            &-title {
+                h1 {
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+            }
+
+            p{
+                font-size: 0.9rem;
+            }
+        }
+
+        .form-content{
+            form{
+                flex-flow: column;
+                .names{
+                    flex-flow: column;
+                    input{
+                        width: 300px;
+                    }
+                }
+
+                .email{
+                    input{
+                        width: 300px;
+                    }
+                }
+
+                .news-letter-btn{
+                    >button{
+                        padding: 15px 40px 15x;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .p-tag{
+            p{
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width:380px)  {
+    &-elements {
+        .text-content {
+            &-title {
+                h1 {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+
+            p{
+                font-size: 0.7rem;
+            }
+        }
+
+        .form-content{
+            form{
+                .names{
+                    input{
+                        width: 200px;
+                    }
+                }
+
+                .email{
+                    input{
+                        width: 200px;
+                    }
+                }
+
+                .news-letter-btn{
+                    >button{
+                        padding: 10px 20px 10px;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+    }}
+}
