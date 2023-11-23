@@ -31,16 +31,6 @@ export const AboutItem=[
 ]
 
 
-export const ShopItems=[
-    {
-      id:1,
-      title:"Onyx group shop",
-      path:"/onyx",
-      cName:"list-item"
-
-    },
-]
-
 
 export const RighSection=[
     {

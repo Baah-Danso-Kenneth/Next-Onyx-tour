@@ -1,4 +1,5 @@
 .nav-bar-container{
+    position: relative;
     padding: 0.5rem;
     min-height: auto;
     &-elements{
@@ -10,6 +11,7 @@
         gap: 1rem;
 
         .right-section{
+            position: relative;
             ul{
                 display: flex;
                 justify-content: center;
@@ -32,6 +34,10 @@
         .left-section{
             @extend .right-section
         }
+
+        .tablet-mobile-icon{
+            display: none;
+        }
     }
   @media (min-width:1200px){
     &-elements{
@@ -47,6 +53,14 @@
         .menu-icon{
             display: none;
         }
+
+        .middle-section{
+            display: block;
+        }
+
+        .tablet-mobile-icon{
+            display: none;
+        }
     }
    }
     @media (min-width:575.98px) and (max-width:767.98px) {
@@ -54,8 +68,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-flow: row-reverse;
-
             .right-section{
                 display: none;
             }
@@ -65,6 +77,18 @@
                 color: var(--light-slate);
                 font-size: 2rem;
             }
+
+            .middle-section{
+                display: none;
+            }
+            .tablet-mobile-icon{
+                display: block;
+                 > img{
+                width: 100%;
+                height: 5rem;
+                object-fit: cover;
+            }
+            }
         }
     }
 
@@ -72,7 +96,6 @@
     @media (max-width:575px){
        &-elements{
           justify-content: space-between;
-          flex-flow: row-reverse;
           .right-section{
             display: none;
           }
@@ -83,8 +106,18 @@
           }
 
           .middle-section{
+
+            display: none;
             img{
                 height: 3rem;
+            }
+          }
+          .tablet-mobile-icon{
+            display: block;
+                > img{
+                width: 100%;
+                height: 3rem;
+                object-fit: cover;
             }
           }
        }
@@ -113,4 +146,11 @@
 
 .increase-padding{
     padding: 0.8rem;
+
+ @media (min-width:575.98px) and (max-width:767.98px) {
+    padding: 0.5rem;
+ }
+        @media (max-width:575px){
+          padding: 0.5rem;
+        }    
 }

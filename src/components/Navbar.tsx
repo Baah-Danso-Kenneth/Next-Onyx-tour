@@ -7,13 +7,15 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {CgClose} from 'react-icons/cg'
 import {TfiPlus} from 'react-icons/tfi'
 import { TfiMinus } from 'react-icons/tfi'
+import { AboutDropDown, DestinationDropDown } from './DropDown'
 
 
 function Navbar() {
  const [scrolled,setScrolled]=useState(false)
  const [scrollPosition, setSCrollPosition]=useState(0)
  const [open,setOpen]=useState(false)
-
+ const [dropDown, setDropDown]=useState(false)
+ const [about,setAbout]=useState(false)
 
  useEffect(()=>{
   const handleScroll=()=>{
@@ -41,8 +43,11 @@ function Navbar() {
                       <li
                       key={id}
                       className={cName}
+                      onMouseEnter={()=>setDropDown(true)}
+                      onMouseLeave={()=>setDropDown(false)}
                        >
                        <Link href={path} className='list-item'>{title}</Link>
+                       {dropDown && <div className={scrolled ? "scrolled-destination" : ""}><DestinationDropDown/></div>}
                       </li>
                     )
                 }
@@ -76,8 +81,12 @@ function Navbar() {
                 else if(title==='about'){
                   return(
                     <li key={id}
+                    className={cName}
+                    onMouseEnter={()=>setAbout(true)}
+                    onMouseLeave={()=>setAbout(false)}
                     >
                       <Link href="#" className='list-item'>{title}</Link>
+                      {about && <div className={scrolled ? 'scrolled-about': ''}><AboutDropDown/></div>}
                     </li>
                   )
 
@@ -95,9 +104,12 @@ function Navbar() {
         </div>
 
       <div className="menu-icon">
-         <CgClose/>
+        {open  ? <CgClose onClick={()=>setOpen(!open)}/>  : <GiHamburgerMenu onClick={()=>setOpen(!open)}/>}
       </div>
 
+     <div className="tablet-mobile-icon">
+        <Image src={CompanyLogo} alt='company-logo' quality={100}/>
+     </div>
 
       </div>  
 
