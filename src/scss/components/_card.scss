@@ -36,7 +36,7 @@
             font-family: var(--slug_way);
             color: var(--blue-dark);
             font-weight: 500;
-            line-height: 1.5rem;
+            line-height: 2rem;
         }
 
                 &::after {
@@ -81,7 +81,7 @@
     @media (max-width:575.98px) {
         .card-item{
             >p{
-                font-size: 1remi;
+                font-size: 1rem;
 
             }
         }
@@ -94,8 +94,12 @@
 
     @media (min-width:380px) and (max-width:500px){
         .card-item{
+            padding: 1rem;
             >p{
-                font-size: 1rem;
+                font-size: 0.8rem;
+            }
+            &::after{
+                transform: translateY(5px) rotate(80deg);
             }
         }
          h6{
