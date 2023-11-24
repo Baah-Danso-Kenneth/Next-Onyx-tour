@@ -11,11 +11,13 @@ import { AboutDropDown, DestinationDropDown } from './DropDown'
 
 
 function Navbar() {
- const [scrolled,setScrolled]=useState(false)
- const [scrollPosition, setSCrollPosition]=useState(0)
- const [open,setOpen]=useState(false)
- const [dropDown, setDropDown]=useState(false)
- const [about,setAbout]=useState(false)
+const [scrolled,setScrolled]=useState(false)
+const [scrollPosition, setSCrollPosition]=useState(0)
+const [open,setOpen]=useState(false)
+const [toggleDestination,setToggleDestination]=useState(false)
+const [toggleAbout,setToggleAbout]=useState(false)
+const [dropDown, setDropDown]=useState(false)
+const [about,setAbout]=useState(false)
 
  useEffect(()=>{
   const handleScroll=()=>{
@@ -31,7 +33,7 @@ function Navbar() {
   }
  },[])
   return (
-    <div className={scrolled ?'increase-padding': 'nav-bar-container'}>
+    <div className={scrolled ?'increase-padding height-annex': 'nav-bar-container'}>
 
       <div className='nav-bar-container-elements'>
 
@@ -66,7 +68,7 @@ function Navbar() {
           <Image src={CompanyLogo} alt='company-logo' quality={100}/>
         </div>
 
-        <div className={scrolled ? "right-section shoot-up": "left-section"}>
+        <div className={scrolled ? "left-section shoot-up shift-text": "left-section"}>
            <ul>
             {LeftSection.map(({id,title,cName})=>{
 
@@ -112,6 +114,65 @@ function Navbar() {
      </div>
 
       </div>  
+
+   {open && (
+        <div className={scrolled ? "shift-navbar":"sidebar"}>
+
+          <div className="sidebar-elements">
+
+              <div className="home">
+                <Link href="/">Home</Link>
+              </div>
+
+                  <div className="sidebar-destination">
+                      <div className="icons-text">
+                        {toggleDestination ? <TfiPlus  className='icon'onClick={()=>setToggleDestination(false)}/> : <TfiMinus  className='icon'onClick={()=>setToggleDestination(true)}/>}
+                        <h3>destination</h3>
+                      </div>
+                      {toggleDestination && (
+                       <ul>
+                        <Link href="/group-trip/winter" className='header-title'>winter trip</Link>
+                        <Link href="/group-trip/summer" className='header-title'>summer trip</Link>
+                      </ul>
+
+                      )}         
+                 </div>
+
+                 <div className="sidebar-gallery">
+                    <Link href="/" className='header-title'>Gallery</Link>
+                </div>
+
+                <div className="tablet-nav-custom-trips">
+                    <Link href="/">Custom trips</Link>
+                </div>
+
+                 <div className="tablet-nav-custom-trips">
+                    <Link href="/">shop</Link>
+                </div>
+
+              
+
+                <div className="sidebar-destination">
+                      <div className="icons-text">
+                        {toggleAbout ? <TfiPlus  className='icon'onClick={()=>setToggleAbout(false)}/> : <TfiMinus  className='icon'onClick={()=>setToggleAbout(true)}/>}
+                        <h3>About</h3>
+                      </div>
+                      {toggleAbout && (
+                       <ul>
+                        <Link href="/group-trip/winter" className='header-title'>our team</Link>
+                        <Link href="/group-trip/summer" className='header-title'>our team</Link>
+                      </ul>
+
+                      )}         
+                 </div>
+               
+
+
+          </div>
+      </div>
+   )}
+
+
 
     </div>
   )

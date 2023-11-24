@@ -8,6 +8,7 @@
         .logo{
             display: flex;
             margin-bottom: 2rem;
+            justify-content: center;
             >img{
                 width: 30%;
                 height: 150px;
@@ -66,8 +67,12 @@
     @media (max-width:575px){
 
         &-elements{
-            max-width: 100%;
+            max-width: 80%;
             margin: 0 auto;
+            .logo{
+               justify-content: center;
+               margin-bottom: 0.8rem;
+            }
             .statement{
                 p{
                     font-size: 0.8rem;
@@ -75,15 +80,20 @@
             }
 
             .contacts{
+                justify-content: center;
                 h3{
                     font-size: 1rem;
+                    text-align: center;
                 }
                 p{
                     font-size: 0.8rem;
+                    text-align: center;
                 }
 
                 h5{
                     font-size: 1rem;
+                    text-align: center;
+                    white-space: nowrap;
                 }
             }
 
