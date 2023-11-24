@@ -7,12 +7,24 @@ import Recommend from '@/components/LandingPage/Recommend'
 import Sponsors from '@/components/LandingPage/Sponsors'
 import WhatWeDo from '@/components/LandingPage/WhatWeDo'
 import WhereWeGo from '@/components/LandingPage/WhereWeGo'
+import Loading from '@/components/Loader'
 import Layout from '@/components/shared/Layout'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function HomePage() {
+    const [isLoading, setIsLoading]=useState(false)
+
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(true)
+    }, 3000);
+  },[])
+
   return (
-  <Layout>
+    !isLoading ? <Loading/> : (
+      <>
+    <Layout>
     <Hero/>
     <WhatWeDo/>
     <WhereWeGo/>
@@ -23,6 +35,10 @@ function HomePage() {
     <Instruction/>
     <KindWords/>
     </Layout>
+      </>
+
+    )
+
   )
 }
 

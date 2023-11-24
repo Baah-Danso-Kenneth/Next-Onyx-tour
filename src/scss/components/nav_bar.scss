@@ -1,4 +1,5 @@
 .nav-bar-container{
+    padding: 0.3rem;
     position: relative;
     min-height: auto;
     &-elements{
@@ -37,15 +38,12 @@
         .tablet-mobile-icon{
             display: none;
         }
-    }
-  @media (min-width:1200px){
-    &-elements{
+
         .menu-icon{
             display: none;
         }
     }
-    
-  }
+
 
   @media (min-width: 768px) and (max-width: 991.98px){
     &-elements{
@@ -75,6 +73,7 @@
                 display: block;
                 color: var(--light-slate);
                 font-size: 2rem;
+                z-index: 500;
             }
 
             .middle-section{
@@ -82,6 +81,7 @@
             }
             .tablet-mobile-icon{
                 display: block;
+                z-index: 500;
                  > img{
                 width: 100%;
                 height: 5rem;
@@ -102,6 +102,7 @@
              display: block;
              color: var(--light-slate);
              font-size: 1.5rem;
+             z-index: 500;
           }
 
           .middle-section{
@@ -120,8 +121,38 @@
             }
           }
        }
+    }
 
+    @media (min-width:300px) and (max-width:530.98px) {
+            &-elements{
+          justify-content: space-between;
+          .right-section{
+            display: none;
+          }
+          .menu-icon{
+             display: block;
+             color: var(--light-slate);
+             font-size: 1.5rem;
+             z-index: 500;
+          }
 
+          .middle-section{
+
+            display: none;
+            img{
+                height: 3rem;
+            }
+          }
+          .tablet-mobile-icon{
+            display: block;
+            z-index: 500;
+                > img{
+                width: 100%;
+                height: 3rem;
+                object-fit: cover;
+            }
+          }
+       }
     }
 }
 
@@ -144,7 +175,8 @@
 }
 
 .increase-padding{
-    height: 40px;
+    height: 55px;
+    padding: 0.5rem;
 
  @media (min-width:575.98px) and (max-width:767.98px) {
     padding: 0.5rem;
@@ -177,19 +209,27 @@
 
 
 .sidebar{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     background-color:var(--blue-dark);
 
     &-elements{
-        margin-top: 3rem;
+        margin-top: 10rem;
+        margin-left: -3rem;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
+        font-family: var(--slug_fira);
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1rem;
 
         .sidebar-destination{
+            margin-bottom: 0.8rem;
             text-align: start;
              color: var(--light-slate);
             .icons-text{
@@ -197,8 +237,11 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            margin-bottom: 1rem;
             text-align: start;
+            h3{
+                font-weight: 400;
+                font-size: 1rem;
+            }
         }
 
         ul{
@@ -208,23 +251,76 @@
          align-items: center;
 
          .header-title{
-            margin-left: 1.5rem;
+            margin-left: 2rem;
             margin-bottom: 0.6rem;
+            margin-top: 0.3rem;
             text-decoration: none;
             text-transform: uppercase;
             color: var(--light-slate);
-            font-size: 0.8rem;
+            font-size: 1rem;
          }
         }
         }
 
 
         .sidebar-gallery{
+            margin-bottom: 0.8rem;
             .header-title{
+                text-decoration: none;
+                color: var(--light-slate);   
             }
         }
 
+
+        .custom-trips{
+            margin-bottom: 0.8rem;
+            margin-left: 2.8rem;
+            .header-title{
+                text-decoration: none;
+                color: var(--light-slate);     
+        }
     }
+
+        .shop-trips{
+            @extend .custom-trips;
+            margin-left:-2rem;
+        }
+
+        .home{
+            margin-bottom: 0.8rem;
+                .header-title{
+                text-decoration: none;
+                color: var(--light-slate);   
+                margin-left: -2rem;  
+           }
+        }
+
+        .sidebar-about{
+            @extend .sidebar-destination;
+            margin-left: -3rem;
+            ul{
+            .header-title{
+                margin-left: 4rem;
+            }
+        }
+        }
+
+    // @media (min-width:768px) and (max-width:991.98px) {
+    //    display: none;
+    // }
+
+    // @media (min-width:768px) and (max-width:991.98px) {
+    //    display: none;
+    // }
+    //  @media (min-width:575.98px) and (max-width:767.98px) {
+    //     display: block;
+    //  }
+
+    //      @media (max-width:575px){
+    //         display: block;
+    //      }
+
+
 }
 
 .shift-navbar{
@@ -233,6 +329,8 @@
     width: 150%;
     margin-right: -20rem;
     height: 100vh;   
-    background-color: red;
+    background-color: blue;
     
+}
+
 }
