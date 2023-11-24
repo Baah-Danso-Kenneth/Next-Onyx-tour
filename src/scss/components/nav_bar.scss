@@ -1,6 +1,5 @@
 .nav-bar-container{
     position: relative;
-    padding: 0.5rem;
     min-height: auto;
     &-elements{
         max-width: 80%;
@@ -145,7 +144,7 @@
 }
 
 .increase-padding{
-    padding: 0.8rem;
+    height: 70px;
 
  @media (min-width:575.98px) and (max-width:767.98px) {
     padding: 0.5rem;
@@ -153,4 +152,13 @@
         @media (max-width:575px){
           padding: 0.5rem;
         }    
+}
+
+.nav-item{
+  height: 100px;
+  transform: translateY(2.59rem);
+}
+
+.right-section.shoot-up{
+    transform: translateY(-0.9rem);
 }

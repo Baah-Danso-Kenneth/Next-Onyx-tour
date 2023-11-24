@@ -35,7 +35,7 @@ function Navbar() {
 
       <div className='nav-bar-container-elements'>
 
-        <div className="right-section">
+        <div className={scrolled ? "right-section shoot-up": "right-section"}>
             <ul>
             {RighSection.map(({id,title,cName,path})=>{
                 if(title==='group trips'){
@@ -66,7 +66,7 @@ function Navbar() {
           <Image src={CompanyLogo} alt='company-logo' quality={100}/>
         </div>
 
-        <div className='left-section'>
+        <div className={scrolled ? "right-section shoot-up": "left-section"}>
            <ul>
             {LeftSection.map(({id,title,cName})=>{
 

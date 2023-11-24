@@ -1,12 +1,12 @@
 .destination-card{
  position: absolute;
-  top:3.2rem;
-  left: 3rem;
+  top:3.5rem;
+  left: -3.2rem;
   background-color:var(--blue-dark);
   display: flex;
   flex-flow: column;
   font-size: 13px;
-  width: 50%;
+  width: 250%;
 
   >li:nth-child(1){
     transform: translateY(0.3rem);
@@ -26,12 +26,13 @@
 .about{
  position: absolute;
   top:3.2rem;
-  left: 3rem;
+  left: -8rem;
+  transform: translateX(-14rem);
   background-color:var(--blue-dark);
   display: flex;
   flex-flow: column;
   font-size: 13px;
-  width: 50%;
+  width: 400%;
 
   >li:nth-child(1){
     transform: translateY(0.3rem);
@@ -50,18 +51,18 @@
 
 .scrolled-destination{
    position: absolute;
-   top: -1.5rem;
-   left: 1rem;
-   width: 90%;
+   top: -1rem;
+   left: -1rem;
+   width: 120%;
    background-color: var(--blue-dark);
 
 }
 
 .scrolled-about{
    position: absolute;
-   top: -1.5rem;
-   left: 0.5rem;
-   width: 90%;
+   top: -0.8rem;
+   left: -0.3rem;
+   width: 120%;
    background-color: var(--cove-blue);
 
 
