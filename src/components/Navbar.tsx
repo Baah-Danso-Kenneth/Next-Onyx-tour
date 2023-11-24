@@ -1,52 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import CompanyLogo from '../../public/assets/images/onyxx-logo.png'
-import { AboutDropDown, DestinationDropDown, ShopDropDown} from './DropDown';
-import { LeftSection, RighSection, ShopItems } from './NavItems';
-import Link from 'next/link';
+import Link from 'next/link'
+import { LeftSection, RighSection } from './NavBarItems'
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {CgClose} from 'react-icons/cg'
 import {TfiPlus} from 'react-icons/tfi'
 import { TfiMinus } from 'react-icons/tfi'
+import { AboutDropDown, DestinationDropDown } from './DropDown'
+
 
 function Navbar() {
-  const [dropDown, setDropDown] = useState(false)
-  const [about,setAbout]=useState(false)
-  const [shop, setShop]=useState(false)
-  const [scrolled, setScrolled]=useState(false)
-  const [scrollPosition, setScrolledPosition]=useState(0)
-  const [toggleDestination,setToggleDestination]=useState(false)
-  const [toggleshop,setToggleShop]=useState(false)
-  const [toggleAbout,setToggleAbout]=useState(false)
+ const [scrolled,setScrolled]=useState(false)
+ const [scrollPosition, setSCrollPosition]=useState(0)
+ const [open,setOpen]=useState(false)
+ const [dropDown, setDropDown]=useState(false)
+ const [about,setAbout]=useState(false)
 
-  const [open,setOpen]=useState(false)
-
-
-
-useEffect(()=>{
+ useEffect(()=>{
   const handleScroll=()=>{
     const scrollY = window.scrollY || document.documentElement.scrollTop
-    setScrolledPosition(scrollY)
-    const threshold=600;
+    setSCrollPosition(scrollY)
+    const threshold = 500
     setScrolled(scrollY > threshold)
-}
+  }
 
-window.addEventListener('scroll',handleScroll)
-return ()=>{
-  window.removeEventListener('scroll', handleScroll)
-}
-
-},[])  
-
-
+  window.addEventListener('scroll',handleScroll)
+  return()=>{
+    window.removeEventListener('scroll', handleScroll)
+  }
+ },[])
   return (
-    <div className='block-nav'>
-    <div className={scrolled ?'nav-container-fix cut-head':'nav-container-fix'}>
-      <div className={scrolled ?"nav-container-fix-element center-elements":"nav-container-fix-element"}>
+    <div className={scrolled ?'increase-padding': 'nav-bar-container'}>
 
-        <div className="right-section">
+      <div className='nav-bar-container-elements'>
+
+        <div className={scrolled ? "right-section shoot-up": "right-section"}>
             <ul>
-              {RighSection.map(({id,title,cName,path})=>{
+            {RighSection.map(({id,title,cName,path})=>{
                 if(title==='group trips'){
                     return(
                       <li
@@ -55,33 +46,34 @@ return ()=>{
                       onMouseEnter={()=>setDropDown(true)}
                       onMouseLeave={()=>setDropDown(false)}
                        >
-                       <Link href={path} className='header-title'>{title}</Link>
-                       {dropDown && <div className={scrolled?"scrolled-destination":""}><DestinationDropDown/></div>}
+                       <Link href={path} className='list-item'>{title}</Link>
+                       {dropDown && <div className={scrolled ? "scrolled-destination" : ""}><DestinationDropDown/></div>}
                       </li>
                     )
                 }
 
                 return(
                   <li key={id} className={cName}>
-                    <Link href={path} className='list-itm'>{title}</Link>
+                    <Link href={path} className='list-item'>{title}</Link>
                   </li>
                 )
               })}
+
             </ul>
         </div>
 
-        <div className={scrolled ?"middle-section remove-img":"middle-section"}>
+        <div className={scrolled ? 'hide-middle-section':'middle-section'}>
           <Image src={CompanyLogo} alt='company-logo' quality={100}/>
         </div>
 
-        <div className="left-section">
+        <div className={scrolled ? "right-section shoot-up": "left-section"}>
            <ul>
-              {LeftSection.map(({id,title,cName})=>{
+            {LeftSection.map(({id,title,cName})=>{
 
                 if(title==='shop'){
                   return(
-                    <li key={id} className={cName}>
-                    <Link href="/shop" className="list-itm">{title}</Link>
+                    <li key={id}>
+                    <Link href="/shop/shop_page" className="list-item">{title}</Link>
                     </li>
                   )
                 }
@@ -93,8 +85,8 @@ return ()=>{
                     onMouseEnter={()=>setAbout(true)}
                     onMouseLeave={()=>setAbout(false)}
                     >
-                      <Link href="#" className='header-title'>{title}</Link>
-                      {about && <div className={scrolled ? "scrolled-about":""}><AboutDropDown/></div>}
+                      <Link href="#" className='list-item'>{title}</Link>
+                      {about && <div className={scrolled ? 'scrolled-about': ''}><AboutDropDown/></div>}
                     </li>
                   )
 
@@ -104,85 +96,109 @@ return ()=>{
                 }
                 return(
                   <li key={id}>
-                    <Link href="#" className='list-itm'>{title}</Link>
+                    <Link href="#" className='list-item'>{title}</Link>
                   </li>
                 )
               })}
               </ul>
         </div>
 
-        <div className="small-screen-nav">
-          <div className="small-screen-nav-element">
-              <div className="icons">
-                {open? <CgClose className='icon'onClick={()=>setOpen(false)}/> : <GiHamburgerMenu className='icon' onClick={()=>setOpen(true)}/>}
-              </div>
-              <div className="logos">
-                  <Image src={CompanyLogo} alt="company-logo"/>
-                </div> 
-          </div>
-        </div>
+      <div className="menu-icon">
+        {open  ? <CgClose onClick={()=>setOpen(!open)}/>  : <GiHamburgerMenu onClick={()=>setOpen(!open)}/>}
+      </div>
+
+     <div className="tablet-mobile-icon">
+        <Image src={CompanyLogo} alt='company-logo' quality={100}/>
+     </div>
 
       </div>  
+
     </div>
-
-
-    {open
-       && 
-
-              (
-           <div className='tablet-nav'>
-            <div className="tablet-nav-elements">
-                <div className="tablet-nav-small-group-trips">
-                    <Link href="/" className='link'>home</Link>
-                </div>
-
-               <div className="tablet-nav-destination">
-                      <div className="icons">
-                        {toggleDestination ? <TfiPlus  className='icon'onClick={()=>setToggleDestination(false)}/> : <TfiMinus  className='icon'onClick={()=>setToggleDestination(true)}/>}
-                        <h3>destination</h3>
-                      </div>
-                      {toggleDestination && (
-                       <ul>
-                        <Link href="/group-trip/winter" className='header-title'>winter trip</Link>
-                        <Link href="/group-trip/summer" className='header-title'>summer trip</Link>
-                      </ul>
-
-                      )}         
-               </div>
-
-                <div className="tablet-nav-custom-trips">
-                    <h3>Custom trips</h3>
-                </div>
-
-                <div className="tablet-nav-shop">
-                      <div className="icons">
-                        <Link href="/shop" className='link'>shop</Link>
-                      </div>
-
-               </div>
-
-              <div className="tablet-nav-about">
-                      <div className="icons">
-                        {toggleAbout ? <TfiPlus className='icon' onClick={()=>setToggleAbout(false)}/> : <TfiMinus className='icon' onClick={()=>setToggleAbout(true)}/>}
-                        <h3>About</h3>
-                      </div>
-                      {toggleAbout && (
-                       <ul>
-                        <Link href="/about/our-story" className='header-title'>our story</Link>
-                        <Link href="/about/team" className='header-title'>teams</Link>
-                      </ul>
-                      )}
-
-              
-               </div>
-
-
-            </div> 
-        </div>
-       )
-    }
-     </div>
   )
 }
 
 export default Navbar
+
+
+
+
+
+export function FullNavbar() {
+
+  return (
+    <div className='nav-bar-container'>
+
+      <div className='nav-bar-container-elements'>
+
+        <div className="right-section">
+            <ul>
+            {RighSection.map(({id,title,cName,path})=>{
+                if(title==='group trips'){
+                    return(
+                      <li
+                      key={id}
+                      className={cName}
+                       >
+                       <Link href={path} className='list-item'>{title}</Link>
+                      </li>
+                    )
+                }
+
+                return(
+                  <li key={id} className={cName}>
+                    <Link href={path} className='list-item'>{title}</Link>
+                  </li>
+                )
+              })}
+
+            </ul>
+        </div>
+
+        <div className='middle-section'>
+          <Image src={CompanyLogo} alt='company-logo' quality={100}/>
+        </div>
+
+        <div className='left-section'>
+           <ul>
+            {LeftSection.map(({id,title,cName})=>{
+
+                if(title==='shop'){
+                  return(
+                    <li key={id}>
+                    <Link href="/shop/shop_page" className="list-item">{title}</Link>
+                    </li>
+                  )
+                }
+
+                else if(title==='about'){
+                  return(
+                    <li key={id}
+                    >
+                      <Link href="#" className='list-item'>{title}</Link>
+                    </li>
+                  )
+
+                }
+                else{
+                  console.log('Onyx travels')
+                }
+                return(
+                  <li key={id}>
+                    <Link href="#" className='list-item'>{title}</Link>
+                  </li>
+                )
+              })}
+              </ul>
+        </div>
+
+      <div className="menu-icon">
+         <CgClose/>
+      </div>
+
+
+      </div>  
+
+    </div>
+  )
+}
+

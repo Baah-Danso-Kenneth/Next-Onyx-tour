@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
-import { AboutItem, DestinationItems, ShopItems } from './NavItems'
+import React,{useState,useEffect} from 'react'
+import { AboutItem, DestinationItems} from './NavBarItems'
 import Link from 'next/link'
+
 
 
 
@@ -9,7 +10,7 @@ export function DestinationDropDown() {
 
   return (
     <>
-      <ul className={dropDown ?"destination-items clicked":`destination-items`} onClick={()=>setDropDown(!dropDown)}>
+      <ul className='destination-card'>
         {DestinationItems.map(({id,path,title,cName})=>{
             return(
                 <li key={id}>
@@ -28,7 +29,7 @@ export function PlaneDestinationDropDown() {
 
   return (
     <>
-      <ul className="plane-destination-items" onClick={()=>setDropDown(!dropDown)}>
+      <ul onClick={()=>setDropDown(!dropDown)}>
         {DestinationItems.map(({id,path,title,cName})=>{
             return(
                 <li key={id}>
@@ -46,9 +47,11 @@ export function PlaneDestinationDropDown() {
 
 export function AboutDropDown(){
     const [dropAbout, setAbout]=useState(false)
+
     return(
-        <ul className="about-items" onClick={()=>setAbout(!dropAbout)}>
-            {AboutItem.map(({id, cName,path,title})=>{
+        <>
+        <ul className='about'>
+            {AboutItem.map(({id,path,title,cName})=>{
                 return(
                     <li key={id}>
                         <Link href={path} className={cName} onClick={()=>setAbout(false)}>{title}</Link>
@@ -56,20 +59,7 @@ export function AboutDropDown(){
                 )
             })}
         </ul>
-    )
-}
-
-export function ShopDropDown(){
-    return(
-      <ul className='shop-items'>
-        {ShopItems.map(({id, cName,path,title})=>{
-            return(
-                <li key={id}>
-                    <Link href={path} className={cName}>{title}</Link>
-                </li>
-            )
-        })}
-      </ul>
+        </>
     )
 }
 

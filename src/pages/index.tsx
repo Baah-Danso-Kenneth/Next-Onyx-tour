@@ -1,48 +1,30 @@
-import Layout from '@/components/Layout';
-import Bookings from '@/section/LandingPage/Bookings';
-import Hero from '@/section/LandingPage/Hero';
-import KindWords from '@/section/LandingPage/KindWords';
-import MeetUp from '@/section/LandingPage/MeetUp';
-import Recommend from '@/section/LandingPage/Recommend';
-import Sponsors from '@/section/LandingPage/Sponsors';
-import WhatWeDo from '@/section/LandingPage/WhatWeDo';
-import WhereWeGo from '@/section/LandingPage/WhereWeGo';
-import Adventure from '@/section/LandingPage/Adenture';
-import React, { useEffect, useState } from 'react';
-import Loading from '@/components/Loading';
+import Adventure from '@/components/LandingPage/Adventure'
+import Grouped from '@/components/LandingPage/Grouped'
+import Hero from '@/components/LandingPage/Hero'
+import Instruction from '@/components/LandingPage/Instruction'
+import KindWords from '@/components/LandingPage/KindWords'
+import Recommend from '@/components/LandingPage/Recommend'
+import Sponsors from '@/components/LandingPage/Sponsors'
+import WhatWeDo from '@/components/LandingPage/WhatWeDo'
+import WhereWeGo from '@/components/LandingPage/WhereWeGo'
+import Layout from '@/components/shared/Layout'
+import React from 'react'
 
-function LandingPage() {
-  const [isLoading, setIsLoading]=useState(false)
-
-
-  useEffect(()=>{
-    setTimeout(()=>{
-      setIsLoading(true)
-    }, 3000);
-  },[])
-
+function HomePage() {
   return (
-  !isLoading ? (
-    <Loading />
-  ) : (
-    <div>
-      <Layout>
-        <Hero />
-        <WhatWeDo/>
-        <WhereWeGo />
-        <Recommend />
-        <MeetUp />
-        <Sponsors />
-        <Adventure />
-        <Bookings />
-        <KindWords />
-      </Layout>
-    </div>
+  <Layout>
+    <Hero/>
+    <WhatWeDo/>
+    <WhereWeGo/>
+    <Recommend/>
+    <Grouped/>
+    <Sponsors/>
+    <Adventure/>
+    <Instruction/>
+    <KindWords/>
+    </Layout>
   )
-);
-
-
 }
 
-export default LandingPage;
+export default HomePage
 
