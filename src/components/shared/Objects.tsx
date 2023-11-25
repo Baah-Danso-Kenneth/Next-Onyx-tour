@@ -94,6 +94,7 @@ export const summer_experiences=[
         {id:1, statement:"On a scale of 1 to 10, I rate my trip to Portugal with Wild Terrains ELEVEN. The hotels were beautiful with warm and welcoming staff, the food and wine were amazing, and the activities were remarkable.",name:"- Lagatha H."},
         {id:2, statement:"Truly a ‘pinch me’ experience. Every detail was orchestrated perfectly. A team working in harmony. ",name:"- Fredrick N."},
         {id:3, statement:"From start to finish, a 5-star event. The accommodations exceeded our expectations. The food could not have been better. The women we met went above and beyond",name:"- Benson K."},
+<<<<<<< HEAD
 ]
 
 
@@ -125,4 +126,6 @@ export const winterItenaryData=[
   {img:WI10, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
   {img:WI11, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
   
+=======
+>>>>>>> 407dd1fa56d62ba63aeb27579d3cbd40d9d52362
 ]
