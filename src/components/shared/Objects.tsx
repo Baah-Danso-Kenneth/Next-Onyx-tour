@@ -25,6 +25,33 @@ import WinterTrip5 from '../../../public/assets/images/winter-img5.jpg'
 import WinterTrip6 from '../../../public/assets/images/winter-img6.jpg'
 import WinterTrip7 from '../../../public/assets/images/mostafa-meraji-hte3fepJLCE-unsplash.jpg'
 
+
+// SummerItenary
+import SI1 from '../../../public/assets/images/day-winter-1.jpg';
+import SI2 from '../../../public/assets/images/day-winter-2.jpg'
+import SI3 from '../../../public/assets/images/day-winter-3.jpg'
+import SI4 from '../../../public/assets/images/day-winter-4.jpg'
+import SI5 from '../../../public/assets/images/day-winter-5.jpg'
+import SI6 from '../../../public/assets/images/day-winter-6.jpg'
+import SI7 from '../../../public/assets/images/day-winter-7.jpg'
+import SI8 from '../../../public/assets/images/day-winter-8.jpg'
+import SI9 from '../../../public/assets/images/day-winter-img9.jpg'
+import SI10 from '../../../public/assets/images/day-winter-10.jpg'
+import SI11 from '../../../public/assets/images/day-winter-11.jpg'
+
+//WinterItenary
+import WI1 from '../../../public/assets/images/winter-ac-2.jpg';
+import WI2 from '../../../public/assets/images/winter-ac-3.jpg'
+import WI3 from '../../../public/assets/images/winter-ac-img-1.jpg'
+import WI4 from '../../../public/assets/images/winter-img1.jpg'
+import WI5 from '../../../public/assets/images/winter-img4.jpg'
+import WI6 from '../../../public/assets/images/winter-img2.jpg'
+import WI7 from '../../../public/assets/images/day-winter-7.jpg'
+import WI8 from '../../../public/assets/images/day-winter-8.jpg'
+import WI9 from '../../../public/assets/images/day-winter-img9.jpg'
+import WI10 from '../../../public/assets/images/day-winter-10.jpg'
+import WI11 from '../../../public/assets/images/tourist-10.jpg'
+
 export const WhereWegoProps=[
     {id:1, image:Tourist1, place:"royal",itenary:"See the itinerary", logo:<AiOutlineDoubleRight/>},
      {id:2, image:Tourist2, place:"royal",itenary:"See the itinerary", logo:<AiOutlineDoubleRight/>},
@@ -53,4 +80,49 @@ export const WinterTripInfo=[
       {img:WinterTrip5, date:"France: March 10 -16, 2024", button_text:"book now"},
        {img:WinterTrip6, date:"France: March 10 -16, 2024", button_text:"book now"},
         {img:WinterTrip7, date:"France: March 10 -16, 2024", button_text:"book now"},
+]
+
+
+export const experiences=[
+        {id:1, statement:"Argentina was legitimately the best vacation of my life - full stop. Book it before it sells out!",name:"- Laurin H."},
+        {id:2, statement:"The trip was ABSOLUTELY INCREDIBLE…life changing. I can’t recommend it enough. It’s WORTH EVERY PENNY.",name:"- Fredrick N."},
+        {id:3, statement:"Still pinching myself - can’t believe how amazing Argentina was!",name:"- Benson K."},
+]
+
+
+export const summer_experiences=[
+        {id:1, statement:"On a scale of 1 to 10, I rate my trip to Portugal with Wild Terrains ELEVEN. The hotels were beautiful with warm and welcoming staff, the food and wine were amazing, and the activities were remarkable.",name:"- Lagatha H."},
+        {id:2, statement:"Truly a ‘pinch me’ experience. Every detail was orchestrated perfectly. A team working in harmony. ",name:"- Fredrick N."},
+        {id:3, statement:"From start to finish, a 5-star event. The accommodations exceeded our expectations. The food could not have been better. The women we met went above and beyond",name:"- Benson K."},
+]
+
+
+export const SummerItenaryData=[
+  {img:SI1, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI2, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI3, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI4, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI5, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI6, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI7, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI8, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI9, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI10, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:SI11, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  
+]
+
+export const winterItenaryData=[
+  {img:WI1, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI2, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI3, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI4, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI5, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI6, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI7, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI8, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI9, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI10, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  {img:WI11, statement:"It’s been a long journey and you deserve a day of pampering - don’t you think? We’ll meet at Cecile Adam’s Entre Cielos Hotel & Spa for an afternoon of total relaxation. Entre Cielos is famous for its hammam, so naturally we’re taking over the spa - we’ve booked the Classic Hammam Circuit for everyone in our group.",meals:"Meals included: dinner",day:"DAY ONE - MENDOZA"},
+  
 ]

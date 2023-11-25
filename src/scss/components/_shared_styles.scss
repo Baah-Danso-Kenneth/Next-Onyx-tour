@@ -466,3 +466,210 @@ gap: 3rem;
      }
 
 }
+
+
+
+.showcase-container{
+    min-height: auto;
+    padding: 4rem;
+    background-color: var(--plum-violet);
+    &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+       &-title{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        p{
+            text-transform: uppercase;
+            font-family: var(--slug_fira);
+            color: var(--light-slate);
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    padding: 3rem;
+    &-elements{
+        max-width: 100%;
+        margin: 0 auto;
+        &-title{
+            font-size: 2rem;
+        }
+    }
+}
+
+  @media (min-width:575px) and (max-width:767.98px){
+    padding: 2rem;
+    &-elements{
+        max-width: 90%;
+        margin: 0 auto;
+        &-title{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+  }
+
+    @media (max-width:575px){
+    padding: 2rem;
+    &-elements{
+        max-width: 90%;
+        margin: 0 auto;
+        &-title{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+  }
+
+}
+
+
+.itenary-container{
+    .itenary-flex{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    &-image{
+        margin-bottom: 2rem;
+        >img{
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .itenary-container-text{
+        h3{
+            font-size: 1.8rem;
+            color: var(--light-slate);
+            text-transform: uppercase;
+            font-family: var(--slug_fira);
+            word-spacing: -0.8rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            white-space: nowrap;
+        }
+
+        p{
+            font-family: var(--slug_way);
+            line-height: 2rem;
+            font-size: 1rem;
+            color: var(--lightest-slate);
+
+        }
+        >p:nth-child(3){
+            margin-top: 0.8rem;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991.98px) {
+        margin-bottom: 2rem;
+        &-image{
+          margin-bottom: 1.8rem;
+          >img{
+            width: 350px;
+            height: 250px;
+          }
+        }
+
+        .itenary-container-text{
+            h3{
+                font-size: 1.5rem;
+                
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            >p:nth-child(3){
+                margin-top: 1rem;
+            }
+        }
+    }
+
+      @media (min-width:575px) and (max-width:767.98px){
+         .itenary-flex{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+         }  
+         &-image{
+            >img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+         }
+
+         .itenary-container-text{
+          transform: translateY(-8%);
+            >p:nth-child(3){
+                margin-bottom: 3rem;
+            }
+         }
+         
+      }
+
+
+            @media (max-width:575px){
+         .itenary-flex{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+         }  
+         &-image{
+            >img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+         }
+
+         .itenary-container-text{
+          transform: translateY(-8%);
+            >p:nth-child(3){
+                margin-bottom: 3rem;
+            }
+         }
+         
+      }
+
+
+        @media (max-width:385px){
+         .itenary-flex{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+         }  
+         &-image{
+            >img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+         }
+
+         .itenary-container-text{
+          transform: translateY(-8%);
+            >p:nth-child(3){
+                margin-bottom: 3rem;
+            }
+
+            h3{
+                font-size: 1.3rem;
+                word-spacing: -0.3rem;
+         }
+         p{
+            font-size: 0.9rem;
+         }
+         
+      }
+ }
+}
