@@ -45,7 +45,6 @@ export const SummerTripInfo=[
     {img:SummerTrip1, date:"France: May 10 -16, 2024", button_text:"6 spots left"},
     {img:SummerTrip2, date:"France: June 20 -16, 2024", button_text:"book now"},
     {img:SummerTrip3, date:"France: March 10 -16, 2024", button_text:"book now"},
-<<<<<<< HEAD
 ]
 
 
@@ -57,6 +56,4 @@ export const WinterTripInfo=[
       {img:WinterTrip5, date:"France: March 10 -16, 2024", button_text:"book now"},
        {img:WinterTrip6, date:"France: March 10 -16, 2024", button_text:"book now"},
         {img:WinterTrip7, date:"France: March 10 -16, 2024", button_text:"book now"},
-=======
->>>>>>> 08ee5cc0af9e7a714ad1458c241d22d9e04a9f9f
 ]
