@@ -1,0 +1,126 @@
+
+
+.routes-link{
+    margin-top: 2rem;
+   ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .divss{
+        cursor: pointer;
+        .items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: var(--light-slate);
+                text-transform: uppercase;
+                word-spacing: -0.2rem;
+                font-family: var(--slug_fira);
+                font-size: 1.3rem;
+                font-weight: 100;
+            }
+
+            p{
+                    transform: translateX(0.5rem);
+                    color: var(--blue-dark);
+            }
+        }
+
+    }
+   }
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    ul{
+        flex-wrap: wrap;
+        .divss{
+           .items{
+            white-space: nowrap;
+            span{
+                font-size: 1.1rem;
+            }
+           } 
+        }
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px){
+    ul{
+        flex-wrap: wrap;
+        .divss{
+           .items{
+            white-space: nowrap;
+            span{
+                font-size: 1rem;
+            }
+           } 
+        }
+    }
+}
+
+@media (max-width:575px) {
+    ul{
+        flex-wrap: wrap;
+        .divss{
+            .items{
+                white-space: nowrap;
+            span{
+                font-size: 1rem;
+            }
+        }
+        }
+    }
+}
+
+
+@media (max-width:380px) {
+    ul{
+        flex-wrap: wrap;
+        .divss{
+            .items{
+                white-space: nowrap;
+            span{
+                font-size: 0.8rem;
+            }
+        }
+        }
+    }
+}
+
+
+//    @media screen and (max-width:780px){
+//       ul{
+//         flex-wrap: wrap;
+//       }
+//    }
+
+//    @media screen and (max-width:480px){
+//     ul{
+//         .divss{
+//             .items{
+//                 span{
+//                     font-size: 1.2rem;
+//                 }
+//             }
+//         }
+//     }
+    
+//    }
+
+//    @media screen and (max-width:320px){
+//       ul{
+//        .divss{
+//         .items{
+//             span{
+//                 font-size: 1rem;
+//             }
+//         }
+//        }
+//       }
+    
+//    }
+}

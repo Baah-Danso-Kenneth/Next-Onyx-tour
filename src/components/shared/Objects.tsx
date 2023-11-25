@@ -1,4 +1,6 @@
 import { AiOutlineDoubleRight } from "react-icons/ai"
+
+// where we go
 import Tourist1 from '../../../public/assets/images/tourist-1.jpg'
 import Tourist2 from '../../../public/assets/images/tourist-2.jpg'
 import Tourist3 from '../../../public/assets/images/tourist-3.jpg'
@@ -8,6 +10,10 @@ import Tourist6 from '../../../public/assets/images/tourist-6.jpg'
 import Tourist7 from '../../../public/assets/images/tourist-7.jpg'
 import Tourist8 from '../../../public/assets/images/tourist-8.jpg'
 
+// summer trip
+import SummerTrip1 from '../../../public/assets/images/new-summer-1.jpg'
+import SummerTrip2 from '../../../public/assets/images/new-summer-2.jpg'
+import SummerTrip3 from '../../../public/assets/images/new-summer-3.jpg'
 
 export const WhereWegoProps=[
     {id:1, image:Tourist1, place:"royal",itenary:"See the itinerary", logo:<AiOutlineDoubleRight/>},
@@ -19,4 +25,11 @@ export const WhereWegoProps=[
           {id:7, image:Tourist7, place:"royal",itenary:"See the itinerary", logo:<AiOutlineDoubleRight/>},
            {id:8, image:Tourist8, place:"royal",itenary:"See the itinerary", logo:<AiOutlineDoubleRight/>},
 
+]
+
+
+export const SummerTripInfo=[
+    {img:SummerTrip1, date:"France: May 10 -16, 2024", button_text:"6 spots left"},
+    {img:SummerTrip2, date:"France: June 20 -16, 2024", button_text:"book now"},
+    {img:SummerTrip3, date:"France: March 10 -16, 2024", button_text:"book now"},
 ]
