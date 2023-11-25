@@ -5,10 +5,8 @@ import SummerImage from '../../../public/assets/images/hudson-hintze-TCq5EVSIZbQ
 import InformationOnTour from '@/components/shared/GroupTripComponents/InformationOnTour'
 import SummerContent from '@/section/GroupTrips/Summer/SummerContent'
 import SummererContentExperience from '@/section/GroupTrips/Summer/SummerContentExperience'
-<<<<<<< HEAD
 import ShowCaseItenary from '@/section/GroupTrips/Summer/ShowCaseItenary'
-=======
->>>>>>> 407dd1fa56d62ba63aeb27579d3cbd40d9d52362
+import SummerInclusion from '@/section/GroupTrips/Summer/SummerInclusion'
 
 
 function summer() {
@@ -18,10 +16,8 @@ function summer() {
       <InformationOnTour title='onyx travel summer' duration_from='10 days' duration_to='9 nights' statement='If there was ever a bucket list trip, it’s our 10-day Argentina tour. You’ll explore Mendoza, Buenos Aires, and Patagonia through the eyes of Argentina’s most talented women chefs, artists, and designers. From horseback riding through the Andes, to dining under the Milky Way in Patagonia, this is truly the trip-of-a-lifetime.'/>
       <SummerContent/>
       <SummererContentExperience/>
-<<<<<<< HEAD
       <ShowCaseItenary/>
-=======
->>>>>>> 407dd1fa56d62ba63aeb27579d3cbd40d9d52362
+      <SummerInclusion/>
     </FixedLayout>
   )
 }

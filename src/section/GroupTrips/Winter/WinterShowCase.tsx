@@ -7,7 +7,7 @@ function WinterShowCase() {
     
             <div className="showcase-container-elements">
                 <div className="showcase-container-elements-title">
-                    <p>summer itinenary</p>
+                    <p>Winter itinenary</p>
                 </div>
                    <WinterItenary/>
             </div>
