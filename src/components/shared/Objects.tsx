@@ -54,3 +54,17 @@ export const WinterTripInfo=[
        {img:WinterTrip6, date:"France: March 10 -16, 2024", button_text:"book now"},
         {img:WinterTrip7, date:"France: March 10 -16, 2024", button_text:"book now"},
 ]
+
+
+export const experiences=[
+        {id:1, statement:"Argentina was legitimately the best vacation of my life - full stop. Book it before it sells out!",name:"- Laurin H."},
+        {id:2, statement:"The trip was ABSOLUTELY INCREDIBLE…life changing. I can’t recommend it enough. It’s WORTH EVERY PENNY.",name:"- Fredrick N."},
+        {id:3, statement:"Still pinching myself - can’t believe how amazing Argentina was!",name:"- Benson K."},
+]
+
+
+export const summer_experiences=[
+        {id:1, statement:"On a scale of 1 to 10, I rate my trip to Portugal with Wild Terrains ELEVEN. The hotels were beautiful with warm and welcoming staff, the food and wine were amazing, and the activities were remarkable.",name:"- Lagatha H."},
+        {id:2, statement:"Truly a ‘pinch me’ experience. Every detail was orchestrated perfectly. A team working in harmony. ",name:"- Fredrick N."},
+        {id:3, statement:"From start to finish, a 5-star event. The accommodations exceeded our expectations. The food could not have been better. The women we met went above and beyond",name:"- Benson K."},
+]
