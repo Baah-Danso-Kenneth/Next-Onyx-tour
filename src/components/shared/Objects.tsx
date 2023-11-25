@@ -14,7 +14,6 @@ import Tourist8 from '../../../public/assets/images/tourist-8.jpg'
 import SummerTrip1 from '../../../public/assets/images/new-summer-1.jpg'
 import SummerTrip2 from '../../../public/assets/images/new-summer-2.jpg'
 import SummerTrip3 from '../../../public/assets/images/new-summer-3.jpg'
-<<<<<<< HEAD
 
 
 //winter -trip
@@ -25,8 +24,6 @@ import WinterTrip4 from '../../../public/assets/images/winter-img4.jpg'
 import WinterTrip5 from '../../../public/assets/images/winter-img5.jpg'
 import WinterTrip6 from '../../../public/assets/images/winter-img6.jpg'
 import WinterTrip7 from '../../../public/assets/images/mostafa-meraji-hte3fepJLCE-unsplash.jpg'
-=======
->>>>>>> 08ee5cc0af9e7a714ad1458c241d22d9e04a9f9f
 
 export const WhereWegoProps=[
     {id:1, image:Tourist1, place:"royal",itenary:"See the itinerary", logo:<AiOutlineDoubleRight/>},
@@ -45,7 +42,6 @@ export const SummerTripInfo=[
     {img:SummerTrip1, date:"France: May 10 -16, 2024", button_text:"6 spots left"},
     {img:SummerTrip2, date:"France: June 20 -16, 2024", button_text:"book now"},
     {img:SummerTrip3, date:"France: March 10 -16, 2024", button_text:"book now"},
-<<<<<<< HEAD
 ]
 
 
@@ -57,6 +53,4 @@ export const WinterTripInfo=[
       {img:WinterTrip5, date:"France: March 10 -16, 2024", button_text:"book now"},
        {img:WinterTrip6, date:"France: March 10 -16, 2024", button_text:"book now"},
         {img:WinterTrip7, date:"France: March 10 -16, 2024", button_text:"book now"},
-=======
->>>>>>> 08ee5cc0af9e7a714ad1458c241d22d9e04a9f9f
 ]
