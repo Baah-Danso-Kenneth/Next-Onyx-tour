@@ -7,6 +7,9 @@ import WinterContent from '@/section/GroupTrips/Winter/WinterContent'
 import WinterContentExperience from '@/section/GroupTrips/Winter/WinterContentExperience'
 import WinterShowCase from '@/section/GroupTrips/Winter/WinterShowCase'
 import WinterInclusion from '@/section/GroupTrips/Winter/WinterInclusion'
+import WinterWhatWeThinkContent from '@/section/GroupTrips/Winter/WinterWhatWeThinkContent'
+import WinterAccomodationContent from '@/section/GroupTrips/Winter/WinterAccomodationContent'
+import WinterTripLeaderContent from '@/section/GroupTrips/Winter/WinterTripLeaderContent'
 
 
 function winter() {
@@ -19,6 +22,9 @@ function winter() {
             <WinterContentExperience/>
             <WinterShowCase/>
             <WinterInclusion/>
+            <WinterWhatWeThinkContent/>
+            <WinterAccomodationContent/>
+            <WinterTripLeaderContent/>
     </FixedLayout>
   )
 }

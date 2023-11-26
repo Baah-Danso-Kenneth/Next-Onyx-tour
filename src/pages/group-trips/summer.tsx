@@ -7,6 +7,9 @@ import SummerContent from '@/section/GroupTrips/Summer/SummerContent'
 import SummererContentExperience from '@/section/GroupTrips/Summer/SummerContentExperience'
 import ShowCaseItenary from '@/section/GroupTrips/Summer/ShowCaseItenary'
 import SummerInclusion from '@/section/GroupTrips/Summer/SummerInclusion'
+import SummerWhatWeThinkContent from '@/section/GroupTrips/Summer/SummerWhatWeThinkContent'
+import SummerAccomodationContent from '@/section/GroupTrips/Summer/SummerAccomodationContent'
+import SummerTripLeaderContent from '@/section/GroupTrips/Summer/SummerTripLeaderContent'
 
 
 function summer() {
@@ -18,6 +21,9 @@ function summer() {
       <SummererContentExperience/>
       <ShowCaseItenary/>
       <SummerInclusion/>
+      <SummerWhatWeThinkContent/>
+      <SummerAccomodationContent/>
+      <SummerTripLeaderContent/>
     </FixedLayout>
   )
 }
