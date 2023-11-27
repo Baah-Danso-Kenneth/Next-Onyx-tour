@@ -10,6 +10,8 @@ import SummerInclusion from '@/section/GroupTrips/Summer/SummerInclusion'
 import SummerWhatWeThinkContent from '@/section/GroupTrips/Summer/SummerWhatWeThinkContent'
 import SummerAccomodationContent from '@/section/GroupTrips/Summer/SummerAccomodationContent'
 import SummerTripLeaderContent from '@/section/GroupTrips/Summer/SummerTripLeaderContent'
+import SummerMeetUpContent from '@/section/GroupTrips/Summer/SummerMeetUpContent'
+import SummerQuestionContent from '@/section/GroupTrips/Summer/SummerQuestionContent'
 
 
 function summer() {
@@ -24,6 +26,8 @@ function summer() {
       <SummerWhatWeThinkContent/>
       <SummerAccomodationContent/>
       <SummerTripLeaderContent/>
+      <SummerMeetUpContent/>
+      <SummerQuestionContent/>
     </FixedLayout>
   )
 }

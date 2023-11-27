@@ -66,6 +66,42 @@ import ACS4 from '../../../public/assets/images/ac-summer-4.jpg'
 
 
 
+//summer people meet
+import SP1 from '../../../public/assets/images/meet-s-1.jpg'
+import SP2 from '../../../public/assets/images/meet-s-2.jpg'
+import SP3 from '../../../public/assets/images/meet-s-3.jpg'
+import SP4 from '../../../public/assets/images/meet-s-4.jpg'
+import SP5 from '../../../public/assets/images/meet-s-5.jpg'
+import SP6 from '../../../public/assets/images/meet-s-6.jpg'
+import SP7 from '../../../public/assets/images/meet-s-7.jpg'
+import SP8 from '../../../public/assets/images/meet-s-8.jpg'
+import SP9 from '../../../public/assets/images/meet-s-9.jpg'
+import SP10 from '../../../public/assets/images/meet-s-10.jpg'
+import SP11 from '../../../public/assets/images/meet-s-11.jpg'
+import SP12 from '../../../public/assets/images/meet-s-12.jpg'
+import SP13 from '../../../public/assets/images/meet-s-13.jpg'
+import SP14 from '../../../public/assets/images/meet-s-14.jpg'
+import SP15 from '../../../public/assets/images/meet-s-15.jpg'
+
+
+//winter meet people
+
+import WP1 from '../../../public/assets/images/meet-w-1.jpg'
+import WP2 from '../../../public/assets/images/meet-w-2.jpg'
+import WP3 from '../../../public/assets/images/meet-w-3.jpg'
+import WP4 from '../../../public/assets/images/meet-w-4.jpg'
+import WP5 from '../../../public/assets/images/meet-w-5.jpg'
+import WP6 from '../../../public/assets/images/meet-w-6.jpg'
+import WP7 from '../../../public/assets/images/meet-w-7.jpg'
+import WP8 from '../../../public/assets/images/meet-w-8.jpg'
+import WP9 from '../../../public/assets/images/meet-w-9.jpg'
+import WP10 from '../../../public/assets/images/meet-w-10.jpg'
+import WP11 from '../../../public/assets/images/meet-w-11.jpg'
+import WP12 from '../../../public/assets/images/meet-w-12.jpg'
+import WP13 from '../../../public/assets/images/meet-w-13.jpg'
+import WP14 from '../../../public/assets/images/meet-w-14.jpg'
+import WP15 from '../../../public/assets/images/meet-w-15.jpg'
+
 
 
 export const WhereWegoProps=[
@@ -177,3 +213,40 @@ export const winterAccomodation_data=[
 ]
 
 
+
+export const meetSummerTeam=[
+  {img:SP1, name:"manuela palma", task:"ranch owner"},
+  {img:SP2, name:"katherie theobalds", task:"shoe designer"},
+  {img:SP3, name:"mica najmanovich", task:"chef"},
+  {img:SP4, name:"toti quesada", task:"chef"},
+  {img:SP5, name:"manuela palma", task:"ranch owner"},
+  {img:SP6, name:"jelieta caruso", task:"ranch owner"},
+  {img:SP7, name:"manuela palma", task:"ranch owner"},
+  {img:SP8, name:"manuela palma", task:"ranch owner"},
+  {img:SP9, name:"manuela palma", task:"ranch owner"},
+  {img:SP10, name:"manuela palma", task:"ranch owner"},
+  {img:SP11, name:"manuela palma", task:"ranch owner"},
+  {img:SP12, name:"manuela palma", task:"ranch owner"},
+  {img:SP13, name:"manuela palma", task:"ranch owner"},
+  {img:SP14, name:"sofia pescaromaon", task:"ranch owner"},
+  {img:SP15, name:"brosi geesman", task:"fashionister"}
+]
+
+
+export const meetWinWerTeam=[
+  {img:WP1, name:"manuela palma", task:"ranch owner"},
+  {img:WP2, name:"katherie theobalds", task:"shoe designer"},
+  {img:WP3, name:"mica najmanovich", task:"chef"},
+  {img:WP4, name:"toti quesada", task:"chef"},
+  {img:WP5, name:"manuela palma", task:"ranch owner"},
+  {img:WP6, name:"jelieta caruso", task:"ranch owner"},
+  {img:WP7, name:"manuela palma", task:"ranch owner"},
+  {img:WP8, name:"manuela palma", task:"ranch owner"},
+  {img:WP9, name:"manuela palma", task:"ranch owner"},
+  {img:WP10, name:"manuela palma", task:"ranch owner"},
+  {img:WP11, name:"manuela palma", task:"ranch owner"},
+  {img:WP12, name:"manuela palma", task:"ranch owner"},
+  {img:WP13, name:"manuela palma", task:"ranch owner"},
+  {img:WP14, name:"sofia pescaromaon", task:"ranch owner"},
+  {img:WP15, name:"brosi geesman", task:"fashionister"}
+]
