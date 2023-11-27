@@ -2,7 +2,11 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows:repeat(4,auto);
-   
+    
+    .full-nav-bar{
+       grid-area: 1/1/span 1/-1;
+        background-color:var(--blue-dark);
+    }
     .nav-bar{
         grid-area: 1/1/span 1/-1;
         background-color:var(--blue-dark);
@@ -27,7 +31,17 @@
         grid-area: 4/1/span 1/-1;
         background-color:var(--heliotrope-violet);
     }
-
-
 }
 
+.loader-container{
+    background-color: var(--blue-dark);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >img{
+        width: 40%;
+        height: 250px;
+        object-fit: contain;
+    }
+}

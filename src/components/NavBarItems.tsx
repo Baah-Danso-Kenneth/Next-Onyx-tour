@@ -2,14 +2,14 @@ export const DestinationItems=[
     {
         id:1,
         title:"winter trip",
-        path:"/group-trip/winter",
+        path:"/group-trips/winter",
         cName:"list-item"
     },
 
     {
         id:2,
         title:"summer trip",
-        path:"/group-trip/summer",
+        path:"/group-trips/summer",
         cName:"list-item"
     },
 ]
