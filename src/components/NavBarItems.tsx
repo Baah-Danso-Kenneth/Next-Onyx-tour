@@ -13,20 +13,34 @@ export const DestinationItems=[
         cName:"list-item"
     },
 ]
+export const PlaceDestinationItems=[
+    {
+        id:1,
+        title:"winter trip",
+        path:"/group-trips/winter",
+        cName:"rem-up"
+    },
 
+    {
+        id:2,
+        title:"summer trip",
+        path:"/group-trips/summer",
+        cName:"list-item"
+    },
+]
 
 export const AboutItem=[
   {
     id:1,
     title:"Our story",
-    path:"/about/our-story",
+    path:"/about/our_story",
     cName:"list-item"
   },
    {
     id:2,
     title:"Our team",
     cName:"list-item",
-    path:"/about/team"
+    path:"/about/our_team"
    },
 ]
 

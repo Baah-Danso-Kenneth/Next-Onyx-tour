@@ -1,0 +1,23 @@
+.about-hero-container{
+    width: 100%;
+    background-color: var(--plum-violet);
+    min-height: auto;
+    >img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .vision{
+        padding: 5rem;
+        display: flex;
+        max-width: 80%;
+        margin: 0 auto;
+        >p{
+            color: var(--lightest-slate);
+            font-family: var(--slug_way);
+            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+}

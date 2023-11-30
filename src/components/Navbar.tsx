@@ -7,7 +7,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {CgClose} from 'react-icons/cg'
 import {TfiPlus} from 'react-icons/tfi'
 import { TfiMinus } from 'react-icons/tfi'
-import { AboutDropDown, DestinationDropDown } from './DropDown'
+import { AboutDropDown, DestinationDropDown, PlaneAboutDropDown, PlaneDestinationDropDown } from './DropDown'
 
 
 function Navbar() {
@@ -185,13 +185,16 @@ export default Navbar
 
 
 export function FullNavbar() {
+const [open,setOpen]=useState(false)
+const [toggleDestination,setToggleDestination]=useState(false)
+const [toggleAbout,setToggleAbout]=useState(false)
+const [dropDown, setDropDown]=useState(false)
+const [about,setAbout]=useState(false)
 
   return (
-    <div className='nav-bar-container'>
-
+    <div className= 'nav-bar-container'>
       <div className='nav-bar-container-elements'>
-
-        <div className="right-section">
+        <div className= "right-section">
             <ul>
             {RighSection.map(({id,title,cName,path})=>{
                 if(title==='group trips'){
@@ -199,8 +202,11 @@ export function FullNavbar() {
                       <li
                       key={id}
                       className={cName}
+                      onMouseEnter={()=>setDropDown(true)}
+                      onMouseLeave={()=>setDropDown(false)}
                        >
                        <Link href={path} className='list-item'>{title}</Link>
+                       {dropDown && <div className= ""><DestinationDropDown/></div>}
                       </li>
                     )
                 }
@@ -219,7 +225,7 @@ export function FullNavbar() {
           <Image src={CompanyLogo} alt='company-logo' quality={100}/>
         </div>
 
-        <div className='left-section'>
+        <div className= "left-section">
            <ul>
             {LeftSection.map(({id,title,cName})=>{
 
@@ -234,8 +240,12 @@ export function FullNavbar() {
                 else if(title==='about'){
                   return(
                     <li key={id}
+                    className={cName}
+                    onMouseEnter={()=>setAbout(true)}
+                    onMouseLeave={()=>setAbout(false)}
                     >
                       <Link href="#" className='list-item'>{title}</Link>
+                      {about && <div><AboutDropDown/></div>}
                     </li>
                   )
 
@@ -253,11 +263,73 @@ export function FullNavbar() {
         </div>
 
       <div className="menu-icon">
-         <CgClose/>
+        {open  ? <CgClose onClick={()=>setOpen(!open)}/>  : <GiHamburgerMenu onClick={()=>setOpen(!open)}/>}
       </div>
 
+     <div className="tablet-mobile-icon">
+        <Image src={CompanyLogo} alt='company-logo' quality={100}/>
+     </div>
 
       </div>  
+
+   {open && (
+        <div className="sidebar">
+
+          <div className="sidebar-elements">
+
+              <div className="home">
+                <Link href="/" className='header-title' >Home</Link>
+              </div>
+
+                  <div className="sidebar-destination">
+                      <div className="icons-text">
+                        {toggleDestination ? <TfiMinus  className='icon'onClick={()=>setToggleDestination(false)}/> : <TfiPlus  className='icon'onClick={()=>setToggleDestination(true)}/>}
+                        <h3>destination</h3>
+                      </div>
+                      {toggleDestination && (
+                       <ul>
+                        <Link href="/group-trip/winter" className='header-title'>winter trip</Link>
+                        <Link href="/group-trip/summer" className='header-title'>summer trip</Link>
+                      </ul>
+
+                      )}         
+                 </div>
+
+                 <div className="sidebar-gallery">
+                    <Link href="/gallery" className='header-title'>Gallery</Link>
+                </div>
+
+                <div className="custom-trips">
+                    <Link href="/custom-trip" className="header-title">Custom trips</Link>
+                </div>
+
+                 <div className="shop-trips">
+                    <Link href="/shops/shop" className="header-title">shop</Link>
+                </div>
+
+              
+
+                <div className="sidebar-about">
+                      <div className="icons-text">
+                        {toggleAbout ? <TfiMinus  className='icon'onClick={()=>setToggleAbout(false)}/> : <TfiPlus  className='icon'onClick={()=>setToggleAbout(true)}/>}
+                        <h3>About</h3>
+                      </div>
+                      {toggleAbout && (
+                       <ul>
+                        <Link href="/group-trip/winter">our team</Link>
+                        <Link href="/group-trip/summer">our story</Link>
+                      </ul>
+
+                      )}         
+                 </div>
+               
+
+
+          </div>
+      </div>
+   )}
+
+
 
     </div>
   )

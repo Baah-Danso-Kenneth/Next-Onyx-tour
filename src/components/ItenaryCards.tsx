@@ -9,7 +9,7 @@ interface ItenaryProps{
 }
 function ItenaryCards({img,statement,meals,day}:ItenaryProps) {
   return (
-    <div className='itenary-container'>
+    <div className='itenary-container' id='itenary'>
 
        <div className="itenary-flex">
         <div className="itenary-container-image">

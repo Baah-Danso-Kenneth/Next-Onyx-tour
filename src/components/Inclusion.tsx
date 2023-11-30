@@ -37,7 +37,7 @@ function Inclusion({
     expenses
 }:InclusionProps) {
   return (
-    <div className='inclusion-container'>
+    <div className='inclusion-container' id='included'>
 
         <div className="inclusion-container-elements">
             <div className="inclusion-container-elements-included">

@@ -9,7 +9,7 @@ import Image, { StaticImageData } from 'next/image'
 
 function MeetLeader({title,img,btn_text}:LeaderProps) {
   return (
-    <div className='leader-container'>
+    <div className='leader-container' id='leader'>
         <div className="leader-container-elements">
           <div className="leader-container-elements-title">
              <h5>{title}</h5>

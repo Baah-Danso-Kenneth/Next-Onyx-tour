@@ -8,7 +8,7 @@ interface QuestionProps{
 
 function Question({title,answers,btn_text}:QuestionProps) {
   return (
-    <div className='question-content-option'>
+    <div className='question-content-option' id='faqs'>
       <div className='title'>
         <p>{title}</p>
       </div>
