@@ -250,3 +250,20 @@ export const meetWinWerTeam=[
   {img:WP14, name:"sofia pescaromaon", task:"ranch owner"},
   {img:WP15, name:"brosi geesman", task:"fashionister"}
 ]
+
+export const OnyxTeamMembers=[
+  {img:SP1, name:"manuela palma", task:"ranch owner"},
+  {img:SP2, name:"katherie theobalds", task:"shoe designer"},
+  {img:SP3, name:"mica najmanovich", task:"chef"},
+  {img:SP4, name:"toti quesada", task:"chef"},
+  {img:SP5, name:"manuela palma", task:"ranch owner"},
+  {img:SP6, name:"jelieta caruso", task:"ranch owner"},
+  {img:SP7, name:"manuela palma", task:"ranch owner"},
+  {img:SP9, name:"manuela palma", task:"ranch owner"},
+  {img:SP10, name:"manuela palma", task:"ranch owner"},
+  {img:SP11, name:"manuela palma", task:"ranch owner"},
+  {img:SP12, name:"manuela palma", task:"ranch owner"},
+  {img:SP13, name:"manuela palma", task:"ranch owner"},
+  {img:SP14, name:"sofia pescaromaon", task:"ranch owner"},
+  {img:SP15, name:"brosi geesman", task:"fashionister"}
+]

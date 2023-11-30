@@ -12,11 +12,12 @@ import SummerAccomodationContent from '@/section/GroupTrips/Summer/SummerAccomod
 import SummerTripLeaderContent from '@/section/GroupTrips/Summer/SummerTripLeaderContent'
 import SummerMeetUpContent from '@/section/GroupTrips/Summer/SummerMeetUpContent'
 import SummerQuestionContent from '@/section/GroupTrips/Summer/SummerQuestionContent'
+import Layout from '@/components/shared/Layout'
 
 
 function summer() {
   return (
-    <FixedLayout>
+    <Layout>
       <SeasonHeroSection text='summer trip' img={SummerImage}/>
       <InformationOnTour title='onyx travel summer' duration_from='10 days' duration_to='9 nights' statement='If there was ever a bucket list trip, it’s our 10-day Argentina tour. You’ll explore Mendoza, Buenos Aires, and Patagonia through the eyes of Argentina’s most talented women chefs, artists, and designers. From horseback riding through the Andes, to dining under the Milky Way in Patagonia, this is truly the trip-of-a-lifetime.'/>
       <SummerContent/>
@@ -28,7 +29,7 @@ function summer() {
       <SummerTripLeaderContent/>
       <SummerMeetUpContent/>
       <SummerQuestionContent/>
-    </FixedLayout>
+    </Layout>
   )
 }
 

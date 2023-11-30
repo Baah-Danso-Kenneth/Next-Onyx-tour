@@ -95,3 +95,700 @@
 
 
 
+
+.leader-instructor-container{
+    min-height: auto;
+    background-color: var(--cove-blue);
+    padding: 4rem;
+    &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+
+        .logo{
+            display: flex;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            justify-content: center;
+            align-items: center;
+            >img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border: 1px solid var(--blue-dark);
+                border-radius: 50%;
+            }
+        }
+
+          .bio-container{
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 10rem;
+               .image-zone{
+                 >img{
+                    width:487px;
+                    height: 653.2px;
+                    object-fit: cover;
+                 }
+               }
+
+               .text{
+                h5{
+                    font-size: 2rem;
+                    font-family: var(--slug_fira);
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: var(--light-slate);
+                    margin-bottom: 0.3rem;
+                }
+
+                h3{
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-family: var(--slug_way);
+                    color: var(--lightest-slate);
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+
+
+                }
+
+                p{
+                    font-family: var(--slug_way);
+                    line-height: 2rem;
+                    color: var(--blue-dark);
+                    font-weight: 500;
+                }
+               }
+         }
+
+         .inspo{
+            margin-bottom: 5rem;
+         }
+
+
+         .learn-more-content{
+            &-title{
+                display: flex;
+                justify-content: center;
+                h3{
+                    font-size: 2rem;
+                    font-family: var(--slug_fira);
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: var(--light-slate);
+                    margin-bottom: 2rem;
+                    word-spacing: -0.3rem;
+                }
+            }
+
+            .grid-content-learn-more{
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(3,1fr);
+                margin-bottom: 3rem;
+
+                .content-1{
+                    h3{
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                    font-family: var(--slug_way);
+                    color: var(--light-slate);
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+
+                    }
+                    &-p-tag{
+                        p{
+                            line-height: 1.5rem;
+                            color: var(--blue-dark);
+                            font-size: 300;
+                        }
+
+                    }
+                }
+
+                .content-2{
+                    @extend .content-1;
+                        .content-2-p-tag{
+                        p{
+                            line-height: 1.5rem;
+                            color: var(--blue-dark);
+                            font-size: 300;
+                        }
+
+                    }
+                }
+
+                .content-3{
+                    @extend .content-1;
+                       .content-3-p-tag{
+                        p{
+                            line-height: 1.5rem;
+                            color: var(--blue-dark);
+                            font-size: 300;
+                        }
+
+                    }
+                }
+            }
+         }
+        
+         .experience-to-observer{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+            .header-for-experience{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h3{
+                   font-size: 2rem;
+                    font-family: var(--slug_fira);
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: var(--light-slate);
+                    margin-bottom: 2rem;
+                    word-spacing: -0.3rem;
+                }
+            }
+
+            .travel-btn{
+                >button{
+                    padding: 15px 30px 15px;
+                    font-family: var(--slug_fira);
+                    background-color: var(--heliotrope-violet);
+                    outline:none;
+                    border: none;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+
+                    .link{
+                        text-decoration: none;
+                        color: var(--blue-dark);
+                        font-weight: 400;
+                    }
+                }
+            }
+         }
+
+
+    }
+
+    @media (min-width:768px) and (max-width:991.98px) {
+     padding: 3rem;
+     &-elements{
+        max-width: 100%;
+        margin: 0 auto;
+        .logo{
+            margin-top: 8rem;
+            >img{
+                width: 230px;
+                height: 230px;
+                object-fit: cover;
+            }
+        }
+
+        .bio-container{
+            gap: 2rem;
+            margin-bottom: 5rem;
+            .image-zone{
+                >img{
+                    width: 350px;
+                }
+            }
+            .text{
+                h5{
+                    font-size: 1.8rem;
+                }
+                h3{
+                    font-size: 0.9rem;
+                }
+                p{
+                    font-size: 200;
+                }
+            }
+
+
+        }
+
+
+        .learn-more-content{
+            &-title{
+                h3{
+                    font-size: 1.6rem;
+                }
+            }
+
+            .grid-content-learn-more{
+                .content-1{
+                    h3{
+                        font-size: 1rem;
+                    }
+
+                    &-p-tag{
+                        p{
+                            font-size: 0.9rem;
+                            font-family: var(--slug_way);
+                        }
+                    }
+                }
+
+                .content-2{
+                    h3{
+                        font-size: 1rem;
+                    }
+
+                    .content-2-p-tag{
+                        p{
+                            font-size: 0.9rem;
+                            font-family: var(--slug_way);
+                        }
+                    }
+                }
+
+
+                .content-3{
+                    h3{
+                        font-size: 1rem;
+                    }
+
+                    .content-3-p-tag{
+                        p{
+                            font-size: 0.9rem;
+                            font-family: var(--slug_way);
+                        }
+                    }
+                }
+            }
+        }
+
+        .experience-to-observer{
+            .header-for-experience{
+                h3{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+
+
+     }
+    }
+
+   @media (min-width:575px) and (max-width:767.98px) {
+       padding: 3rem;
+       &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+
+        .logo{
+            margin-top: 5rem;
+            >img{
+                width:200px ;
+                height:200px ;
+                object-fit: cover;
+            }
+        }
+
+        .bio-container{
+            flex-flow: column;
+            margin-bottom: 5rem;
+            justify-content: center;
+            align-items: center;
+
+            .image-zone{
+                >img{
+                    width: 400px;
+                    height: 500px;
+                }
+            }
+        }
+
+        .learn-more-content{
+            &-title{
+                h3{
+                    text-align: center;
+                    font-size: 1.8rem;
+                }
+            }
+            .grid-content-learn-more{
+                grid-template-columns: 1fr;
+
+                .content-1{
+                    &-p-tag{
+                        p{
+                            font-family: var(--slug_way);
+                        }
+                    }
+                }
+
+                  .content-2{
+                    .content-2-p-tag{
+                        p{
+                            font-family: var(--slug_way);
+                        }
+                    }
+                }
+
+                    .content-3{
+                    .content-3-p-tag{
+                        p{
+                            font-family: var(--slug_way);
+                        }
+                    }
+                }
+            }
+        }
+
+        .experience-to-observer{
+            .header-for-experience{
+                h3{
+                    text-align: center;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+       }
+   }
+
+       @media (max-width:575px) {
+        padding: 4rem;
+        &-elements{
+            max-width: 80%;
+            margin: 0 auto;
+            .logo{
+                margin-top: 5rem;
+              >img{
+                width: 150px;
+                height: 150px;
+            }
+            }
+
+            .bio-container{
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5rem;
+                .image-zone{
+                    >img{
+                        width: 350px;
+                        height: 500px;
+                    }
+                }
+
+                .text{
+                    h5{
+                        font-size: 1.3rem;
+                        word-wrap: normal;
+                        white-space: nowrap;
+                    }
+
+                    h3{
+                        font-size: 1rem;
+                        white-space: nowrap
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+
+
+            .learn-more-content{
+                &-title{
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                }
+                .grid-content-learn-more{
+                grid-template-columns: 1fr;
+                .content-1{
+                    h3{
+                        font-size: 1rem;
+                    }
+
+                 &-p-tag{
+                    p{
+                      font-size: 0.9rem;
+                      font-family: var(--slug_way);
+                    }
+                }
+                }
+                
+                .content-2{
+                 h3{
+                    font-size: 1rem;
+                 }
+                 .content-2-p-tag{
+                    p{
+                        font-size: 0.9rem;
+                        font-family: var(--slug_way);
+                    }
+                 }
+                }
+
+                .content-3{
+                 h3{
+                    font-size: 1rem;
+                 }
+                 .content-3-p-tag{
+                    p{
+                        font-size: 0.9rem;
+                        font-family: var(--slug_way);
+                    }
+                 }
+                }
+
+                }
+            }
+
+
+            .experience-to-observer{
+                .header-for-experience{
+                    h3{
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                }
+               .travel-btn{
+                  >button{
+                    padding: 13px 20px 13px;
+                    .link{
+                        font-size:0.7rem;
+                    }
+                  }
+               }
+            }
+        }
+    }
+
+
+ @media (max-width:365px) {
+        padding: 4rem;
+        &-elements{
+            max-width: 100%;
+            margin: 0 auto;
+            .logo{
+                margin-top: 5rem;
+              >img{
+                width: 150px;
+                height: 150px;
+            }
+            }
+
+            .bio-container{
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5rem;
+                .image-zone{
+                    >img{
+                        width: 300px;
+                        height: 400px;
+                    }
+                }
+
+                .text{
+                    h5{
+                        font-size: 1.3rem;
+                        word-wrap: normal;
+                        white-space: nowrap;
+                    }
+
+                    h3{
+                        font-size: 1rem;
+                        white-space: nowrap
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+
+
+            .learn-more-content{
+                &-title{
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                }
+                .grid-content-learn-more{
+                grid-template-columns: 1fr;
+                .content-1{
+                    h3{
+                        font-size: 1rem;
+                    }
+
+                 &-p-tag{
+                    p{
+                      font-size: 0.9rem;
+                      font-family: var(--slug_way);
+                    }
+                }
+                }
+                
+                .content-2{
+                 h3{
+                    font-size: 1rem;
+                 }
+                 .content-2-p-tag{
+                    p{
+                        font-size: 0.9rem;
+                        font-family: var(--slug_way);
+                    }
+                 }
+                }
+
+                .content-3{
+                 h3{
+                    font-size: 1rem;
+                 }
+                 .content-3-p-tag{
+                    p{
+                        font-size: 0.9rem;
+                        font-family: var(--slug_way);
+                    }
+                 }
+                }
+
+                }
+            }
+
+
+            .experience-to-observer{
+                .header-for-experience{
+                    h3{
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                }
+               .travel-btn{
+                  >button{
+                    padding: 13px 20px 13px;
+                    .link{
+                        font-size:0.7rem;
+                    }
+                  }
+               }
+            }
+        }
+    }
+    @media (max-width:300px) {
+        padding: 2rem;
+        &-elements{
+            max-width: 100%;
+            margin: 0 auto;
+            .logo{
+                margin-top: 5rem;
+              >img{
+                width: 150px;
+                height: 150px;
+            }
+            }
+
+            .bio-container{
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5rem;
+                .image-zone{
+                    >img{
+                        width: 250px;
+                        height: 500px;
+                    }
+                }
+
+                .text{
+                    h5{
+                        font-size: 1.3rem;
+                        word-wrap: normal;
+                        white-space: nowrap;
+                    }
+
+                    h3{
+                        font-size: 1rem;
+                        white-space: nowrap
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+
+
+            .learn-more-content{
+                &-title{
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                }
+                .grid-content-learn-more{
+                grid-template-columns: 1fr;
+                .content-1{
+                    h3{
+                        font-size: 1rem;
+                    }
+
+                 &-p-tag{
+                    p{
+                      font-size: 0.8rem;
+                      font-family: var(--slug_way);
+                    }
+                }
+                }
+                
+                .content-2{
+                 h3{
+                    font-size: 1rem;
+                 }
+                 .content-2-p-tag{
+                    p{
+                        font-size: 0.8rem;
+                        font-family: var(--slug_way);
+                    }
+                 }
+                }
+
+                .content-3{
+                 h3{
+                    font-size: 1rem;
+                 }
+                 .content-3-p-tag{
+                    p{
+                        font-size: 0.8rem;
+                        font-family: var(--slug_way);
+                    }
+                 }
+                }
+
+                }
+            }
+
+
+            .experience-to-observer{
+                .header-for-experience{
+                    h3{
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                }
+               .travel-btn{
+                  >button{
+                    padding: 13px 20px 13px;
+                    .link{
+                        font-size:0.7rem;
+                    }
+                  }
+               }
+            }
+        }
+    }
+}

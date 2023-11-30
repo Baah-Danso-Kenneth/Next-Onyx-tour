@@ -13,7 +13,7 @@ function Accomodation({accomodation_img,accomodation_name,
                         accomodation_location,
                          accomodation_info}:AccommodationProps) {
   return (
-    <div className='accomodation-container'>
+    <div className='accomodation-container'id="accomodation">
       <div className="accomodation-container-img">
         <Image src={accomodation_img} alt="accomodation"/>
       </div>
