@@ -1,10 +1,10 @@
 
 import type { AppProps } from "next/app";
-import {Raleway, Fira_Code, Cedarville_Cursive, Poppins} from 'next/font/google'
+import {Raleway, Fira_Code, Cedarville_Cursive, Poppins,Montserrat} from 'next/font/google'
 import '../scss/index.scss'
 
-const slug_way = Raleway({subsets:["latin"]});
 
+const slug_way = Montserrat({subsets:["latin"]})
 const slug_fira = Fira_Code({
   subsets:['latin'],
   weight:['300', '400', '500', '600', '700']

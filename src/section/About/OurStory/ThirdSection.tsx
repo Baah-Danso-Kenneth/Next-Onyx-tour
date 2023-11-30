@@ -1,5 +1,5 @@
 import React from 'react'
-import ThirdImage from '../../../public/assets/images/pool-side.jpg'
+import ThirdImage from '../../../../public/assets/images/pool-side.jpg'
 import Image from 'next/image'
 
 function ThirdSection() {

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import PlayImage from '../../../public/assets/images/playing_games.jpg';
+import PlayImage from '../../../../public/assets/images/playing_games.jpg';
 
 
 function SecondSection() {

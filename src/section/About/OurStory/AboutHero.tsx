@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import TeamWorkImg from '../../../public/assets/images/team-work.jpg'
+import TeamWorkImg from '../../../../public/assets/images/team-work.jpg';
 
 function AboutHero() {
   return (

@@ -316,8 +316,8 @@ const [about,setAbout]=useState(false)
                       </div>
                       {toggleAbout && (
                        <ul>
-                        <Link href="/group-trip/winter">our team</Link>
-                        <Link href="/group-trip/summer">our story</Link>
+                        <Link className='header-title' href="/group-trip/winter">our team</Link>
+                        <Link  className="header-title" href="/group-trip/summer" >our story</Link>
                       </ul>
 
                       )}         
