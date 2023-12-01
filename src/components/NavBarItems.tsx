@@ -33,14 +33,14 @@ export const AboutItem=[
   {
     id:1,
     title:"Our story",
-    path:"/about/our_story",
+    path:"/about/our-story",
     cName:"list-item"
   },
    {
     id:2,
     title:"Our team",
     cName:"list-item",
-    path:"/about/our_team"
+    path:"/about/our-team"
    },
 ]
 
