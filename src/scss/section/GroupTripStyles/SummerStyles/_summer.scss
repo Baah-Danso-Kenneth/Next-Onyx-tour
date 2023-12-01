@@ -197,13 +197,14 @@
 
       @media (max-width:575px) {
      &-elements{
+      max-width: 100%;
+      margin: 0 auto;
       >img{
         height: 130px;
       }
      }
    }
-
-
+   
  }
 
  .grid-meet-up{
@@ -234,7 +235,7 @@
     justify-content: center;
      }   
 
-    @media (max-width:500px) {
+    @media (max-width:550px) {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:2rem;
@@ -258,6 +259,7 @@
 
 
  .main-content-meet-up{
+  margin-top: -1rem;
   &-title{
     display: flex;
     justify-content: center;
