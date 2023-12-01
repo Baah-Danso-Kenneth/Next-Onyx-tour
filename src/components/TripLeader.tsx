@@ -60,7 +60,7 @@ function TripLeader(props:TripLeaderProps) {
 
       <div className="bio-container">
         <div className="image-zone">
-            <Image src={img_model} alt=''/>
+            <Image src={img_model} alt='img-img'/>
         </div>
 
         <div className="text">

@@ -11,7 +11,9 @@ function RecommendCard({name, statement}:CardProps) {
       <div className="card-item">
         <p>{statement}</p>
       </div>
+      <div className="names-section">
       <h6>{name}</h6>
+      </div>
     </div>
   )
 }
