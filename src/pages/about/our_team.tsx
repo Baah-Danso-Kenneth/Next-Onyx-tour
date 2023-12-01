@@ -6,6 +6,7 @@ import TeamHero from '@/section/About/OurTeam/TeamHero'
 import React, { useEffect, useState } from 'react'
 import MissionStatement from '../../section/About/OurTeam/MissionStatement'
 import BriefMessage from '@/section/About/OurTeam/BriefMessage'
+import Loading from '@/components/Loader'
 
 function OurTeam() {
   const [isLoading,setLoading]=useState(false)
@@ -17,7 +18,9 @@ function OurTeam() {
   },[])
 
   return (
-       
+      !isLoading ? (<Loading/>) : 
+      (
+        <>
       <Layout>
         <TeamHero/>
         <AllOnyxTeam/>
@@ -26,6 +29,8 @@ function OurTeam() {
         <AllContentWinterTrip/>
         <MissionStatement/>
      </Layout>
+     </>
+      )
     )
 }
 
