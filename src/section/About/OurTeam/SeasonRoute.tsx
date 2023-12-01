@@ -17,16 +17,16 @@ function SeasonRoute() {
                <ul>
                 <div className='divss'>
                  <ScrollLink to="winter" smooth={true} duration={500} className='items'>
-                   <span className='link' onClick={()=>scrollToSection('trip-date')}>winter</span>
-                   <p>|</p>
+                   <span className='link' onClick={()=>scrollToSection('winter')}>winter</span>
+                   <p id="primer">|</p>
                  </ScrollLink>
                  </div>
    
    
                  <div className='divss'>
                  <ScrollLink to="summer" smooth={true} duration={500} className='items'>
-                   <span className='link' onClick={()=>scrollToSection('itenary')}>summer</span>
-                   <p>|</p>
+                   <span className='link' onClick={()=>scrollToSection('summer')}>summer</span>
+                   <p id="primer">|</p>
                  </ScrollLink>
                  </div>
    
