@@ -131,8 +131,8 @@ const [about,setAbout]=useState(false)
                       </div>
                       {toggleDestination && (
                        <ul>
-                        <Link href="/group-trip/winter" className='header-title'>winter trip</Link>
-                        <Link href="/group-trip/summer" className='header-title'>summer trip</Link>
+                        <Link href="/group-trips/winter" className='header-title'>winter trip</Link>
+                        <Link href="/group-trips/summer" className='header-title'>summer trip</Link>
                       </ul>
 
                       )}         
@@ -159,8 +159,8 @@ const [about,setAbout]=useState(false)
                       </div>
                       {toggleAbout && (
                        <ul>
-                        <Link href="/group-trip/winter" className='header-title'>our team</Link>
-                        <Link href="/group-trip/summer" className='header-title'>our story</Link>
+                        <Link href="/about/our_team" className='header-title'>our team</Link>
+                        <Link href="/about/our_story" className='header-title'>our story</Link>
                       </ul>
 
                       )}         
