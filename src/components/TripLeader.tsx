@@ -49,9 +49,7 @@ function TripLeader(props:TripLeaderProps) {
     } = props
 
 
-  const router = useRouter();
-  const routePath = `/${router.pathname === '/summer-trip-leader' ? 'summer-trip-leader' : 'winter-trip-leader'}`;
-;
+
 
   return (
     <div className='leader-instructor-container'>
