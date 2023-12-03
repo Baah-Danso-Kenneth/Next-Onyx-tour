@@ -1,6 +1,6 @@
 import FixedLayout from '@/components/shared/FixedLayout'
 import SeasonHeroSection from '@/components/shared/GroupTripComponents/SeasonHeroSection'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import WinterImage from '../../../public/assets/images/winter-img6.jpg'
 import InformationOnTour from '@/components/shared/GroupTripComponents/InformationOnTour'
 import WinterContent from '@/section/GroupTrips/Winter/WinterContent'
@@ -13,11 +13,22 @@ import WinterTripLeaderContent from '@/section/GroupTrips/Winter/WinterTripLeade
 import WinterMeetUpContent from '@/section/GroupTrips/Winter/WinterMeetUpContent'
 import WinterQuestionContent from '@/section/GroupTrips/Winter/WinterQuestionContent'
 import Layout from '@/components/shared/Layout'
+import Loading from '@/components/Loader'
 
 
-function winter() {
+function Winter() {
+  const [isLoading,setLoading]=useState(false)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(true)
+    },3000)
+  },[])
   return (
-    <Layout>
+
+    !isLoading ? (<Loading/>) : (
+      <>
+      <Layout>
       <SeasonHeroSection text='winter trip' img={WinterImage}/>
         <InformationOnTour title='onyx travel winter ' duration_from='7 days' duration_to='6 nights' statement='A fresh take on the tried-and-true trip to France. We’re showing you the real France, and connecting you with the talented women living here today. You’ll hand-dye silk in Provence, dine in an historic abbey with a Michelin-star chef, and so much more. Bon voyage!'/>
         <WinterContent/>
@@ -30,7 +41,10 @@ function winter() {
             <WinterMeetUpContent/>
             <WinterQuestionContent/>
     </Layout>
+      </>
+    )
+
   )
 }
 
-export default winter
+export default Winter
