@@ -1,0 +1,134 @@
+.what-we-do-container{
+    background-color: var(--plum-violet);
+    padding: 3rem;
+    min-height: auto;
+    margin-top: -0.8rem;
+    &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+        .title{
+           display: flex;
+           align-items: center;
+           margin-bottom: 2rem;
+           text-align: center;
+           >h1{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-family: var(--slug_fira);
+            font-weight: 300;
+            color: var(--light-slate);
+           }
+        }
+
+     .experiences{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        .first-experience{
+            h1{
+                font-size: 3rem;
+                color: var(--lightest-slate);
+                font-family: var(--slug_way);
+                text-transform: uppercase;
+                font-weight: 300;
+                margin-bottom: 1rem;
+            }
+
+            p{
+              color: var(--lightest-slate);
+              font-family: var(--slug_way);
+            }
+        }
+        .second-experience{@extend .first-experience}
+        .third-experience{@extend .first-experience}
+     }
+
+    }
+
+
+
+     @media (min-width: 1200px){ }
+
+     @media (min-width: 768px) and (max-width: 991.98px){
+        &-elements{
+            max-width: 90%;
+            margin: 0 auto;
+            .title{
+                text-align: center;
+            }
+            .experiences{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .first-experience{
+                    h1{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                        text-align: center
+                    };
+                }
+            }
+        }
+     }
+
+    @media (min-width: 575.98px) and (max-width: 767.98px){
+        &-elements{
+            max-width: 100%;
+            .title{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+      
+              h1{
+                text-align: center;
+                font-size: 1.3rem;
+              }
+            }
+            .experiences{
+                flex-flow: column;
+                .first-experience{
+                    h1{
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:575px){
+        &-elements{
+            max-width: 100%;
+            margin: 0 auto;
+            .title{
+               >h1{
+                font-size: 1rem;
+               }
+            }
+            .experiences{
+                flex-flow: column;
+                .first-experience{
+                    width: 120%;
+                    h1{
+                        font-size: 1.5rem;
+                        text-align: center;
+                        color: var(--light-slate);
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+     }
+}

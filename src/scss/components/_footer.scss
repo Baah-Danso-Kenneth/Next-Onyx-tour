@@ -1,0 +1,108 @@
+.footer-container{
+    min-height: auto;
+    padding: 2rem;
+    &-elements{
+        max-width: 80%;
+        margin: 0 auto;
+
+        .logo{
+            display: flex;
+            margin-bottom: 2rem;
+            justify-content: center;
+            >img{
+                width: 30%;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+        .statement{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+            p{
+                text-align: center;
+                font-family: var(--slug_way);
+                line-height: 1.8rem;
+            }
+        }
+        .contacts{
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            h3{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-family: var(--slug_fira);
+                margin-bottom: 0.3rem;
+            }
+            p{
+                border-bottom: 1px solid var(--blue-dark);
+                margin-bottom: 0.5rem;
+                font-family: var(--slug_way);
+            }
+            h5{
+                font-weight: 500;
+                font-size: 1.2rem;
+                margin-bottom: 0.3rem;
+                font-family: var(--slug_way);
+            }
+        }
+
+        .copyright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--slug_way);
+            p{
+                text-align: center;
+                font-style: italic;
+            }
+        }
+    }
+
+    @media (max-width:575px){
+
+        &-elements{
+            max-width: 80%;
+            margin: 0 auto;
+            .logo{
+               justify-content: center;
+               margin-bottom: 0.8rem;
+            }
+            .statement{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+
+            .contacts{
+                justify-content: center;
+                h3{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+
+                h5{
+                    font-size: 1rem;
+                    text-align: center;
+                    white-space: nowrap;
+                }
+            }
+
+            .copyright{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    
+}
