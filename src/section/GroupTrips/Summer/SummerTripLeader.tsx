@@ -6,7 +6,7 @@ import SummerLeaderImg from '../../../../public/assets/images/leader-1.jpg';
 function SummerTripLeader() {
   return (
     <div className='flex-item'>
-    <MeetLeader img={SummerLeaderImg} title="meet your trip leader" btn_text='meet suzzy'/>
+    <MeetLeader img={SummerLeaderImg} title="meet your trip leader" btn_text='meet Monica'/>
  </div>
   )
 }
