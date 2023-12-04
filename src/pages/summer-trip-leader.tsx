@@ -1,9 +1,9 @@
 import TripLeader from '@/components/TripLeader'
 import CompanyLogo from '../../public/assets/images/onyx-loader-logo.png'
-import Blonde from '../../public/assets/images/blonde.jpg'
 import React, { useEffect, useState } from 'react'
 import Layout from '@/components/shared/Layout'
 import Loading from '@/components/Loader'
+import Blonde from '../../public/assets/images/blonde.jpg'
 
 function SummerTripLeader() {
   const [isLoading, setIsLoading]=useState(false)
@@ -24,7 +24,7 @@ function SummerTripLeader() {
        <TripLeader
         brand_img={CompanyLogo}
         img_model={Blonde}
-        name='Suzzy Williams'
+        name='Monica Brown'
         location='Ohio Oklahoma'
         statement='Meet Paige - our fabulous Trip Leader for our Argentina Group Trips. Paige was born and raised in the Washington, DC area and first traveled to - and fell in love with - Argentina during her junior year abroad. After taking a leap of faith and relocating to Buenos Aires in 2008, she worked in journalism and communications while nurturing her true passion: discovering the citys best food, drink, and cultural experiences. Paige is passionate about connecting people, telling stories, and spreading love over a delicious meal and fabulous bottle of wine. When she isnt doing that, you can find her working on her podcast, Bad Information, walking her dog Pocho, or decompressing on the beaches of Uruguay. Learn more about Paige below and follow her  '
         inspo='What’s more empowering than becoming aware of your own strengths and who you are as a person? And what better vehicle for this experience than travel? '
