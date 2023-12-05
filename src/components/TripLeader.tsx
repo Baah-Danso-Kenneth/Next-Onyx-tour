@@ -2,7 +2,6 @@ import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import RecommendCard from './Cards/RecommendationCard';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 interface TripLeaderProps{
    brand_img:StaticImageData;
