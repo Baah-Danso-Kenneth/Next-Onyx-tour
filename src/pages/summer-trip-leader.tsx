@@ -1,5 +1,5 @@
 import TripLeader from '@/components/TripLeader'
-import CompanyLogo from '../../public/assets/images/onyx-loader-logo.png'
+import CompanyLogo from '../../public/assets/images/yensa-nua.png'
 import React, { useEffect, useState } from 'react'
 import Layout from '@/components/shared/Layout'
 import Loading from '@/components/Loader'
