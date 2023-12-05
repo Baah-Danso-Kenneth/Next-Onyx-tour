@@ -1,6 +1,6 @@
 import TripLeader from '@/components/TripLeader'
 import React, { useEffect, useState } from 'react'
-import CompanyLogo from '../../public/assets/images/onyx-loader-logo.png'
+import CompanyLogo from '../../public/assets/images/yensa-nua.png'
 import Paul from '../../public/assets/images/meet-s-17.jpg'
 import Layout from '@/components/shared/Layout'
 import Loading from '@/components/Loader'

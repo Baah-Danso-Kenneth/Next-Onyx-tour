@@ -1,5 +1,5 @@
 import React from 'react'
-import Brand from '../../../../public/assets/images/onyx-loader-logo.png'
+import Brand from '../../../../public/assets/images/yensa-nua.png'
 import Image from 'next/image'
 
 function MissionStatement() {
